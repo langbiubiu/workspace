@@ -1,0 +1,15 @@
+库是用来包含具体产品中特有的扩展类的
+比如，比如一体机项目中需要对TeeveePlayer进行二次封装，那么其封装的后的代码会放到libandroidtvext.jar
+里面。这个jar包和具体的项目是密切相关的。过程中自带的jar是空的。
+
+如果需要具体的jar文件，可以check相关工程，编译得到。
+
+比如可以从这里拿到:
+https://svn.eis/svn/apptv/2013/main/packages/dtvextend/
+
+1 本地测试可以直接替换
+2 在线编译，请将库文件上传到plattv仓库同目录下面，编译系统将自动覆盖
+
+
+
+!!!! libandroidtvext.jar 已锁定，请勿上传文件!!!!

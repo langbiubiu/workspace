@@ -1,0 +1,2 @@
+rem 本文件用于生成JavaDoc标准文档 
+javadoc -bootclasspath %ANDROID_BTCLASS% -classpath bin/classes -doclet com.google.doclava.Doclava -docletpath libs/doclava-1.0.6.jar -sourcepath java -d doc android.appwidget android.media android.view android.net.telecast android.net.telecast.ca android.net.telecast.dvb 

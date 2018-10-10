@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- 本Ant脚本用于自动对class进行打jar包  -->
+<project name="Androidtelevision" default="makeJar" basedir="."> 	
+    <target name="makeJar" >
+        <jar jarfile="./libandroidtv.jar" basedir="bin/classes" excludes="" >
+        </jar>
+    </target>
+</project>

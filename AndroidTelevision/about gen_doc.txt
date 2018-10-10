@@ -1,0 +1,4 @@
+工程右键->Properties->Builders 选中gen javadoc ->Edit
+选择Enviroment 选项卡
+编辑其中的两个环境变量，指向你本机的实际路径
+
