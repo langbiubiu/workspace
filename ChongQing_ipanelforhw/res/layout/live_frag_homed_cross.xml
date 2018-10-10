@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/anim_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="775dp"
+        android:layout_height="628dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/live_cross" >
+       <!--  <com.ipanel.join.topway.homed.live.view.CrossLayout
+            android:id="@+id/cross"
+            android:layout_width="650dp"
+            android:layout_height="610dp"
+            android:layout_centerInParent="true" /> -->
+            
+        <LinearLayout 
+            android:id="@+id/cross"
+            android:layout_width="330dp"
+            android:layout_height="550dp"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+        </LinearLayout> 
+           
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="110dp"
+			android:layout_marginTop="250dp"
+			android:layout_marginLeft="225dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/channel_number"
+                style="@style/marquee_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0px"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="#f0f0f0"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/channel_name"
+                style="@style/marquee_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="#f0f0f0"
+                android:textSize="36dp" />
+
+            <TextView
+                android:id="@+id/program_info"
+                style="@style/marquee_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="65dp"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="#6d6d6b"
+                android:textSize="24dp" />
+        </RelativeLayout>
+        
+        <TextView 
+            android:id="@+id/l_channel_num"
+            android:layout_height="110dp"
+            android:layout_width="150dp"
+            android:layout_marginLeft="70dp"
+            android:gravity="center"
+            android:layout_marginTop="250dp"
+            android:textColor="#f0f0f0"
+            android:textSize="32dp"/>
+        <TextView 
+            android:id="@+id/r_channel_num"
+            android:layout_height="110dp"
+            android:layout_width="185dp"
+            android:layout_marginLeft="535dp"
+            android:layout_marginTop="250dp"
+            android:gravity="center"
+            android:textColor="#f0f0f0"
+            android:textSize="32dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

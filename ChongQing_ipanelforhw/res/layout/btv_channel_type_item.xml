@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330px"
+    android:layout_height="90px"
+    android:background="@drawable/vod_channel_type_bg_sl"
+    android:focusable="true" >
+
+    <TextView
+        android:id="@+id/channel_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="90px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100px"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@drawable/back_sl_tab_text"
+        android:textSize="36px" />
+
+</RelativeLayout>

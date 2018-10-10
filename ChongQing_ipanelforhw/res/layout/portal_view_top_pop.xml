@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1920px"
+    android:layout_height="1080px"
+    android:background="@drawable/portal_bg2" >
+    
+    <com.ipanel.join.chongqing.widget.TimeTextView2
+        android:id="@+id/time_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="84px"
+        android:layout_marginTop="86px"
+        android:textSize="130px"
+        android:textColor="#ffffff" />
+    
+    <com.ipanel.join.chongqing.widget.WeatherView2
+        android:id="@+id/weather_02"
+        android:layout_width="wrap_content"
+        android:layout_height="65px"
+        android:layout_marginLeft="475px"
+        android:layout_marginTop="106px"
+        android:gravity="center_vertical"/>
+    
+    <com.ipanel.join.chongqing.widget.DateTextView
+        android:id="@+id/date_02"
+        android:layout_width="wrap_content"
+        android:layout_height="65px"
+        android:layout_marginLeft="475px"
+        android:layout_marginTop="179px"
+        android:gravity="center_vertical"
+        android:textSize="30px"
+        android:textColor="#ffffff" />
+    
+    <LinearLayout 
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="315px"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <ImageView
+        	android:id="@+id/user"
+        	android:layout_width="216px"
+        	android:layout_height="283px"
+        	android:focusable="true"
+        	android:background="@drawable/portal_selector_icon03"/>
+    
+    	<ImageView
+        	android:id="@+id/setting"
+        	android:layout_width="216px"
+        	android:layout_height="283px"
+        	android:layout_marginLeft="180px"
+        	android:focusable="true"
+        	android:background="@drawable/portal_selector_icon01" />
+    
+    	<ImageView
+        	android:id="@+id/app" 
+        	android:layout_width="216px"
+        	android:layout_height="283px"
+        	android:layout_marginLeft="180px"
+        	android:focusable="true"
+        	android:background="@drawable/portal_selector_icon05" />
+    
+    	<ImageView
+        	android:id="@+id/wechat_tv"
+        	android:layout_width="216px"
+        	android:layout_height="283px"
+        	android:layout_marginLeft="180px"
+        	android:focusable="true"
+        	android:background="@drawable/portal_selector_icon06" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_alignLeft="@+id/line1"
+        android:layout_marginTop="36px"
+        android:orientation="horizontal">
+        <ImageView
+        	android:id="@+id/tv_business_hall"
+        	android:layout_width="216px"
+        	android:layout_height="283px"
+        	android:focusable="true"
+        	android:background="@drawable/portal_selector_icon02" />
+    
+    	<ImageView
+        	android:id="@+id/tv_cloud"
+        	android:layout_width="216px"
+        	android:layout_height="283px"
+        	android:layout_marginLeft="180px"
+        	android:focusable="true"
+        	android:background="@drawable/portal_selector_icon00" />
+    
+    	<ImageView
+        	android:id="@+id/usb"
+        	android:layout_width="216px"
+        	android:layout_height="283px"
+        	android:layout_marginLeft="180px"
+        	android:focusable="true"
+        	android:background="@drawable/portal_selector_icon04"
+        	android:visibility="invisible" />
+    </LinearLayout>
+    
+
+</RelativeLayout>

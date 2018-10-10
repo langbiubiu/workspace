@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40px"
+    android:orientation="horizontal">
+  <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:text="@string/title1"
+      android:textSize="32px"
+      android:gravity="center_vertical"/>
+  <ImageView
+      android:layout_height="match_parent"
+      android:layout_width="wrap_content"
+      android:background="@drawable/user_tips00"
+      android:gravity="center_vertical"/>
+  <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:text="@string/title2"
+      android:textSize="32px"
+      android:gravity="center_vertical"/>"
+     <ImageView
+      android:layout_height="match_parent"
+      android:layout_width="wrap_content"
+      android:background="@drawable/user_tips01"
+      android:gravity="center_vertical"/> 
+      <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:text="@string/title3"
+      android:textSize="32px"
+      android:gravity="center_vertical"/> 
+     <TextView
+          android:id="@+id/pager"
+	      android:layout_height="wrap_content"
+	      android:layout_width="wrap_content"
+		  android:layout_marginLeft="50px"
+      	  android:textSize="32px"
+      	  android:gravity="center_vertical"/> "
+    
+
+</LinearLayout>

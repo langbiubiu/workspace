@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!-- sure dialog -->
+    <dimen name="sroot_w">480dp</dimen>
+    <dimen name="sroot_h">180dp</dimen>
+    <dimen name="layout_head_h">45dp</dimen>
+    <dimen name="layout_head_margt">5dp</dimen>
+    <dimen name="stitle_marg">8dp</dimen>
+    <dimen name="stitle_size">24sp</dimen>
+    <dimen name="layout_body_h">76dp</dimen>
+    <dimen name="layout_body_pd">45dp</dimen>
+    <dimen name="content_size">19sp</dimen>
+    <dimen name="layout_tail_h">45dp</dimen>
+    <dimen name="layout_tail_margb">8dp</dimen>
+    <dimen name="layout_tail_marglr">40dp</dimen>
+    <dimen name="layout_tail_margt">4dp</dimen>
+    <dimen name="no_btn_h">30dp</dimen>
+    <dimen name="no_btn_size">16sp</dimen>
+    <dimen name="yes_btn_margl">40dp</dimen>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="702px"
+    android:layout_height="387px"
+    android:background="@drawable/order_dialog_bg" >
+
+    <TextView
+        android:id="@+id/order_dialog_tip"
+        android:layout_width="550px"
+        android:layout_height="150px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="69px"
+        android:text="@string/order_title"
+        android:textColor="#ffffffff"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/order_dialog_sure"
+        android:layout_width="204px"
+        android:layout_height="82px"
+        android:layout_marginLeft="116px"
+        android:layout_marginTop="258px"
+        android:background="@drawable/order_btn_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/order_sure"
+        android:textColor="@color/font_style"
+        android:textSize="35px" />
+    
+    <TextView
+        android:id="@+id/order_dialog_ok"
+        android:layout_width="204px"
+        android:layout_height="82px"
+        android:layout_marginLeft="116px"
+        android:layout_marginTop="258px"
+        android:background="@drawable/order_btn_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/sure"
+        android:textColor="@color/font_style"
+        android:textSize="35px"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/order_dialog_cancel"
+        android:layout_width="204px"
+        android:layout_height="82px"
+        android:layout_marginRight="116px"
+        android:layout_marginTop="258px"
+        android:background="@drawable/order_btn_selector"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/font_style"
+        android:textSize="35px" />
+
+</FrameLayout>

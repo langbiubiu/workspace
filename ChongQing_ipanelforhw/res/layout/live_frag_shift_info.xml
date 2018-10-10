@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/anim_view"
+    android:layout_width="match_parent"
+    android:layout_height="225px"
+    android:layout_marginTop="773px" >
+
+    <RelativeLayout
+        android:layout_width="1073px"
+        android:layout_height="225px"
+        android:layout_marginLeft="270px"
+        android:background="@drawable/live_pf_bg" >
+
+        <ImageView
+            android:id="@+id/volume_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27px"
+            android:src="@drawable/live_play_text_title" />
+
+        <TextView
+            android:id="@+id/channel_name"
+            style="@style/marquee_style"
+            android:layout_width="278px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="126px"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/current_event"
+            style="@style/marquee_style"
+            android:layout_width="435px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="305px"
+            android:layout_marginTop="90px"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="36px" />
+
+        <com.ipanel.join.topway.homed.live.view.LiveSeekBar
+            android:id="@+id/watch_progress"
+            android:layout_width="683px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300px"
+            android:layout_marginTop="129px"
+            android:focusable="false"
+            android:gravity="center"
+            android:max="100"
+            android:maxHeight="53px"
+            android:minHeight="53px"
+            android:progress="0"
+            android:progressDrawable="@drawable/live_progress_drawable"
+            android:thumb="@drawable/live_slider_02" />
+
+        <TextView
+            android:id="@+id/current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300px"
+            android:layout_marginTop="170px"
+            android:textColor="#ffffff"
+            android:textSize="27px" />
+
+        <TextView
+            android:id="@+id/event_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="773px"
+            android:layout_marginTop="90px"
+            android:textColor="#ffffff"
+            android:textSize="33px" />
+    </RelativeLayout>
+
+    <ipanel.join.ad.widget.ImageAdView
+        android:id="@+id/ad"
+        android:layout_width="377px"
+        android:layout_height="224px"
+        android:layout_marginLeft="1352px"
+        android:background="@drawable/live_pf_ad"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

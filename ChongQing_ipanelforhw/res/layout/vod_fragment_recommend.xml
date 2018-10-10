@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1920px"
+    android:layout_height="1080px" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="395px"
+        android:layout_alignParentBottom="true"
+        android:background="#B3000000" >
+
+        <com.ipanel.join.cq.vod.customview.SimpleAdapterView
+            android:id="@+id/recommend_list"
+            android:layout_width="match_parent"
+            android:layout_height="395px"
+            android:layout_marginLeft="60px" />
+    </RelativeLayout>
+
+</RelativeLayout>

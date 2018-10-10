@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="439px"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:background="@drawable/live_bar_bg1" >
+    
+    <ImageView
+        android:id="@+id/poster_01"
+        android:layout_width="240px"
+        android:layout_height="300px"
+        android:layout_marginLeft="89px"
+        android:layout_marginTop="53px"
+        android:focusable="true"
+        android:src="@drawable/live_pop_img6_1" />
+    
+    <TextView
+        android:layout_width="240px"
+        android:layout_height="45px"
+        android:layout_alignLeft="@id/poster_01"
+        android:layout_marginTop="362px"
+        android:gravity="center"
+        android:text="@string/user_name_live"
+        android:textColor="#bebebe"
+        android:textSize="32px" />
+    
+    <ImageView
+        android:id="@+id/poster_02"
+        android:layout_width="240px"
+        android:layout_height="300px"
+        android:layout_marginLeft="375px"
+        android:layout_marginTop="53px"
+        android:focusable="true"
+        android:src="@drawable/live_pop_img6_2" />
+    
+    <TextView
+        android:layout_width="240px"
+        android:layout_height="45px"
+        android:layout_alignLeft="@id/poster_02"
+        android:layout_marginTop="362px"
+        android:gravity="center"
+        android:text="@string/user_name_live"
+        android:textColor="#bebebe"
+        android:textSize="32px" />
+    
+    <ImageView
+        android:id="@+id/poster_03"
+        android:layout_width="240px"
+        android:layout_height="300px"
+        android:layout_marginLeft="661px"
+        android:layout_marginTop="53px"
+        android:focusable="true"
+        android:src="@drawable/live_pop_img6_3" />
+    
+    <TextView
+        android:layout_width="240px"
+        android:layout_height="45px"
+        android:layout_alignLeft="@id/poster_03"
+        android:layout_marginTop="362px"
+        android:gravity="center"
+        android:text="@string/user_name_live"
+        android:textColor="#bebebe"
+        android:textSize="32px" />
+    
+    <ImageView
+        android:id="@+id/poster_04"
+        android:layout_width="240px"
+        android:layout_height="300px"
+        android:layout_marginLeft="947px"
+        android:layout_marginTop="53px"
+        android:focusable="true"
+        android:src="@drawable/live_pop_img6_4" />
+    
+    <TextView
+        android:layout_width="240px"
+        android:layout_height="45px"
+        android:layout_alignLeft="@id/poster_04"
+        android:layout_marginTop="362px"
+        android:gravity="center"
+        android:text="@string/user_name_live"
+        android:textColor="#bebebe"
+        android:textSize="32px" />
+    
+    <ImageView
+        android:id="@+id/poster_05"
+        android:layout_width="240px"
+        android:layout_height="300px"
+        android:layout_marginLeft="1233px"
+        android:layout_marginTop="53px"
+        android:focusable="true"
+        android:src="@drawable/live_pop_img6_5" />
+    
+    <TextView
+        android:layout_width="240px"
+        android:layout_height="45px"
+        android:layout_alignLeft="@id/poster_05"
+        android:layout_marginTop="362px"
+        android:gravity="center"
+        android:text="@string/user_name_live"
+        android:textColor="#bebebe"
+        android:textSize="32px" />
+    
+    <ImageView
+        android:id="@+id/poster_06"
+        android:layout_width="240px"
+        android:layout_height="300px"
+        android:layout_marginLeft="1519px"
+        android:layout_marginTop="53px"
+        android:focusable="true"
+        android:src="@drawable/live_pop_img6_6" />
+    
+    <TextView
+        android:layout_width="240px"
+        android:layout_height="45px"
+        android:layout_alignLeft="@id/poster_06"
+        android:layout_marginTop="362px"
+        android:gravity="center"
+        android:text="@string/user_name_live"
+        android:textColor="#bebebe"
+        android:textSize="32px" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="291px"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_search_result_bg1" >
+
+    <RelativeLayout
+        android:id="@+id/vod_left_part"
+        android:layout_width="291px"
+        android:layout_height="match_parent"
+        android:background="@drawable/vod_part_bg" >
+
+        <ListView
+            android:id="@+id/sort_up"
+            android:layout_width="match_parent"
+            android:layout_height="710px"
+            android:layout_marginTop="170px"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="25px"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ImageView
+            android:id="@+id/type_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160px"
+            android:layout_marginTop="914px"
+            android:background="@drawable/vod_arrowdown" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

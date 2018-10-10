@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="241px"
+    android:layout_height="wrap_content"
+    android:id="@+id/ffhotitem"
+    android:focusable="true" >
+
+    <ImageView
+        android:id="@+id/film_img"
+        android:layout_width="241px"
+        android:layout_height="301px"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/film_name"
+        android:layout_width="241px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330px"
+        android:ellipsize="marquee"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="#9FA2A4"
+        android:textSize="36px" />
+
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/live_preview_bg" >
+    
+    <FrameLayout
+        android:id="@+id/tv"
+        android:layout_width="675px"
+        android:layout_height="380px"
+        android:layout_marginTop="252px"
+        android:layout_marginLeft="233px" />
+    
+    <ImageView
+        android:layout_width="285px"
+        android:layout_height="60px"
+        android:layout_marginLeft="230px"
+        android:layout_marginTop="115px"
+        android:background="@drawable/portal_logo" />
+    
+    <TextView
+        android:id="@+id/channelName"
+        android:layout_width="750px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="535px"
+        android:layout_marginTop="101px"
+        android:textSize="72px"
+        android:textColor="#F0F0F0"
+        android:gravity="center" />
+    
+    <TextView
+        android:layout_width="750px"
+        android:layout_height="60px"
+        android:layout_marginLeft="940px"
+        android:layout_marginTop="252px"
+        android:text="@string/preview_jianjie"
+        android:textSize="36px"
+        android:textColor="#F0F0F0" />
+    
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="750px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="940px"
+        android:layout_marginTop="332px"
+        android:textSize="33px"
+        android:textColor="#F0F0F0" />
+    
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="68px"
+        android:layout_marginLeft="233px"
+        android:layout_marginTop="684px"
+        android:text="@string/preview_order_price"
+        android:textSize="39px"
+        android:textColor="#F0F0F0" />
+    
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="200px"
+        android:layout_height="68px"
+        android:layout_marginLeft="433px"
+        android:layout_marginTop="684px"
+        android:textSize="39px"
+        android:textColor="#FFDB16" />
+    
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="1457px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="233px"
+        android:layout_marginTop="855px"
+        android:text="@string/preview_tips"
+        android:textSize="30px"
+        android:textColor="#F0F0F0" />
+
+</RelativeLayout>

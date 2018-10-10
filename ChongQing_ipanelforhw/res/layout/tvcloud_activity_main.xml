@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tvcloud_bg" >
+    
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="291px"
+        android:layout_height="91px"
+        android:layout_marginLeft="61px"
+        android:layout_marginTop="34px"
+        android:focusable="false"
+        android:background="@drawable/tvcloud_logo" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1380px"
+        android:layout_marginTop="42px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tips"
+            android:textSize="31px" />
+        
+        <ImageView
+            android:layout_width="65px"
+            android:layout_height="46px"
+            android:src="@drawable/tvcloud_tips00" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:textSize="31px" />
+        
+        <ImageView
+            android:layout_width="65px"
+            android:layout_height="46px"
+            android:src="@drawable/tvcloud_tips01" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/key"
+            android:textSize="31px" />
+    </LinearLayout>
+    
+    <cn.ipanel.android.widget.SimpleTab
+        android:id="@+id/cloud_tab"
+        android:layout_width="238px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="116px"
+        android:layout_marginTop="150px"
+        android:orientation="vertical"
+        android:background="@drawable/tvcloud_list_01" >
+
+        <TextView
+            android:id="@+id/cloud_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="82px"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/tvcloud_recommend"
+            android:textSize="34px"
+            android:textColor="@drawable/tvcloud_selector_tab_text"
+            android:background="@drawable/tvcloud_selector_menu_bg" >
+        </TextView>
+        
+        <TextView
+            android:id="@+id/live_record"
+            android:layout_width="match_parent"
+            android:layout_height="82px"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/live_record"
+            android:textSize="34px"
+            android:textColor="@drawable/tvcloud_selector_tab_text"
+            android:background="@drawable/tvcloud_selector_menu_bg" />
+        
+        <TextView
+            android:id="@+id/my_record"
+            android:layout_width="match_parent"
+            android:layout_height="82px"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/my_record"
+            android:textSize="34px"
+            android:textColor="@drawable/tvcloud_selector_tab_text"
+            android:background="@drawable/tvcloud_selector_menu_bg" />
+    </cn.ipanel.android.widget.SimpleTab>
+    
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="1688px"
+        android:layout_height="820px"
+        android:layout_marginLeft="116px"
+        android:layout_marginTop="150px"
+        android:clipToPadding="false">
+        
+    </FrameLayout>
+    
+    <LinearLayout
+        android:id="@+id/page_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="850px"
+        android:layout_marginLeft="1836px"
+        android:layout_marginTop="156px"
+        android:background="@drawable/tvcloud_page1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal" >
+        
+        <TextView
+            android:id="@+id/current_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="74px"
+            android:gravity="center_horizontal"
+            android:textSize="36px" />
+        
+        <TextView
+            android:id="@+id/total_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:gravity="center_horizontal"
+            android:textSize="36px" />
+    </LinearLayout>
+    
+    <ProgressBar
+        android:id="@+id/space_bar"
+        android:layout_width="1194px"
+        android:layout_height="5px"
+        android:layout_alignLeft="@id/content_layout"
+        android:layout_below="@id/content_layout"
+        android:layout_marginTop="30px"
+        android:max="10000"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/tv_progress_bar"
+        android:background="@color/bar_bg"/>
+    
+    <TextView
+        android:id="@+id/space_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/space_bar"
+        android:layout_below="@id/content_layout"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="10px"
+        
+        android:textSize="24px" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/space_bar"
+        android:layout_below="@id/content_layout"
+        android:layout_marginLeft="340px"
+        android:layout_marginTop="10px"
+        android:gravity="center_vertical" >
+        
+        <ImageView
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:background="@color/used_space" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:text="@string/already_use"
+            android:textSize="24px" />
+        
+        <ImageView
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:layout_marginLeft="20px"
+            android:background="@color/pre_space" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:text="@string/will_use"
+            android:textSize="24px" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="430dp"
+    android:layout_height="258dp"
+    android:background="@drawable/live_conflict_bg"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/showinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:gravity="left|center_vertical"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/ensureButton"
+            android:layout_width="136dp"
+            android:layout_height="54dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:text="@string/yes_button"
+            android:textColor="@android:color/white"
+            android:background="@drawable/live_conflict_btn"
+            android:textSize="26sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="136dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="55dp"
+            android:focusable="true"
+            android:text="@string/no_button"
+            android:textColor="@android:color/white"
+            android:background="@drawable/live_conflict_btn"
+            android:textSize="26sp" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

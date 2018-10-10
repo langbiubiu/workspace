@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+       android:id="@+id/time_first"
+        android:layout_height="44px"
+        android:layout_width="93px"
+        android:layout_x="12px"
+        android:layout_alignParentLeft="true"       
+        android:gravity="center"
+        android:background="#1637B3"
+        android:textSize="28px"
+        android:textColor="#FFFFFF"
+        android:focusable="false"/> 
+   <cn.ipanel.android.widget.WeightGridLayout
+        android:id="@+id/gvfirst"
+        android:layout_y="50px" 
+        android:padding="23px"       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+    </cn.ipanel.android.widget.WeightGridLayout>
+   
+</AbsoluteLayout>

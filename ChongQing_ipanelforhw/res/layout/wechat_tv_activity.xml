@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1920px"
+    android:layout_height="1080px"
+    android:background="@drawable/portal_bg2" >
+
+    <ImageView
+        android:id="@+id/wechat_title"
+        android:layout_width="270px"
+        android:layout_height="40px"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="60px"
+        android:src="@drawable/wechat_tv_title" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1400px"
+        android:layout_marginTop="60px"
+        layout="@layout/back_tip_layout" />
+
+    <ImageView
+        android:id="@+id/wechat_help"
+        android:layout_width="540px"
+        android:layout_height="825px"
+        android:layout_below="@id/wechat_title"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="50px"
+        android:src="@drawable/weixinma" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="1760px"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="120px" >
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/showcode"
+        android:layout_width="185dp"
+        android:layout_height="185dp"
+        android:layout_alignRight="@+id/wechat_help"
+        android:layout_below="@+id/horizontalScrollView1"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="64dp" />
+
+    <TextView
+        android:id="@+id/infocode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/showcode"
+        android:layout_below="@+id/showcode"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="85dp"
+        android:textColor="#006666"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/weixincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infocode"
+        android:layout_marginLeft="173dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/wechat_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="1130px"
+        android:layout_height="885px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="150px"
+        android:layout_toRightOf="@+id/wechat_help"
+        android:clipChildren="false"
+        android:layerType="software"
+        android:orientation="horizontal" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="545px"
+            android:layout_height="830px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:clipChildren="false" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/weixintip"
+        android:layout_width="1130px"
+        android:layout_height="825px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="150px"
+        android:layout_toRightOf="@+id/wechat_help"
+        android:src="@drawable/defposter" />
+
+</RelativeLayout>

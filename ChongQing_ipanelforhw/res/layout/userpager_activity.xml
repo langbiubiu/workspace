@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1920px"
+    android:layout_height="1080px"
+    android:background="@drawable/portal_bg2">
+    
+    <ImageView 
+        android:id="@+id/wechat1_title"
+        android:layout_width="270px"
+        android:layout_height="48px"
+        android:layout_marginTop="45px"
+        android:layout_marginLeft="65px"
+        android:src="@drawable/wechat_tv_title"/>
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1400px"
+        android:layout_marginTop="60px"
+        layout="@layout/back_tip_layout"/>
+    
+    <LinearLayout
+ 	    android:layout_toRightOf="@+id/wechat_help" 
+ 	    android:layout_width="1720px"
+ 	    android:layout_height="885px"
+ 	    android:layout_marginLeft="100px"
+        android:layout_marginTop="150px"
+ 	    android:clipChildren="false"
+ 	    android:layerType="software"  
+    	android:orientation="horizontal"   >
+    
+      <android.support.v4.view.ViewPager 
+        android:id="@+id/user_viewpager"  
+        android:layout_width="545px"  
+        android:layout_height="830px"  
+        android:layout_marginLeft="10px"  
+		android:layout_marginRight="10px"
+        android:clipChildren="false">  
+               
+           
+    </android.support.v4.view.ViewPager> 
+    </LinearLayout> 
+</RelativeLayout>

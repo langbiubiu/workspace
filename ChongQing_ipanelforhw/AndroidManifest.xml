@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ipanel.chongqing_ipanelforhw"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+   <!--  <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" /> -->
+
+    <application
+        android:name="com.ipanel.chongqing_ipanelforhw.CQApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ipanel.chongqing_ipanelforhw.downloading.VideoActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="Chongqing Portal"
+            android:theme="@style/AppTheme.Video" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.ipanel.join.chongqing.portal.PortalActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/hometheme" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.ipanel.join.chongqing.portal.PortalActivity2"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ipanel.chongqing_ipanelforhw.downloading.AppActivity"
+            android:launchMode="singleTask" >
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.ipanel.join.chongqing.live.LiveForHWActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity=":live"
+            android:theme="@style/AppTheme.Player" >
+            <intent-filter>
+                <action android:name="com.ipanel.join.apps.LIVE_HOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ipanel.join.chongqing.myapp.MyAppActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/hometheme" >
+        </activity>
+
+        <uses-library
+            android:name="android.television.library"
+            android:required="false" />
+
+        <activity
+            android:name="com.ipanel.join.chongqing.wechattv.WechatTVActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.ipanel.join.chongqing.wechattv.PicScanActivity"
+            android:launchMode="singleInstance" >            
+        </activity>
+        <activity
+            android:name="com.ipanel.join.chongqing.wechattv.UserPagerActivity"
+			android:launchMode="singleInstance" >            
+        </activity>
+        <activity
+            android:name="com.ipanel.join.chongqing.portal.MineActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        <!--
+        <activity
+            android:name="com.ipanel.chongqing_ipanelforhw.hwstruct.HwstructTest"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="com.ipanel.join.cq.vod.vodhome.FilmListActivity"
+            android:exported="true"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.ipanel.join.cq.vod.detail.DetailActivity"
+            android:exported="true"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.ipanel.join.cq.vod.searchpage.SearchPage"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.ipanel.join.cq.vod.starshow.StarShowActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.ipanel.join.cq.vod.detail.TVDetailActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.ipanel.join.cq.vod.player.SimplePlayerActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.ipanel.join.cq.vod.player.SimplePlayerActivity"
+            android:theme="@style/AppTheme.Player" >
+        </activity>
+        <activity
+            android:name="com.ipanel.join.cq.back.BackActivity"
+            android:exported="true"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.ipanel.join.cq.vod.rank.VodRankListActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.ipanel.join.cq.vod.detail.VodTabActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.ipanel.join.cq.user.UserActivity"
+            android:launchMode="singleInstance">
+        </activity>
+
+        <provider
+            android:name="com.ipanel.join.chongqing.live.provider.LiveContentProvider"
+            android:authorities="com.ipanel.join.apps.chongqing.LiveTVProvider"
+            android:exported="true" >
+        </provider>
+        <!--
+        <service android:name="com.ipanel.chongqing_ipanelforhw.downloading.LoadingService" >
+        </service>
+        -->
+    </application>
+
+</manifest>

@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1920px"
+    android:layout_height="1080px" >
+    
+    <RelativeLayout
+        android:id="@+id/program_list_rl"
+        android:layout_width="560px"
+        android:layout_height="match_parent"
+        android:background="@drawable/live_list01" >
+        
+        <TextView
+            android:id="@+id/channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="105px"
+            android:layout_marginLeft="146px"
+            android:layout_marginTop="68px"
+            android:gravity="center_vertical"
+            android:textColor="@color/label_text"
+            android:textSize="36px" />
+        
+        <com.ipanel.join.chongqing.live.view.JEventListView_b
+	        android:id="@+id/program_list_02"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/channel_name" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="521px"
+        android:src="@drawable/live_left00" />
+    
+    <RelativeLayout
+        android:layout_width="210px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/program_list_rl"
+        android:background="@drawable/live_list02" >
+        
+        <ImageView
+            android:id="@+id/up_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="105px"
+            android:layout_marginLeft="85px"
+            android:layout_marginTop="68px"
+            android:src="@drawable/live_epg_arrow_up" />
+        
+        <com.ipanel.join.chongqing.live.view.JWeekListView
+            android:id="@+id/week_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/up_arrow" />
+        
+        <ImageView
+            android:id="@+id/down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="105px"
+            android:layout_below="@id/up_arrow"
+            android:layout_marginLeft="85px"
+            android:layout_marginTop="735px"
+            android:src="@drawable/live_epg_arrow_down" />
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

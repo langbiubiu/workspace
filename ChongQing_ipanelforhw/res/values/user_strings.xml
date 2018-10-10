@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="history">观看历史</string>
+    <string name="watchList">影片收藏</string>
+    <string name="chaseDrama">追剧</string>
+    <string name="myRecordings">我的录制</string>
+    <string name="reservation">预约</string>
+    <string name="user_channel_collect">频道收藏</string>
+    <string name="user_flagbook">标签订阅</string>
+    <string name="user_actor">明星关注</string>
+    <string name="early">更早</string>   
+    <string name="earlier">更早</string>
+    <string name="del_tips_history">您确定要删除全部\n【观看历史】吗？</string>
+    <string name="del_tips_chase">您确定要删除全部\n【追剧】吗？</string>
+    <string name="del_tips_colect">您确定要删除全部\n【频道收藏】吗？</string>
+    <string name="del_tips_recode">您确定要删除全部\n【我的录制】吗？</string>
+    <string name="del_tips_resevation">您确定要删除全部\n【预约】吗？</string>
+    <string name="del_tips_watchList">您确定要删除全部\n【影片收藏】吗？</string>
+    <string name="del_tips_flag">您确定要删除全部\n【标签订阅】吗？</string>
+    <string name="del_tips_star">您确定要删除全部\n【明星关注】吗？</string>
+    <string name="chase">追剧</string>
+    <string name="title1">更多功能请按遥控器</string>
+    <string name="title2">或</string>
+    <string name="title3">键</string>
+    <string name="delone">删除</string>
+    <string name="delall">清空</string>
+    <string name="hang">行</string>
+    <string name="no_book">没有预约节目</string>
+    <string name="no_chase">暂无追剧</string>
+    <string name="no_collect">暂无频道收藏</string>
+    <string name="no_history">暂无观看记录</string>
+    <string name="no_record">暂无录制</string>
+    <string name="no_watchlist">暂无影片收藏</string>
+    <string name="no_flagbook">暂无标签订阅</string>
+    <string name="fail_read">数据解析失败</string>
+
+
+</resources>

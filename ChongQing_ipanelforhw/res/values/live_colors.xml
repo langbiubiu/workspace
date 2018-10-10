@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_bg_color">#ffba00</color>
+	<color name="yh_color">#ffc92a</color>  
+    <color name="bg_color">#99000000</color>
+    <color name="normal_text_color">#919191</color>
+    <color name="normal_text_color_1">#999999</color>
+    <color name="focus_text_color">#dcdcdc</color>
+    <color name="transparent_bg1">#90060821</color>
+    <color name="sc_transparent_background">#00ffffff</color>
+    <color name="light">#50000000</color>
+    <color name="alpha0">#00ffffff</color>
+    <color name="alpha10">#10ffffff</color>
+    <color name="alpha30">#30ffffff</color>
+    <color name="alpha80">#a0ffffff</color>
+    <color name="alpha90">#e0ffffff</color>
+    <color name="back_ground">#D3D3D3</color>
+    <color name="tv_background_color">#fff74dff</color>
+    <drawable name="btn_normal">#ffc600</drawable>
+    <drawable name="btn_focus">#757b91</drawable>
+    <drawable name="tv_background">		#00000000
+</drawable>
+    <drawable name="alpha50">#00ffffff</drawable>
+    <drawable name="alpha0">#00ffffff</drawable>
+    <drawable name="dark_gray">#8F8F8F</drawable>
+    <drawable name="light_gray">#EEEEEE</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="hyaline">#00000000</drawable>
+    <drawable name="alpha00">#00000000</drawable>
+    <drawable name="alpha10">#10ffffff</drawable>
+    <drawable name="alpha80">#80000000</drawable>
+    <drawable name="alphaa0">#a0000000</drawable>
+    <drawable name="alphac0">#c0000000</drawable>
+    <drawable name="loading_dialog_drawable">#e0000000</drawable>
+
+    <color name="video_text_color">#00FFFFFF</color>
+
+    <drawable name="translucent_background">		#00000000
+</drawable>
+
+    <color name="dark_yellow">#fffefe11</color>
+    <color name="nav_parental_ed">#D9D919</color>
+
+    <drawable name="red">#7f00</drawable>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="green">#7700ff00</drawable>
+    <drawable name="yellow">#77ffff00</drawable>
+    <drawable name="screen_background_black">#ff000000</drawable>
+    <!-- <drawable name="translucent_background">#e0000000</drawable> -->
+    <drawable name="transparent_background">#00000000</drawable>
+
+    <color name="solid_red">#f00</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="solid_green">#7cfc00</color>
+    <color name="solid_yellow">#ffffff00</color>
+    <color name="mmp_black">#000000</color>
+    <color name="progress_start">#ff454543</color>
+    <color name="progress_end">#ff453452</color>
+    <color name="blue">#003cd2</color>
+    <color name="red">#80ff0000</color>
+    <color name="translucent_black">#AA000000</color>
+    <color name="blue_transparent">#003cd200</color>
+    <color name="translucent_gray">#AA000000</color>
+    <color name="blue_start">#0f93b8</color>
+    <color name="green_list_head">#b8d272</color>
+    <color name="gray_font">#B2B2B2</color>
+    <color name="solid_gray_font">#FFC2C2C2</color>
+    <color name="siwhite">#FFFFFFFD</color>
+    <color name="darkwhite">#FFFFFF</color>
+    <color name="channel_num">#00F0FF</color>
+    <color name="temp_yellow">#FFF568</color>
+    <color name="weather_right_info_color">#CCFFFF</color>
+
+    <drawable name="epg_focus_bk">#C807080f</drawable>
+    <drawable name="epg_normal_bk">#9607080f</drawable>
+    <drawable name="epg_bk">#80000000</drawable>
+    <color name="live_channel_bgc">#2c2c2c</color>
+    <color name="live_channel_bgcf">#FFB400</color>
+    <color name="live_channel_list_fucus">#FFB500</color>
+    <color name="live_channel_list_select">#969696</color>
+    <color name="live_channel_item_color">#000000</color>
+    <color name="live_mail_bg_color_f">#80ffff00</color>
+    
+    <color name="blueYellow_custom">#585eaa</color>
+    <color name="half_trans">#80000000</color>
+    
+    <color name="collect_bg_foucus">#ffc800</color>
+    <color name="test">#787878</color>
+    <color name="tv_name_normal">#b4b4b4</color>
+    <color name="lightyellow">#FFFFE0</color><!--亮黄色 -->   
+    <color name="vod_line_bg_color">#FFB1B3A6</color>
+    <color name="recommend_text">#bebebe</color>
+    <color name="label_text">#f0f0f0</color>
+    <drawable name="progress_bg_color">#ffba00</drawable>
+    <color name="recommend_tips_bg">#c8c8c8</color>
+    <color name="recommend_bg">#a1a1ac</color>
+    
+    <!-- 黑色 百分比不透明度 -->
+    <color name="black10">#1A000000</color>
+    <color name="black20">#33000000</color>
+    <color name="black30">#4D000000</color>
+    <color name="black40">#66000000</color>
+    <color name="black50">#80000000</color>
+    <color name="black70">#B3000000</color>
+    <color name="black80">#CC000000</color>
+    <color name="black85">#D9000000</color>
+    <color name="black90">#E6000000</color>
+    
+    <!-- 白色 百分比不透明度 -->
+    <color name="white20">#33FFFFFF</color>
+    
+    <!-- 黑色 百分比不透明度 -->
+    <drawable name="black10">#1A000000</drawable>
+    <drawable name="black20">#33000000</drawable>
+    <drawable name="black30">#4D000000</drawable>
+    <drawable name="black40">#66000000</drawable>
+    <drawable name="black50">#80000000</drawable>
+    <drawable name="black70">#B3000000</drawable>
+    <drawable name="black80">#CC000000</drawable>
+    <drawable name="black90">#E6000000</drawable>
+    
+    <!-- 白色 百分比不透明度 -->
+    <drawable name="white20">#33FFFFFF</drawable>
+    
+    <drawable name="focus_color">#FFB400</drawable>
+    <color name="secondaryProgress">#666666</color>
+
+</resources>

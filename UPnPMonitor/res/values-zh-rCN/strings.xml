@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_settings">设置</string>
+    <string name="search">搜索设备</string>
+    <string name="enable_auto_start">自动启动</string>
+    <string name="disable_auto_start">关闭自动启动</string>
+    <string name="choosedmr">选择 DMR</string>
+    <string name="choose_media_renderer">选择媒体显示设备</string>
+    <string name="cancel">取消</string>
+    <string name="click_to_select_dmr">点击选择 DMR</string>
+    <string name="youku_daily_hot">YouKu 每日热点</string>
+    <string name="video">视频</string>
+    <string name="music">音乐</string>
+    <string name="photos">图片</string>
+    
+    <string name="dms_list">DMS 设备列表</string>
+    
+</resources>

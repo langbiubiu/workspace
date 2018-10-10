@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_collect"
+    android:layout_width="185px"
+    android:layout_height="82px"
+    android:layout_gravity="center"
+    android:focusable="true" >
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="185px"
+        android:layout_height="82px"
+        android:background="@drawable/vod_collect_item_bg_sl"
+        android:duplicateParentState="true"
+        android:gravity="center"
+        android:textColor="@drawable/vod_collect_text_sl"
+        android:textSize="50px" />
+
+    <ImageView
+        android:layout_width="15px"
+        android:layout_height="17px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="28px"
+        android:background="@drawable/vod_collect_playicon_sl"
+        android:duplicateParentState="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

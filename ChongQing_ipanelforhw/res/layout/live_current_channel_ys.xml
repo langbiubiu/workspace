@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="210px"
+    android:layout_height="210px"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/cc_yy"
+        android:layout_width="210px"
+        android:layout_height="105px"
+        android:focusable="true"
+        android:text="@string/live_yuyue"
+        android:gravity="center"
+        android:nextFocusDown="@+id/cc_sl"
+        android:nextFocusUp="@+id/cc_yy"
+         android:background="@drawable/live_list_channelpro_80focus"
+        android:textColor="@color/live_item_channeltv_color"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/cc_sl"
+        android:layout_width="210px"
+        android:layout_height="105px"
+        android:focusable="true"
+        android:text="@string/live_shoul"
+        android:gravity="center"
+        android:nextFocusDown="@+id/cc_sl"
+         android:nextFocusUp="@+id/cc_yy"
+         android:background="@drawable/live_list_channelpro_80focus"
+        android:textColor="@color/live_item_channeltv_color"
+        android:textSize="40px" />
+
+</LinearLayout>

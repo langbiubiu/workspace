@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="false">
+    
+    <ImageView
+        android:id="@+id/rec_00"
+        android:layout_width="760px"
+        android:layout_height="430px"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="40px"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster"
+        android:focusable="true" 
+        android:nextFocusDown="@+id/rec_03"/>
+    
+    <ImageView
+        android:id="@+id/rec_01"
+        android:layout_width="375px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/rec_00"
+        android:layout_toRightOf="@+id/rec_00"
+        android:layout_marginLeft="10px"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/rec_02"
+        android:layout_width="375px"
+        android:layout_height="210px"
+        android:layout_below="@+id/rec_01"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@+id/rec_00"
+        android:layout_marginLeft="10px"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/ad"
+        android:layout_width="375px"
+        android:layout_height="430px"
+        android:layout_alignTop="@+id/rec_00"
+		android:layout_toRightOf="@+id/rec_01"
+		android:layout_marginLeft="10px"
+		android:scaleType="fitXY"
+        android:src="@drawable/portal_pop_img2_2"/>
+    
+    <ImageView
+        android:id="@+id/rec_03"
+        android:layout_width="375px"
+        android:layout_height="210px"
+        android:layout_alignLeft="@+id/rec_00"
+        android:layout_below="@+id/rec_00"
+        android:layout_marginTop="10px"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/rec_04"
+        android:layout_width="375px"
+        android:layout_height="210px"
+        android:layout_marginLeft="10px"
+        android:layout_alignTop="@+id/rec_03"
+        android:layout_toRightOf="@+id/rec_03"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/rec_05"
+        android:layout_width="375px"
+        android:layout_height="210px"
+        android:layout_marginLeft="10px"
+        android:layout_alignTop="@+id/rec_04"
+        android:layout_toRightOf="@+id/rec_04"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/rec_06"
+        android:layout_width="375px"
+        android:layout_height="210px"
+        android:layout_alignLeft="@+id/rec_03"
+        android:layout_below="@+id/rec_03"
+        android:layout_marginTop="10px"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/rec_07"
+        android:layout_width="375px"
+        android:layout_height="210px"
+        android:layout_marginLeft="10px"
+        android:layout_alignTop="@+id/rec_06"
+        android:layout_toRightOf="@+id/rec_06"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/rec_08"
+        android:layout_width="375px"
+        android:layout_height="210px"
+        android:layout_marginLeft="10px"
+        android:layout_alignTop="@+id/rec_07"
+        android:layout_toRightOf="@+id/rec_07"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster" 
+        android:focusable="true"/>
+    
+    <ImageView
+        android:id="@+id/ad2"
+        android:layout_width="375px"
+        android:layout_height="430px"
+        android:layout_alignTop="@+id/rec_05"
+		android:layout_toRightOf="@+id/rec_05"
+		android:layout_marginLeft="10px"
+		android:scaleType="fitXY"
+        android:src="@drawable/portal_pop_img2_7"/>
+
+</RelativeLayout>

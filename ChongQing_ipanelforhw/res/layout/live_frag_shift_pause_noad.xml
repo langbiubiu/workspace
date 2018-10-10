@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pause_view"
+    android:layout_width="315px"
+    android:layout_height="224px"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="83px"
+    android:layout_marginTop="90px"
+    android:background="@drawable/live_pause_stauts" >
+
+    <TextView
+        android:id="@+id/noow_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="195px"
+        android:layout_marginTop="95px"
+        android:textColor="#e5ffffff"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/am_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="95px"
+        android:textColor="#e5ffffff"
+        android:textSize="36px" />
+
+</RelativeLayout>

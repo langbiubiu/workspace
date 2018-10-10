@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="false">
+    
+    <ImageView
+        android:id="@+id/app_ad"
+        android:layout_width="760px"
+        android:layout_height="430px"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="40px"
+        android:src="@drawable/portal_pop_img5_1"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/app_comic"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/app_ad"
+        android:layout_toRightOf="@+id/app_ad"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img5_2" 
+        android:focusable="true"/>
+    
+    <ImageView
+        android:id="@+id/app_finance"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_alignLeft="@+id/app_comic"
+        android:layout_below="@+id/app_comic"
+        android:layout_marginTop="10px"
+        android:src="@drawable/portal_pop_img5_5"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/app_game"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/app_comic"
+        android:layout_toRightOf="@+id/app_comic"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img5_3"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/app_healthy"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/app_finance"
+        android:layout_toRightOf="@+id/app_finance"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img5_6"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/app_entertainment"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/app_game"
+        android:layout_toRightOf="@+id/app_game"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img5_4"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/app_tech"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/app_healthy"
+        android:layout_toRightOf="@+id/app_healthy"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img5_7" 
+        android:focusable="true"/>
+    
+    <ImageView
+        android:id="@+id/app_TVlibrary"
+        android:layout_width="504px"
+        android:layout_height="210px"
+        android:layout_alignLeft="@+id/app_ad"
+        android:layout_below="@+id/app_ad"
+        android:layout_marginTop="10px"
+        android:src="@drawable/portal_pop_img5_8"
+        android:focusable="true" 
+        android:nextFocusDown="@+id/app_rec3"/>
+    
+    <ImageView
+        android:id="@+id/app_rec1"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/app_TVlibrary"
+        android:layout_toRightOf="@+id/app_TVlibrary"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img5_9"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/app_rec2"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/app_rec1"
+        android:layout_toRightOf="@+id/app_rec1"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img5_10"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/app_total"
+        android:layout_width="503px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/app_rec2"
+        android:layout_toRightOf="@+id/app_rec2"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img5_11"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/app_rec3"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_alignLeft="@+id/app_TVlibrary"
+        android:layout_below="@+id/app_TVlibrary"
+        android:layout_marginTop="10px"
+        android:src="@drawable/portal_pop_img5_12"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/app_rec4"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/app_rec3"
+        android:layout_toRightOf="@+id/app_rec3"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img5_13"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/app_rec5"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/app_rec4"
+        android:layout_toRightOf="@+id/app_rec4"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img5_14"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/app_rec6"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/app_rec5"
+        android:layout_toRightOf="@+id/app_rec5"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img5_15"
+        android:focusable="true" />
+
+</RelativeLayout>

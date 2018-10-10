@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ffhotitem"
+    android:layout_width="253px"
+    android:layout_height="379px"
+    android:background="@drawable/vod_picture_bg_sl"
+    android:focusable="true" >
+
+    <ImageView
+        android:id="@+id/film_img"
+        android:layout_width="235px"
+        android:layout_height="295px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9px"
+        android:background="@drawable/default_poster"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/score_layout"
+        android:layout_width="50px"
+        android:layout_height="47px"
+        android:layout_gravity="right"
+        android:layout_marginRight="9px"
+        android:layout_marginTop="9px"
+        android:background="@color/score_green_bg"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+        <RatingBar
+            android:id="@+id/score_ratingbar"
+            style="@style/roomRatingBar"
+            android:layout_width="match_parent"
+            android:layout_height="9px"
+            android:layout_marginTop="30px"
+            android:numStars="5"
+            android:rating="4" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/film_name"
+        android:layout_width="241px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="320px"
+        android:duplicateParentState="true"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@drawable/vod_recommend_text_color"
+        android:textSize="36px" />
+
+</FrameLayout>

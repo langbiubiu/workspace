@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="530px"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="277px"
+    android:background="@drawable/common_voice_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/search_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal"
+        android:background="@drawable/voice_content_bg_sl"
+        android:focusable="true">
+        <ImageView
+            android:layout_width="12px"
+            android:layout_height="15px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10px" 
+            android:src="@drawable/common_voice_arrow01"/>
+
+        <TextView
+            android:id="@+id/voice_search_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:duplicateParentState="true"
+            android:layout_marginLeft="10px"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/voice_des3"
+            android:textColor="@color/voice_text_color_sl"
+            android:textSize="40px" />
+    </LinearLayout>
+    
+    
+    <ListView 
+        android:id="@+id/voice_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@null"/>
+
+</LinearLayout>

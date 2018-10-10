@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mod pid="" id="" len="" version="">
+	<dir key="">
+		<node name="" type="d" tag="" tid="" mid="" key="" />
+		<node name="" type="f" tag="" tid="" mid="" key="" />
+		<node name="" type="f" tag="" tid="" mid="" key="" />
+		<node name="" type="f" tag="" tid="" mid="" key="" />
+		<node name="" type="d" tag="" tid="" mid="" key="" />
+		<node name="" type="d" tag="" tid="" mid="" key="" />
+	</dir>
+	<dir key="">
+		<file name="" type="f" tag="" tid="" mid="" key="" />
+	</dir>
+	<buf type="f" key="" off="" len="" />
+	<buf type="f" key="" off="" len="" />
+	<buf type="s" key="" off="" len="" />
+</mod>
+

@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".IManager" >
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000" >
+        <com.ipanel.join.mediaplayer.VideoSurface
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+    -->
+    
+    <FrameLayout
+        android:id="@+id/tv"
+        android:visibility="visible"
+        android:layout_width="1280dp"
+        android:layout_height="720dp">
+    </FrameLayout>
+    
+    <RelativeLayout
+        android:id="@+id/first_level"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_level"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" >
+    </RelativeLayout>
+    
+    <ipanel.join.ad.widget.TextAdView
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/live_txt_ad"
+        android:textSize="26dp"
+        android:visibility="invisible" />
+</RelativeLayout>

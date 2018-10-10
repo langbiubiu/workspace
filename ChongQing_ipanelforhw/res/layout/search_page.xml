@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vod_bg00" >
+
+    <ImageView
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_marginLeft="105px"
+        android:layout_marginTop="151px"
+        android:src="@drawable/search" />
+
+    <EditText
+        android:id="@+id/search_content"
+        android:layout_width="352px"
+        android:layout_height="40px"
+        android:layout_marginLeft="145px"
+        android:layout_marginTop="151px"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:singleLine="true"
+        android:textColor="#EEEEEE"
+        android:textSize="40px" />
+
+    <ImageView
+        android:layout_width="392px"
+        android:layout_height="1.5px"
+        android:layout_marginLeft="105px"
+        android:layout_marginTop="199px"
+        android:src="@drawable/search_line" />
+
+    <TextView
+        android:layout_width="385px"
+        android:layout_height="75px"
+        android:layout_marginLeft="104px"
+        android:layout_marginTop="801px"
+        android:text="@string/search_tips"
+        android:textColor="#A1A1A1"
+        android:textSize="28px" />
+
+    <LinearLayout
+        android:id="@+id/ll_sercah1"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_below="@+id/search_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/search_item_selector"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:layout_marginTop="12px"
+            android:text="@string/one"
+            android:textColor="@drawable/search_digitcolor_selector"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-10dp"
+            android:duplicateParentState="true"
+            android:text="@string/letter1"
+            android:textColor="@drawable/search_lettercolor_selector"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sercah2"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_below="@+id/search_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="50px"
+        android:layout_toRightOf="@+id/ll_sercah1"
+        android:background="@drawable/search_item_selector"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:layout_marginTop="12px"
+            android:text="@string/two"
+            android:textColor="@drawable/search_digitcolor_selector"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:text="@string/letter2"
+            android:textColor="@drawable/search_lettercolor_selector"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sercah3"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_below="@+id/search_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="50px"
+        android:layout_toRightOf="@+id/ll_sercah2"
+        android:background="@drawable/search_item_selector"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:layout_marginTop="12px"
+            android:text="@string/three"
+            android:textColor="@drawable/search_digitcolor_selector"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:text="@string/letter3"
+            android:textColor="@drawable/search_lettercolor_selector"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sercah4"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_below="@+id/ll_sercah1"
+        android:layout_marginLeft="60px"
+        android:background="@drawable/search_item_selector"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:text="@string/four"
+            android:layout_marginTop="12px"
+            android:textColor="@drawable/search_digitcolor_selector"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:text="@string/letter4"
+            android:textColor="@drawable/search_lettercolor_selector"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sercah5"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_below="@+id/ll_sercah1"
+        android:layout_marginLeft="40px"
+        android:layout_toRightOf="@+id/ll_sercah4"
+        android:background="@drawable/search_item_selector"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:layout_marginTop="12px"
+            android:text="@string/five"
+            android:textColor="@drawable/search_digitcolor_selector"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:text="@string/letter5"
+            android:textColor="@drawable/search_lettercolor_selector"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sercah6"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_below="@+id/ll_sercah1"
+        android:layout_marginLeft="40px"
+        android:layout_toRightOf="@+id/ll_sercah5"
+        android:background="@drawable/search_item_selector"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:text="@string/six"
+            android:layout_marginTop="12px"
+            android:textColor="@drawable/search_digitcolor_selector"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:text="@string/letter6"
+            android:textColor="@drawable/search_lettercolor_selector"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sercah7"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_below="@+id/ll_sercah4"
+        android:layout_marginLeft="60px"
+        android:background="@drawable/search_item_selector"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:text="@string/seven"
+            android:layout_marginTop="12px"
+            android:textColor="@drawable/search_digitcolor_selector"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:text="@string/letter7"
+            android:textColor="@drawable/search_lettercolor_selector"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sercah8"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_below="@+id/ll_sercah4"
+        android:layout_marginLeft="40px"
+        android:layout_toRightOf="@+id/ll_sercah7"
+        android:background="@drawable/search_item_selector"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:text="@string/eight"
+            android:layout_marginTop="12px"
+            android:textColor="@drawable/search_digitcolor_selector"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:text="@string/letter8"
+            android:textColor="@drawable/search_lettercolor_selector"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sercah9"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_below="@+id/ll_sercah5"
+        android:layout_marginLeft="40px"
+        android:layout_toRightOf="@+id/ll_sercah8"
+        android:background="@drawable/search_item_selector"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:layout_marginTop="12px"
+            android:text="@string/nine"
+            android:textColor="@drawable/search_digitcolor_selector"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:text="@string/letter9"
+            android:textColor="@drawable/search_lettercolor_selector"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_delete_one"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_below="@+id/ll_sercah7"
+        android:layout_marginLeft="60px"
+        android:background="@drawable/search_item_selector"
+        android:focusable="true"
+        android:nextFocusDown="@+id/ll_delete_one"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgbtb_deleteone"
+            android:layout_width="58px"
+            android:layout_height="41px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30px"
+            android:duplicateParentState="true"
+            android:src="@drawable/search_back_sl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5px"
+            android:duplicateParentState="true"
+            android:text="@string/backspace"
+            android:textColor="@drawable/search_lettercolor_selector"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sercah0"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_below="@+id/ll_sercah8"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40px"
+        android:layout_toRightOf="@+id/ll_delete_one"
+        android:background="@drawable/search_item_selector"
+        android:focusable="true"
+        android:nextFocusDown="@+id/ll_sercah0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textColor="@drawable/search_digitcolor_selector"
+            android:textSize="40px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_delete_all"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_below="@+id/ll_sercah9"
+        android:layout_marginLeft="40px"
+        android:layout_toRightOf="@+id/ll_sercah0"
+        android:background="@drawable/search_item_selector"
+        android:focusable="true"
+        android:nextFocusDown="@+id/ll_delete_all"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgbtb_deleteaoneletter"
+            android:layout_width="58px"
+            android:layout_height="41px"
+            android:layout_gravity="center"
+            android:layout_marginTop="30px"
+            android:duplicateParentState="true"
+            android:src="@drawable/search_clear_sl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5px"
+            android:duplicateParentState="true"
+            android:text="@string/clear"
+            android:textColor="@drawable/search_lettercolor_selector"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/movie_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:layout_marginLeft="631px"
+        android:layout_marginTop="131px"
+        android:text="@string/vod_top_search"
+        android:textColor="#FFFFFD"
+        android:textSize="44px" />
+
+    <TextView
+        android:id="@+id/search_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/movie_tv"
+        android:layout_marginLeft="48px"
+        android:layout_toRightOf="@+id/movie_tv"
+        android:textColor="#BFBEBE"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="736px"
+        android:layout_height="1.5px"
+        android:layout_marginLeft="628px"
+        android:layout_marginTop="199px"
+        android:src="@drawable/vertical_line" />
+
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="736px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="628px"
+        android:layout_marginTop="199px"
+        android:divider="@drawable/vod_line"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+    
+    <ListView
+        android:id="@+id/search_type_list"
+        android:layout_width="455px"
+        android:layout_height="616px"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="136px"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+         >
+    </ListView>
+
+</RelativeLayout>

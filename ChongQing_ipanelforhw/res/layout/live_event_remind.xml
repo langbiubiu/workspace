@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="467dp"
+        android:layout_height="222dp"
+        android:layout_marginLeft="859dp"
+        android:layout_marginTop="408dp"
+        android:background="#d9000000" >
+
+        <TextView
+            android:id="@+id/count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:textColor="#ffcccc"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/count_down2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/event_count_down"
+            android:textColor="#cccccc"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/noow_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="286dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/am_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="186dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/remind_event"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="70dp"
+            android:ellipsize="marquee"
+            android:gravity="left|center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <!-- <TextView
+            android:id="@+id/remind_channel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="70dp"
+            android:ellipsize="marquee"
+            android:gravity="left|center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="24sp" /> -->
+
+        <TextView
+            android:id="@+id/remind_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="106dp"
+            android:drawableLeft="@drawable/live_ic_clock"
+            android:drawablePadding="10dp"
+            android:textColor="#ffcc00"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/enter_remind"
+            android:layout_width="184dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="140dp"
+            android:text="@string/book_remind"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/out_remind"
+            android:layout_width="184dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="140dp"
+            android:layout_toRightOf="@+id/enter_remind"
+            android:text="@string/not_remind"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

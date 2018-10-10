@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="453.33dp"
+	android:layout_height="286dp"
+    android:background="@color/bg_dialog"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33.33dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_channel"
+        android:textColor="@color/list_select_selected"
+        android:textSize="24sp" />
+		
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="20dp">
+		
+		<TextView
+			android:id="@+id/text_name"
+			android:layout_width="133.33dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="33.33dp"
+			android:text="@string/name"
+			android:textColor="@drawable/selector_text"
+	        android:textSize="24sp"/>
+	
+		<EditText
+			android:id="@+id/edit_name"
+	        android:layout_width="253.33dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical|right"
+	        android:drawableBottom="@drawable/edit_bottom_line2"
+	        android:textCursorDrawable="@drawable/edit_cursor"
+	        android:singleLine="true"
+	        android:textColor="@color/text_selected"
+	        android:textSize="24sp"
+	        android:background="@android:color/transparent" />
+	
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="20.67dp">
+		
+		<TextView
+			android:id="@+id/text_url"
+			android:layout_width="133.33dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="33.33dp"
+			android:text="@string/url"
+			android:textColor="@drawable/selector_text"
+	        android:textSize="24sp"/>
+	
+		<EditText
+			android:id="@+id/edit_url"
+	        android:layout_width="253.33dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical|right"
+	        android:drawableBottom="@drawable/edit_bottom_line2"
+	        android:textCursorDrawable="@drawable/edit_cursor"
+	        android:singleLine="true"
+	        android:textColor="@color/text_selected"
+	        android:textSize="24sp"
+	        android:background="@android:color/transparent"/>
+	
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="20.67dp">
+		
+		<TextView
+			android:id="@+id/text_pwd"
+			android:layout_width="133.33dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="33.33dp"
+			android:text="@string/pwd"
+			android:textColor="@drawable/selector_text"
+	        android:textSize="24sp"/>
+	
+		<EditText
+			android:id="@+id/edit_pwd"
+	        android:layout_width="253.33dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical|right"
+	        android:drawableBottom="@drawable/edit_bottom_line2"
+	        android:textCursorDrawable="@drawable/edit_cursor"
+	        android:singleLine="true"
+	        android:textColor="@color/text_selected"
+	        android:textSize="24sp"
+	        android:background="@android:color/transparent"/>
+	
+	</LinearLayout>
+	
+	<Button
+		android:id="@+id/btn_submit"
+		android:layout_width="103.33dp"
+        android:layout_height="40dp"
+		android:layout_marginLeft="318.67dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/text_selected"
+        android:textSize="24sp"
+        android:background="@drawable/selector_list"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="550px"
+    android:layout_height="333px"
+    android:background="#d9000000" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23px"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="45px"
+        android:text="@string/dialog_tittle"
+        android:textColor="#ffffff"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/remind_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83px"
+        android:paddingLeft="45px"
+        android:paddingRight="15px"
+        android:textColor="#ffcc00"
+        android:textSize="36px" />
+
+    <Button
+        android:id="@+id/enter_remind"
+        android:layout_width="275px"
+        android:layout_height="149px"
+        android:layout_marginTop="195px"
+        android:text="@string/yes_button"
+        android:textColor="#ffffff"
+        android:textSize="39px" />
+
+    <Button
+        android:id="@+id/out_remind"
+        android:layout_width="275px"
+        android:layout_height="149px"
+        android:layout_toRightOf="@+id/enter_remind"
+        android:layout_marginTop="195px"
+        android:text="@string/no_button"
+        android:textColor="#ffffff"
+        android:textSize="39px" />
+
+</RelativeLayout>

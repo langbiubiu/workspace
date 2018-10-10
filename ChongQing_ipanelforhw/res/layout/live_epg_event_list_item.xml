@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="600dp"
+    android:layout_height="60dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/book_flag"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginRight="10dp" />
+
+         <TextView
+            android:id="@+id/event_time"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/event_name"
+            style="@style/marquee_style"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/record_state"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:visibility="invisible"
+            android:text="@string/record_state_done"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jianjie"
+        android:layout_width="600dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:text="@string/jianjie"
+            android:textColor="#969696"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/jianjie_item"
+            style="@style/marquee_style"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|left"
+            android:textColor="#FFFF44"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+</LinearLayout>

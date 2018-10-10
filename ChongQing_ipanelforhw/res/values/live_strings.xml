@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+     <style name="live_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@null</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 设置屏幕变暗 -->
+    </style>
+
+     <!-- 
+    <style name="marquee_style">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style> -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="list_item_spacing">3dp</dimen>
+    <dimen name="small_text_size3">26dp</dimen>
+    <!-- 频道分类 -->
+
+    <!-- 直播频道列表 -->
+    <!-- 直播频道列表  移动1 -->
+    <!-- event 列表 -->
+    <dimen name="channel_v_lenth">100px</dimen>
+    <dimen name="channel_h_lenth">11px</dimen>
+    <dimen name="timeshift_left1">224px</dimen>
+    <dimen name="timeshift_prograss">1245px</dimen>
+     
+    <drawable name="pf_bar_bg_color">#010101</drawable>
+    <drawable name="transparent_dot">#00000000</drawable>
+    <!-- <drawable name="transparent_background">#00ffffff</drawable> -->
+    <color name="channel_list_color">#6d6d6b</color>
+    
+    <item name="tag_for_item_data" type="id"/>
+    <item name="tag_for_item_channel" type="id"/>
+    <item name="tag_for_item_hold" type="id"/>
+    <item name="tag_for_focus_index" type="id"/>
+    <item name="tag_for_channelP" type="id"/>
+    <item name="tag_for_channeyy" type="id"/>
+    <item name="tag_for_channeyy_tv1" type="id"/>
+    <item name="tag_for_channeyy_tv2" type="id"/>
+        
+    <string name="no_data_text">暂无相关记录</string>
+    <string-array name="week_7_days">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="week_7_days_two">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="week_3_days">
+        <item>今</item>
+        <item>明</item>
+        <item>后</item>
+    </string-array>
+    <string-array name="back_3_days">
+        <item>今</item>
+        <item>昨</item>
+        <item>前</item>
+    </string-array>
+    <string-array name="tv_add_colume">
+        <item>搜索</item>
+        <item>筛查</item>
+        <item>影片编号</item>
+        <item>猜你喜欢</item>
+        <item>热播排行</item>
+    </string-array>
+
+    <string name="live_yuyue">预约</string>
+    <string name="live_shoul">收录</string>
+    <string name="toast_invalid_channel">无相应频道</string>
+    <string name="toast_event_max_limit">预约节目数已达上限</string>
+    <string name="toast_exception_timeshift_fail">进入时移失败</string>
+    <string name="conflict_info">该时间你已预订：【%s】，是否替换？</string>
+    <string name="channel_back">回看</string>
+    <string name="shift_mg_least">您已快退至起点</string>
+    <string name="error_unauthorized">未授权!</string>
+    <string name="shift_mg_most">追上直播</string>
+    
+    
+    <string name="toast_message_channel_empty">频道列表为空,开始搜索设置</string>
+    <string name="toast_message_loading_time_up">加载超时</string>
+    <string name="toast_message_no_group">没有该分组</string>
+    <string name="toast_message_invalid_timeshift">非时移频道</string>
+    <string name="toast_message_invalid_network">网络未连接</string>
+    <string name="toast_message_invalid_ca">请插入CA卡</string>
+    <string name="toast_message_no_found_app">应用未安装</string>
+    <string name="toast_message_invalid_channel_inoput">无相应频道</string>
+    <string name="toast_message_invalid_time_inoput">输入的时间不合法"</string>
+    
+
+    <string name="current_event_label">正在播放:</string>
+    <string name="next_event_label">下一节目:</string>
+    <string name="volume_label">音量</string>
+    <string name="un_order_remind">亲爱的用户，该频道您尚未订购，\n可联系当地客服，享受更多精彩内容。</string>
+    <string name="network_info">插上网线，获得更多电视服务</string>
+    <string name="back_play">时移</string>
+    <string name="current_programme">节目单</string>
+     <string name="add_favorite">添加喜爱</string>
+     <string name="add_favorite_success">添加成功</string>
+     <string name="add_favorite_cancenl">取消成功</string>
+     <string name="look_start">从头看</string>
+     <string name="look_back">回看</string>
+
+    <string-array name="off_colume_names">
+        <item>直播</item>
+        <item>广播</item>
+        <item>设置</item>
+    </string-array>
+    <string-array name="sound_track_array">
+        <item>左 声 道</item>
+        <item>右 声 道</item>
+        <item>立 体 音</item>
+    </string-array>
+    <string-array name="ca_inf">
+        <item>未知卡</item>
+        <item>智能卡已对应其他机顶盒</item>
+        <item>智能卡无效或智能卡不在机顶盒内;</item>
+        <item>智能卡没有对应任何机顶盒;</item>
+        <item>机卡对应</item>
+    </string-array>
+
+    <string name="book_remind">立即进入</string>
+    <string name="not_remind">不需要</string>
+    <string name="dialog_tittle">信息提示</string>
+    <string name="yes_button">确    定</string>
+    <string name="no_button">取    消</string>
+    <string name="pindao_search">频道搜索 </string>
+    <string name="chineng_info">智能卡信息</string>
+    <string name="count_down">时移准备中，剩余 {0} 秒...</string>
+    <string name="btn_setting">设 置</string>
+    <string name="btn_quit">退 出</string>
+    <string name="btn_continue">继 续</string>
+    <string name="btn_continue_play">继续播放</string>
+    <string name="btn_hide_ad">隐藏广告</string>
+    <string name="whether_quit">您是否退出时移？</string>
+    <string name="event_count_down">秒后开播</string>
+    <string name="play_loading">时移准备中...</string>
+
+        <string name="tvstation">直播</string>
+    <string name="no_data_info">暂无数据</string>
+    <string name="user_name_live">幸福宝宝</string>
+        <string name="next_event">接下来:</string>
+        <string name="watch_state_info">时  移</string>
+        
+    <string name="record_state_done">已录制</string>
+    <string name="record_state_doing">录制中</string>
+    
+    <string name="title_of_epg">直播预订</string>
+    <string name="title_of_back">直播回看</string>
+    
+    <string name="channel_list">频道列表</string>
+    <string name="favorite_list">喜爱列表</string>
+    <string name="book_list">预约列表</string>
+    <string name="my_book_title">我的预约</string>
+    <string name="book_empty_data">您还没有预约任何节目</string>
+    <string name="shift_notice_title">温馨提示</string>
+    
+    <string name="book_success">预约成功</string>
+    <string name="book_fail">预约失败</string>
+    <string name="delete_book_success">删除预约节目成功</string>
+    <string name="delete_book_fail">删除预约节目失败</string>
+    
+    <string name="channel_list_loading_fav_data">正在加载喜爱频道数据...</string>
+    <string name="channel_list_loading_fav_nodata">没有喜爱频道数据</string>
+    <string name="channel_playing">当前节目正在播放,不能预约!</string>
+    <string name="channel_no_back">当前频道不支持回看</string>
+    <string name="epg_loading_data">正在努力加载节目信息...</string>
+    <string name="epg_empty_data">无法为你加载节目信息</string>
+    <string name="jianjie">简介：</string>
+    <string name="inpout_invaild_msg">非法输入</string>
+    
+    <string name="menu_buliding">栏目正在建设中...</string>
+    <string name="no_pf_data">暂无节目数据</string>
+    
+    <string name="special_1">当前频点： </string>
+    <string name="special_2">载噪比： </string>
+    <string name="special_3">信号强度： </string>
+    <string name="special_4">STB序列号： </string>
+    <string name="special_5">电平： </string>
+    <string name="special_6">误码率： </string>
+    <string name="special_7">Service ID： </string>
+    <string name="special_8">ts ID： </string>
+    <string name="special_9">video_pid： </string>
+    <string name="special_10">audio_pid： </string>
+    
+    <string name="tv_series">剧集：</string>
+    <string name="tv_number">集数：</string>
+    <string name="tv_language">语言：</string>
+    <string name="series_type">类型：</string>
+    <string name="current_live">正在直播</string>
+    <string name="recommend_live">直播推荐</string>
+    <string name="recommend_vod">点播推荐</string>
+    <string name="quit_tips">关闭弹出</string>
+    <string name="quit_tips2">按【返回】键退出</string>
+    <string name="startzero_short">00:00</string>
+</resources>

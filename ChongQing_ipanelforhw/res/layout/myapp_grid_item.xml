@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280px"
+    android:layout_height="300px">
+
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="253px"
+        android:layout_height="216px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7px"
+        android:background="@drawable/app_picture_bg_sl" />
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:src="@drawable/portal_pop_img5_4" />
+
+    <FrameLayout 
+        android:id="@+id/app_uninstall_fl"
+        android:layout_width="253px"
+        android:layout_height="216px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7px"
+        android:background="@drawable/app_uninstall_bg_sl"
+        android:visibility="gone">
+        <ImageView
+        	android:id="@+id/app_del"
+        	android:layout_width="170px"
+        	android:layout_height="170px"
+        	android:layout_marginLeft="40px"
+        	android:layout_marginTop="20px"
+        	android:src="@drawable/app_uninstall_img_bg_sl"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10px"
+        android:gravity="center"
+        android:text="@string/recommend_2"
+        android:textColor="@color/portal_sl_tab_text"
+        android:textSize="30px" />
+
+</RelativeLayout>

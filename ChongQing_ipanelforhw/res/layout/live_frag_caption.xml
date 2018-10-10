@@ -1,0 +1,7 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/caption"
+    android:layout_width="300px"
+    android:layout_height="126px"
+    android:layout_marginLeft="96px"
+    android:layout_marginTop="66px" />

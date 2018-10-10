@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ipanel.join.cq.user.UserTitle
+        android:id="@+id/user_flag_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="910px"
+        android:layout_y="58px" >
+    </com.ipanel.join.cq.user.UserTitle>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="1430px"
+        android:layout_y="58px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/user_flag_curpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/user_flag_totalpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hang"
+            android:textSize="32px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="97px"
+        android:layout_y="52px"
+        android:text="@string/user_flagbook"
+        android:textSize="48px"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="1450px"
+        android:layout_height="wrap_content"
+        android:layout_x="97px"
+        android:layout_y="140px"
+        android:orientation="vertical"
+        android:paddingLeft="10px"
+        android:paddingRight="10px" >
+    </LinearLayout>
+
+</AbsoluteLayout>

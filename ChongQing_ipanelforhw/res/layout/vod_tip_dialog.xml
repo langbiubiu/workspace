@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1920px"
+    android:layout_height="1280px" >
+
+    <RelativeLayout
+        android:id="@+id/ad_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="235px" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="750px"
+            android:layout_height="420px"
+            android:src="@drawable/vod_ad" />
+
+        <TextView
+            android:id="@+id/tipSure"
+            android:layout_width="375px"
+            android:layout_height="80px"
+            android:layout_below="@+id/imageView1"
+            android:background="@drawable/vod_moviebutton"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/vod_resume"
+            android:textColor="@color/vod_font_style"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tipCancel"
+            android:layout_width="375px"
+            android:layout_height="80px"
+            android:layout_below="@+id/imageView1"
+            android:layout_toRightOf="@+id/tipSure"
+            android:background="@drawable/vod_moviebutton"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/vod_exitad"
+            android:textColor="@color/vod_font_style"
+            android:textSize="42px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70px"
+        android:layout_marginTop="50px" >
+
+        <ImageView
+            android:id="@+id/back_pause_icon"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30px"
+            android:visibility="gone"
+            android:src="@drawable/back_play_icon" />
+
+        <ImageView
+            android:id="@+id/img_pause"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_toLeftOf="@+id/back_pause_icon"
+            android:src="@drawable/vod_icon_pause1"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="false">
+    
+    <TextView 
+        android:id="@+id/title_vod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45px"
+        android:text="@string/portal_vod"
+        android:textSize="45px"
+        android:textColor="#CCE8FF"
+        android:visibility="gone"/>
+    
+    <ImageView
+        android:id="@+id/vod_chongqing"
+        android:layout_width="375px"
+        android:layout_height="430px"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="40px"
+        android:src="@drawable/portal_pop_img3_1" 
+        android:focusable="true"
+        android:nextFocusDown="@+id/vod_4K" />
+    
+    <ImageView
+        android:id="@+id/vod_movie"
+        android:layout_width="375px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/vod_chongqing"
+        android:layout_toRightOf="@+id/vod_chongqing"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_2"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_tvplay"
+        android:layout_width="375px"
+        android:layout_height="210px"
+        android:layout_alignLeft="@+id/vod_movie"
+        android:layout_below="@+id/vod_movie"
+        android:layout_toRightOf="@+id/vod_chongqing"
+		android:layout_marginTop="10px"
+        android:src="@drawable/portal_pop_img3_3"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_all_cq"
+        android:layout_width="375px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/vod_movie"
+        android:layout_toRightOf="@+id/vod_movie"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_5"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_special"
+        android:layout_width="375px"
+        android:layout_height="210px"
+        android:layout_alignLeft="@+id/vod_all_cq"
+        android:layout_below="@+id/vod_all_cq"
+        android:layout_marginTop="10px"
+        android:src="@drawable/portal_pop_img3_6"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_ad"
+        android:layout_width="375px"
+        android:layout_height="430px"
+        android:layout_alignTop="@+id/vod_all_cq"
+        android:layout_toRightOf="@+id/vod_all_cq"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_4"/>
+    
+    <ImageView
+        android:id="@+id/vod_4K"
+        android:layout_width="221px"
+        android:layout_height="210px"
+        android:layout_alignLeft="@+id/vod_chongqing"
+        android:layout_below="@+id/vod_chongqing"
+        android:layout_marginTop="10px"
+        android:src="@drawable/portal_pop_img3_7"
+        android:focusable="true"/>
+    
+    <ImageView
+        android:id="@+id/vod_news"
+        android:layout_width="221px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/vod_4K"
+        android:layout_toRightOf="@+id/vod_4K"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_8"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_children"
+        android:layout_width="221px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/vod_news"
+        android:layout_toRightOf="@+id/vod_news"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_9"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_record"
+        android:layout_width="221px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/vod_children"
+        android:layout_toRightOf="@+id/vod_children"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_10"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/vod_free_area"
+        android:layout_width="221px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/vod_record"
+        android:layout_toRightOf="@+id/vod_record"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_11"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_3D"
+        android:layout_width="183px"
+        android:layout_height="210px"
+        android:layout_alignLeft="@+id/vod_4K"
+        android:layout_below="@+id/vod_4K"
+        android:layout_marginTop="10px"
+        android:src="@drawable/portal_pop_img3_13"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_dolby"
+        android:layout_width="183px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/vod_3D"
+        android:layout_toRightOf="@+id/vod_3D"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_14"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_entertainment"
+        android:layout_width="183px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/vod_dolby"
+        android:layout_toRightOf="@+id/vod_dolby"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_15"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_sports"
+        android:layout_width="183px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/vod_entertainment"
+        android:layout_toRightOf="@+id/vod_entertainment"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_16"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_columns"
+        android:layout_width="183px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/vod_sports"
+        android:layout_toRightOf="@+id/vod_sports"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_17"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_life"
+        android:layout_width="183px"
+        android:layout_height="210px"
+        android:layout_alignTop="@+id/vod_columns"
+        android:layout_toRightOf="@+id/vod_columns"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_18"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/vod_ad2"
+        android:layout_width="375px"
+        android:layout_height="430px"
+        android:layout_alignTop="@+id/vod_free_area"
+        android:layout_toRightOf="@+id/vod_free_area"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img3_12"/>
+</RelativeLayout>

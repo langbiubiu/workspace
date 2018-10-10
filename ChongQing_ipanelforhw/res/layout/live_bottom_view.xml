@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottombar_all"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:layout_alignParentBottom="true"
+    android:background="@color/black80" >
+    
+    <RelativeLayout
+        android:id="@+id/left_part"
+        android:layout_width="350px"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+        
+        <!--
+        <ImageView
+            android:id="@+id/timeshift_icon"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="40px"
+            android:src="@drawable/live_pf_icon_time"
+            android:visibility="invisible" />
+
+        <LinearLayout
+	        android:id="@+id/dight_line_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="170px"
+	        android:layout_marginTop="32px"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	
+	        <ImageView
+	            android:id="@+id/input_bai_1"
+	            android:layout_width="52px"
+	            android:layout_height="80px"
+	            android:gravity="center"
+	            android:src="@drawable/live_num0" />
+	
+	        <ImageView
+	            android:id="@+id/input_shi_1"
+	            android:layout_width="52px"
+	            android:layout_height="80px"
+	            android:gravity="center"
+	            android:src="@drawable/live_num0" />
+	
+	        <ImageView
+	            android:id="@+id/input_ge_1"
+	            android:layout_width="52px"
+	            android:layout_height="80px"
+	            android:gravity="center"
+	            android:src="@drawable/live_num0" />
+	    </LinearLayout>
+	    -->
+
+        <TextView
+            android:id="@+id/channelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/live_channel_bgcf"
+            android:textSize="42px" />
+        
+    </RelativeLayout>
+    
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/white20"
+        android:layout_toRightOf="@id/left_part" />
+    
+    <RelativeLayout
+        android:id="@+id/right_part"
+        android:layout_width="1070px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/left_part"
+        android:paddingLeft="20px" >
+        
+        <com.ipanel.join.chongqing.live.view.LiveSeekBar
+            android:id="@+id/watch_progress"
+            android:layout_width="1000px"
+            android:layout_height="24px"
+            android:layout_marginTop="15px"
+            android:focusable="false"
+            android:gravity="center"
+            android:max="1000"
+            android:progressDrawable="@drawable/live_pfseekbar_drawable"
+            android:thumb="@drawable/transparent_background" />
+        
+        <TextView
+            android:id="@+id/event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/watch_progress"
+            android:layout_marginTop="10px"
+            android:singleLine="true"
+            android:textColor="@color/recommend_tips_bg"
+            android:textSize="42px" />
+        
+        <TextView
+            android:id="@+id/next_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event"
+            android:singleLine="true"
+            android:textColor="@color/normal_text_color_1"
+            android:textSize="30px" />
+        
+        <TextView
+            android:id="@+id/event_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/watch_progress"
+            android:layout_marginTop="15px"
+            android:layout_alignRight="@id/watch_progress"
+            android:textColor="@color/recommend_tips_bg"
+            android:textSize="30px" />
+        
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/ad"
+        android:layout_width="500px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/right_part"
+        android:src="@drawable/live_pop_img1"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

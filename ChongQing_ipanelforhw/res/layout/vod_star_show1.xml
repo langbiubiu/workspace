@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/vod_star_name"
+        android:layout_width="850px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105px"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="44px" />
+
+    <TextView
+        android:id="@+id/basic_info"
+        android:layout_width="850px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/vod_star_name"
+        android:layout_below="@+id/vod_star_name"
+        android:layout_marginTop="18px"
+        android:gravity="center_vertical"
+        android:textColor="#A0A0A0"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/star_desc"
+        android:layout_width="850px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/vod_star_name"
+        android:layout_below="@+id/basic_info"
+        android:layout_marginTop="65px"
+        android:lineSpacingExtra="5px"
+        android:maxLines="6"
+        android:textColor="#bebebe"
+        android:textSize="32px" />
+
+    <Button
+        android:id="@+id/follow"
+        android:layout_width="291px"
+        android:layout_height="80px"
+        android:layout_alignLeft="@+id/vod_star_name"
+        android:layout_marginTop="498px"
+        android:background="@drawable/vod_star_follow_bt_sl"
+        android:text="@string/button_text"
+        android:textColor="@color/vod_color_sl"
+        android:textSize="44px"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/vod_star_img"
+        android:layout_width="350px"
+        android:layout_height="438px"
+        android:layout_marginLeft="1089px"
+        android:layout_marginTop="60px"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster"
+        android:visibility="invisible" />
+
+</RelativeLayout>

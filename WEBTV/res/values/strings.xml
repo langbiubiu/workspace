@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WEBTV</string>
+    <string name="user_defined_content">"
+1.  Create a new file named tvlist.txt in SDCard or Udisk\'s Root directory, Copy Channel links to the file.
+
+2.  Text format is \"Channel namne,Channel link\".
+       eg:TVB NEWS,http://lv.tvb.com/4.m3u8
+       (One line one channel)
+
+3.  8-bit Unicode Transformation Format.
+
+4.  Plug in SDCard or Udisk, Select \"Local import\" to import</string>
+    <string name="audio_str"> Adjust Volume</string>
+    <string name="chanel_str"> Change Channel</string>
+    <string name="list_str"> Channel list</string>
+    <string name="menu_str"> Setting</string>
+    <string name="no_str">No</string>
+    <string name="yes_str">Yes</string>
+    <string name="netdown_str">Import from Internet</string>
+    <string name="clean_str">Clean List</string>
+    <string name="clean_tip_str">List is Empty</string>
+    <string name="down_list_str">Start Download</string>
+	<string name="network_disable">Network Disconnected</string>
+	<string name="prase_error">Download failed, Please try again！</string>
+	<string name="to_exit">Press again to exit!</string>
+	
+	<string name="channel_list_tip">CATEGORY</string>
+	<string name="local">LOCAL</string>
+	<string name="import_to_local">Local Import</string>
+	<string name="add_to_local">Local Add</string>
+	<string name="delete_local_data">Local Delete</string>
+	<string name="change_password">Password Modify</string>
+	<string name="add_channel_error">Channel name or URL is empty!</string>
+	<string name="import_local_error">Import Failed.</string>
+	<string name="import_local_succeed">Import Success.</string>
+	<string name="video_cannot_play">WEBTV Play failed.</string>
+	<string name="wrong_password">Sorry, try again.</string>
+	<string name="password_not_correct">Password incorrect.</string>
+	<string name="add_channel">Add Channel</string>
+	<string name="name">Name</string>
+	<string name="url">URL</string>
+	<string name="pwd">Password</string>
+	<string name="submit">Submit</string>
+	<string name="delete_all_local">Delete all Local channel?</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="delete_channel">Delete %s</string>
+	<string name="editor">Edit</string>
+	<string name="delete">Delete</string>
+	<string name="input_password">Please enter %s Password</string>
+	<string name="enter_password_tip">Encrypted channels, Please set password first.</string>
+	<string name="password_not_match">Password incorrect.</string>
+	<string name="password_succeed">Password successfully.</string>
+	<string name="set_password_tip">Set new password</string>
+	<string name="new_password">New password</string>
+	<string name="repeat_password">Repeat password</string>
+	<string name="repeat">Repeat:</string>
+	<string name="set_password">Set Password</string>
+	<string name="version">Version</string>
+	<string name="input_again">Input Again</string>
+	<string name="enter_new_password">Enter New Password</string>
+	<string name="enter_old_password">Enter Old Password</string>
+	<string name="cancel">Cancel</string>
+	<string name="ok">OK</string>
+	<string name="same_password">Same password as the old one. Please change.</string>
+	<string name="invalid_password">Invalid password.</string>
+	<string name="enter_password">Please enter Password</string>
+	<string name="invalid_input">Invalid Input</string>
+	<string name="edit_channel">Edit Channel</string>
+</resources>

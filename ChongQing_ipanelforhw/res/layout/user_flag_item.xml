@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true">
+		<TextView 
+		    android:id="@+id/user_flag_name"
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:duplicateParentState="true"
+	        android:background="@drawable/vod_text_bg_color"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="30px"
+	        android:paddingRight="30px" 
+	        android:paddingTop="20px"
+	        android:paddingBottom="20px"      
+	        android:singleLine="true"
+	        android:textColor="@color/vod_text_color"
+	        android:textSize="32px">    
+		</TextView>
+		<ImageView
+		    android:id="@+id/user_flag_del"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:visibility="gone"/>
+	</FrameLayout>
+</LinearLayout>

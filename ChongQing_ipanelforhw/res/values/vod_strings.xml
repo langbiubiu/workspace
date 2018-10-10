@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="film">电影</string>
+    <string name="latest">最新</string>
+    <string name="populatest">最热</string>
+    <string name="score">评分</string>
+    <string name="sort">排列顺序</string>
+    <string name="filter">筛选条件</string>
+    <string name="page">/%s页</string>
+    <string name="collect">收藏</string>
+    <string name="collected">已收藏</string>
+    <string name="vod_collect">收藏</string>
+    <string name="cancel_collect">取消收藏</string>
+    <string name="vod_follow">订阅标签</string>
+    <string name="play">播放</string>
+    <string name="tv_play">播放14集</string>
+    <string name="alike">相似影片</string>
+    <string name="recommend">推荐</string>
+    <string name="introduction">剧集介绍</string>
+    <string name="comment">评论</string>
+    <string name="starshow">明星秀</string>
+    <string name="tv_name">琅琊榜</string>
+    <string name="good">点赞</string>
+    <string name="bad">点衰</string>
+    <string name="director">导演：</string>
+    <string name="actor">主演：</string>
+    <string name="tag">标签：</string>
+    <string name="dataerror">数据获取失败，请稍后重试</string>
+    <string name="description">《琅琊榜》是根据海宴同名小说改编的大型古装传奇电视剧。该剧以平反冤案、扶持明君、振兴山河为主线，讲述了“麒麟才子”梅长苏才冠绝伦、以病弱之躯拨开重重迷雾、智博奸佞，为昭雪多年冤案、扶持新君所进行的一系列斗争。梅长苏在国仇家恨、兄弟情义的漩涡中见招拆招、游刃有余，奏出了“江左梅郎”赤子之心下的一曲慷慨悲歌。</string>
+    <string name="times">1150次</string>
+    <string name="score_douban">7.5</string>
+    <string name="total_num">集</string>
+    <string name="update_to">更新至</string>
+    <string name="update">更新至%d集</string>
+    <string name="year_unknown">未知年代</string>
+    <string name="year">未知年代</string>
+    <string name="region">地区：</string>
+    <string name="location">未知地区</string>
+    <string name="director1">李雪</string>
+    <string name="director2">孔笙</string>
+    <string name="actor0">胡歌</string>
+    <string name="actor1">刘涛</string>
+    <string name="actor2">王凯</string>
+    <string name="actor3">陈龙</string>
+    <string name="missing">···</string>
+    <string name="tag1">古装</string>
+    <string name="timeout">您输出的时间超出范围</string>
+    <string name="search_tips">输入节目/演员的首字母搜索\n例如：「港囧」输入GJ</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="letter1"></string>
+    <string name="letter2">ABC</string>
+    <string name="letter3">DEF</string>
+    <string name="letter4">GHI</string>
+    <string name="letter5">JKL</string>
+    <string name="letter6">MNO</string>
+    <string name="letter7">PQRS</string>
+    <string name="letter8">TUV</string>
+    <string name="letter9">WXYZ</string>
+    <string name="letter0"></string>
+	<string name="backspace">退格</string>
+	<string name="clear">清空</string>
+    <string name="movie_tv">电影电视</string>
+    <string name="star_movie">影片</string>
+    <string name="star_zixun">资讯</string>
+    <string name="search_num">搜索结果</string>
+    <string name="search_total">搜索结果%d个</string>
+    <string name="no_search_data">未找到搜索内容</string>
+    <string name="per">个</string>
+	<string name="actress">杨颖</string>
+	<string name="desc">中国、上海/双鱼座/1989-02-28/演员</string>
+	<string name="star_intro">杨颖（Angelababy），1989年2月28日出生于上海，13岁时移居香港，中国影视女演员。2009年主演电影《全城热恋》。2012年，凭借爱情片《第一次》获得第十三届华语电影传媒大奖“最受瞩目女演员奖”。2013年1月，《南都娱乐周刊》举办新生代四小花旦的评选活动，杨颖以总分70分的综合得分与刘诗诗、杨幂、倪妮共同当选为新一代“四小花旦”；同年在徐克导演的影片《狄仁杰之神都龙王》中担任女主角，并且获得第21届北京大学生电影节最受欢迎女演员奖；</string>
+    <string name="button_text">关注TA</string>
+	 <string name="collectprompt">当前是电影 不支持选集</string>
+    <string name="preparefail">连接服务器失败，请稍后再试!</string>
+    <string name="watchout">4031该节目播放完毕\n   谢谢观赏</string>
+    <string name="watcherr">播放出错</string>
+    <string name=" fastreverseend">4041您已快退至起点</string>
+    <string name=" getdetailfail">获取影片详情失败 稍后重试！</string>
+    <string name="loaddataerror">加载数据失败</string>
+    <string name="hometip">无法获取影片数据，请尝试重启点播服务</string>
+    <string name="sure">确定</string>
+    <string name="vod_jumpto">跳转至</string>
+   	<string name="vod_resume">继续看</string>
+   	<string name="vod_exit">退出</string>
+   	<string name="vod_exitad">关闭广告</string>
+    <string name="tvtip"> "该影片有下一集，是否观看下一集"</string>
+    <string name="startzero">00:00:00</string>
+    <string name="vod_loading">正在加载影片，请稍候…</string>
+    <!-- time -->
+    <string name="vod_year">年前</string>
+    <string name="month">月前</string>
+    <string name="day">天前</string>
+    <string name="hour">小时前</string>
+    <string name="min">分钟前</string>
+    <string name="sec">秒前</string>
+    <string name="justnow">刚刚</string>
+    <string name="yesterday">昨天</string>
+    <string name="the_day_before_yesterday">前天</string>
+    <string name="today">今天</string>
+    <string name="date_format">M月d日 HH:mm</string>
+    <string name="year_format">yyyy年 M月d日 HH:mm</string>
+    <string name="nodata">没有查到该影片的相关内容！</string>
+    <string name="live">直播</string>
+    <string name="movie">影视</string>
+    <string-array name="type">
+        <item>全部</item>
+        <item>喜剧</item>
+        <item>爱情</item>
+        <item>动作</item>
+        <item>剧情</item>
+        <item>犯罪</item>
+        <item>科幻</item>
+        <item>恐怖</item>
+        <item>悬疑</item>
+    </string-array>
+    <string-array name="region">
+        <item>全部</item>
+        <item>内地</item>
+        <item>港台</item>
+        <item>美国</item>
+        <item>韩国</item>
+        <item>日本</item>
+        <item>欧洲</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="generation">
+        <item>全部</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>2010</item>
+        <item>80年代</item>
+        <item>70年代</item>
+    </string-array>
+    
+    <string name="gap"> - </string>
+    <string name="digit_one">1</string>
+    <string name="gap_char">:</string>
+    <string name="channel">001</string>
+    <string name="tishi">温馨提示!</string>
+    <string name="tuichuhuikan">确定要退出电视回看吗?</string>
+    <string name="zero_time">00:00:00</string>
+    <string name="playText">正在播放：当幸福来敲门</string>
+    <string name="viewprompt">按数字键输入跳转时间</string>
+    <string name="outputscale">输\n出\n比\n例</string>
+    <string name="scaleshow1"> 全 屏 </string>
+    <string name="scaleshow2">自适应</string>
+    <string name="tvback">电视回看</string>
+    <string name="timeclip">:</string>
+    <string name="timehour">时</string>
+    <string name="timeminute">分</string>
+    <string name="timezero">0</string>
+    <string name="scale_setting">输出比例</string>
+    <string-array name="display_scale">
+        <item>全屏</item>
+        <item>自适应</item>
+    </string-array>
+    
+    <string name="search_type_all">全部(%d)</string>
+    <string name="search_all">全部</string>
+    <string name="vod_rank_list1">最新榜</string>
+    <string name="vod_rank_list2">热播榜</string>
+    <string name="vod_rank_list3">明星榜</string>
+    <string name="vod_rank_list4">收藏榜</string>
+    <string name="vod_filter">筛选</string>
+    <string name="vod_search">搜索</string>
+    <string name="vod_top_search">大家都在搜</string>
+    <string name="vod_history_msg">您上次播放到 {0}, 是否继续播放？</string>
+    <string name="vod_history_msg1">观看至{0}</string>
+    <string name="vod_continue">接着看</string>
+    <string name="review">从头看</string>
+    <string name="chose_series">选集看</string>
+    <string name="similar">相似影片</string>
+    <string name="mine">我的</string>
+    <string name="jst">家世通</string>
+    <string name="live_video">录制</string>
+    <string name="live_channel_collect">频道收藏</string>
+    <string name="cancel_fav_succeed">取消收藏成功</string>
+    <string name="cancel_fav_failed">取消收藏失败</string>
+    <string name="fav_succeed">收藏成功</string>
+    <string name="fav_failed">收藏失败</string>
+    <string name="good_succeed">点赞成功</string>
+    <string name="good_failed">点赞失败</string>
+    <string name="bad_succeed">点衰成功</string>
+    <string name="bad_failed">点衰失败</string>
+    
+    <string name="keyword_tips">更多功能请按</string>
+    <string name="keyword_tips2">键</string>
+    <string name="back_search">搜索</string>
+    <string name="back_title">回看</string>
+
+    <string-array name="day_of_week">
+        <item>今天</item>
+        <item>昨天</item>
+        <item>前天</item>
+    </string-array>
+    
+    <string-array name="channel_type_array">
+        <item>收藏</item>
+        <item>高清</item>
+        <item>本地</item>
+        <item>央视</item>
+        <item>卫视</item>
+        <item>付费</item>
+        <item>其他</item>
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Programs totalResults="2">
+	<Program
+			programId="CCTV1"
+			programName=" CCTV1" 
+			channelId="121" 
+			isNPVR="1"
+			isTVAnyTime="1"
+			startTime="20101101123420"
+			endTime="20101101125420"
+			status="2"
+			/>
+
+</Programs>

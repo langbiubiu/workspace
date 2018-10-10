@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="379px"
+    android:layout_width="241px"
+    android:focusable="true"
+    android:background="@drawable/user_picture_bg_sl">
+    <ImageView
+        android:id="@+id/history_img"
+        android:layout_width="235px"
+        android:layout_height="295px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9px"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster" />
+    <ProgressBar
+        android:id="@+id/bar"
+        android:layout_height="16px"
+        android:layout_width="235px"
+        android:layout_gravity="center_horizontal"
+        android:max="10000"
+        android:layout_marginTop="287px"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/user_progress"/>
+    <!-- android:progressDrawable="@drawable/user_progress" -->
+    <FrameLayout
+        android:id="@+id/user_uninstall_fl"
+        android:layout_width="235px"
+        android:layout_height="295px"
+        android:visibility="gone"
+        android:focusable="false"
+        android:duplicateParentState="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9px">
+        <ImageView
+            android:id="@+id/user_delete"
+            android:layout_height="120px"
+            android:layout_width="120px"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:src="@drawable/user_uninstall_img_bg_sl"/>
+
+      </FrameLayout>
+       
+      <TextView
+        android:id="@+id/history_name"
+        android:layout_width="241px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="330px"
+        android:ellipsize="marquee"  
+        android:duplicateParentState="true"    
+        android:gravity="center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@drawable/user_name_textcolor"
+        android:textSize="36px" />
+  </FrameLayout>

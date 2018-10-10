@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="135px"
+    android:background="@drawable/live_list_channelpro_80focus"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/grouop_cum"
+            android:layout_width="90px"
+            android:layout_height="75px"
+            android:layout_marginLeft="40px"
+            android:duplicateParentState="true"
+            android:gravity="bottom|center_vertical"
+            android:text="@string/channel_back"
+            android:textColor="@color/live_item_channelprotv_color"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/grouop_cname"
+            android:layout_width="380px"
+            android:layout_height="75px"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+             android:gravity="bottom|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/live_item_channelprotv_color"
+            android:textSize="42px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/grouop_zs"
+            android:layout_width="15px"
+            android:layout_height="21px"
+            android:duplicateParentState="true"
+            android:background="@drawable/live_list_groups_sj"
+            android:layout_marginLeft="43px" />
+
+        <TextView
+            android:id="@+id/grouop_plying"
+            android:layout_width="400px"
+            android:layout_height="60px"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/live_group_channelpl_color"
+            android:textSize="26px" />
+    </LinearLayout>
+
+</LinearLayout>

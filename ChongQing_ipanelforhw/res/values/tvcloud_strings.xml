@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tvcloud">电视云</string>
+    <string name="tips">更多功能请按遥控器</string>
+    <string name="or">或</string>
+    <string name="key">键</string>
+    <string name="delete">删除</string>
+    <string name="tvcloud_recommend">云推荐</string>
+    <string name="live_record">直播录制</string>
+    <string name="my_record">我的录制</string>
+    <string name="already_use">已占</string>
+    <string name="will_use">预占</string>
+    <string name="tv_cloud_test">recorded</string>
+    <string name="tv_recommend">推荐</string>
+    <string name="tv_mine">我的</string>
+    <string name="tv_jst">家世通</string>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT configuration (template, screen*, style*)>
+<!ATTLIST configuration 
+				scale CDATA "1.0"
+				extJar CDATA #IMPLIED
+				extRes CDATA #IMPLIED
+				version CDATA #REQUIRED>
+<!ELEMENT template (view)>
+<!ATTLIST template
+				name CDATA #IMPLIED>
+				
+<!ELEMENT screen (view)>
+<!ATTLIST screen 
+				id ID #REQUIRED
+				type (fullscreen|dialog|fragment|toast|item) "fullscreen">
+				
+<!ELEMENT view (bind|action|view)*>
+<!ATTLIST view 
+				id ID #REQUIRED
+				style CDATA #IMPLIED
+				clazz CDATA #REQUIRED>
+
+<!ELEMENT style (bind*)>
+<!ATTLIST style 
+				id ID #REQUIRED
+				parent CDATA #IMPLIED>
+				
+<!ELEMENT action (bind*)>
+<!ATTLIST action 
+				event (onClick|onSelect|onItemClick|onItemSelect|onFocus) "onClick"
+				operation (open|close|add|replace|remove|intent) #REQUIRED
+				target CDATA #IMPLIED
+				container CDATA #IMPLIED>
+				
+<!ELEMENT bind (element|array|#PCDATA)>
+<!ATTLIST bind 
+				id CDATA #REQUIRED
+				target CDATA #IMPLIED> 
+<!ELEMENT element (element|array|property)*>
+<!ATTLIST element
+				name CDATA #IMPLIED>
+<!ELEMENT array (element*|array*|property*)>
+<!ATTLIST array
+				name CDATA #IMPLIED>
+
+<!ELEMENT property (#PCDATA)>
+<!ATTLIST property
+				name CDATA #IMPLIED
+				type (int|long|float|double|boolean|string) #REQUIRED>

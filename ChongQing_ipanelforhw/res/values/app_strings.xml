@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 按钮 -->
+    <string name="app_btn_open">打开</string>
+    <string name="app_btn_down">下载</string>
+    <string name="app_btn_down_doing">下载中</string>
+    <string name="app_btn_down_done">下载完成</string>
+    <string name="app_btn_clear">清除缓存</string>
+    <string name="app_btn_del">删除应用</string>
+    <string name="app_btn_likes">顶</string>
+    
+    <string name="app_size">大小%1$s</string>
+    <string name="app_update_time">更新日期%1$s</string>
+    <string name="app_version">版本%1$s</string>
+    <string name="app_developers">开发商%1$s</string>
+    <string name="app_screenshot">截图</string>
+    
+    <string name="app_del_tips">您确定要删除该「应用」吗？</string>
+    <string name="app_btn_ok">确认</string>
+    <string name="app_btn_no">取消</string>
+    
+    <!-- 静态数据 -->
+    <string name="app_title">虾米音乐</string>
+    <string name="app_remarks">虾米音乐-随时听音乐端！</string>
+    <string name="app_down_times">%1$s人下载</string>
+    <string name="app_likes">%1$s人顶</string>
+    <string name="app_des">虾米音乐（Android版）是虾米网为Android操作系统量身订做的免费音乐应用。它将为您提供流畅且近乎完美的无线音乐解决方案。通过Wi-Fi或3G网络高速收听虾米音乐，并且在国内首家推出离线模式，让您可摆脱无线网络收听虾米音乐：将百万高品质音乐装进口袋。</string>
+    
+</resources>

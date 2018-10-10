@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1920px"
+    android:layout_height="1080px" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="242px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/back_buttom" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="111px"
+            android:background="@color/divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/head_shift_btn"
+            android:layout_width="224px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="111px"
+            android:background="@drawable/live_selector_pop_1_backgroud"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/icon_tck1"
+                android:layout_width="78px"
+                android:layout_height="78px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:duplicateParentState="true"
+                android:src="@drawable/live_selector_pop_1_01" />
+
+            <TextView
+                android:id="@+id/text_tck1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_tck1"
+                android:layout_marginTop="20px"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="@string/review"
+                android:textColor="@drawable/tv_add_textcolor_sl"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/head_shift_btn"
+            android:background="@color/divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/record_btn"
+            android:layout_width="224px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/head_shift_btn"
+            android:background="@drawable/live_selector_pop_1_backgroud"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/icon_tck2"
+                android:layout_width="78px"
+                android:layout_height="78px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:duplicateParentState="true"
+                android:src="@drawable/live_selector_pop_1_02" />
+
+            <TextView
+                android:id="@+id/text_tck2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_tck2"
+                android:layout_marginTop="20px"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="@string/live_video"
+                android:textColor="@drawable/tv_add_textcolor_sl"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/record_btn"
+            android:background="@color/divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/series_btn"
+            android:layout_width="224px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/record_btn"
+            android:background="@drawable/live_selector_pop_1_backgroud"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/icon_tck3"
+                android:layout_width="78px"
+                android:layout_height="78px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:duplicateParentState="true"
+                android:src="@drawable/live_selector_pop_1_05" />
+
+            <TextView
+                android:id="@+id/text_tck3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_tck3"
+                android:layout_marginTop="20px"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="@string/chose_series"
+                android:textColor="@drawable/tv_add_textcolor_sl"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/series_btn"
+            android:background="@color/divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/recommend_btn"
+            android:layout_width="224px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/series_btn"
+            android:background="@drawable/live_selector_pop_1_backgroud"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/icon_tck4"
+                android:layout_width="78px"
+                android:layout_height="78px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:duplicateParentState="true"
+                android:src="@drawable/live_selector_pop_1_03" />
+
+            <TextView
+                android:id="@+id/text_tck4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_tck4"
+                android:layout_marginTop="20px"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="@string/alike"
+                android:textColor="@drawable/tv_add_textcolor_sl"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/recommend_btn"
+            android:background="@color/divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/favorite_btn"
+            android:layout_width="224px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/recommend_btn"
+            android:background="@drawable/live_selector_pop_1_backgroud"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/icon_tck5"
+                android:layout_width="78px"
+                android:layout_height="78px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:duplicateParentState="true"
+                android:src="@drawable/live_selector_pop_1_06" />
+
+            <TextView
+                android:id="@+id/text_tck5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_tck5"
+                android:layout_marginTop="20px"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="@string/live_channel_collect"
+                android:textColor="@drawable/tv_add_textcolor_sl"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/favorite_btn"
+            android:background="@color/divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/mine_btn"
+            android:layout_width="224px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/favorite_btn"
+            android:background="@drawable/live_selector_pop_1_backgroud"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/icon_tck6"
+                android:layout_width="78px"
+                android:layout_height="78px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:duplicateParentState="true"
+                android:src="@drawable/live_selector_pop_1_04" />
+
+            <TextView
+                android:id="@+id/text_tck6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_tck6"
+                android:layout_marginTop="20px"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="@string/mine"
+                android:textColor="@drawable/tv_add_textcolor_sl"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/mine_btn"
+            android:background="@color/divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/live_jst"
+            android:layout_width="224px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/mine_btn"
+            android:background="@drawable/live_selector_pop_1_backgroud"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/icon_tck7"
+                android:layout_width="78px"
+                android:layout_height="78px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:duplicateParentState="true"
+                android:src="@drawable/back_jst_sl" />
+
+            <TextView
+                android:id="@+id/text_tck7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_tck7"
+                android:layout_marginTop="20px"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="@string/jst"
+                android:textColor="@drawable/tv_add_textcolor_sl"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/live_jst"
+            android:background="@color/divider_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

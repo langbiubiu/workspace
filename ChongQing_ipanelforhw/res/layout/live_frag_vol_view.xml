@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transparent_background" >
+
+    <LinearLayout
+        android:layout_width="1075dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/live_vol_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="740dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:gravity="center" >
+
+            <SeekBar
+                android:id="@+id/volume_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:gravity="center"
+                android:max="300"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/live_pfseekbar_drawable"
+                android:thumb="@android:color/transparent"
+                android:thumbOffset="5dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/volume_value"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="#aaaaaa"
+            android:textSize="26sp" />
+        
+        <ipanel.join.ad.widget.ImageAdView
+	        android:id="@+id/ad"
+	        android:layout_width="162dp"
+	        android:layout_height="59dp"
+	        android:layout_marginLeft="5dp"
+	        android:background="@drawable/live_vol_ad" />
+    </LinearLayout>
+    
+
+</RelativeLayout>

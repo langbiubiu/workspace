@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="portal_live">直播</string>
+    <string name="portal_recommend">推荐</string>
+    <string name="portal_vod">点播</string>
+    <string name="portal_area">专区</string>
+    <string name="portal_app">应用</string>
+    <string name="portal_edu">党员远教</string>
+    <string name="portal_mine">我的</string>
+    <string name="test1">花千骨</string>
+	<string name="test2">湖南卫视</string>
+    <string name="test3">伪装者</string>
+    <string name="test4">辽宁卫视</string>
+    <string name="test5">伪装者\n辽宁卫视</string>
+    <string name="test6">晓松奇谈</string>
+    <string name="test7">Discovery 第四季</string>
+    <string name="test8">重庆今天穿衣指数是根据自然环境对人体感觉温度影响最主要的天空状况、气温、湿度及风等气象条件，对人们适宜穿着的服装进行分级，以提醒人们根据天气变化适当着装。明天深圳有大到小雨请相关部门做好相关安排工作引导人员...</string>
+    <string name="is_developing">正在建设中</string>
+    <string name="last_channel">上次观看频道</string>
+    <string name="no_new">无更新</string>
+    
+    <string name="home_more">更多</string>
+    <string name="usbt">请插入U盘</string>
+    <string name="appadd">添加成功</string>
+    <string name="cancenl">取消添加</string>
+    <string name="project_menu">工程菜单</string>
+    <string name="display">显示</string>
+    <string name="application">应用程序</string>
+    <string name="language">语言</string>
+    <string name="storage">存储</string>
+    <string name="chanenl">频道搜索</string>
+    <string name="hdmi_Voice">HDMI音频</string>
+    <string name="security">安全</string>
+    <string name="about_Mac">关于本机</string>
+    <string name="factory_reset">恢复出厂设置</string>
+    <string name="loading_text">正在开机，请稍候…</string>
+    <string name="add_text">已添加</string>
+    <string name="time_text">00:00:00</string>
+    <string name="date_text">日期</string>
+    <string name="select_app">选择应用添加到首页</string>
+    <string name="video_text">视频</string>
+    <string name="music_text">音乐</string>
+    <string name="picture_text">图片</string>
+    <string name="home_live">直播</string>
+    <string name="channel_manger">频道管理</string>
+    <string name="channel_into">请输入想替换的频道号</string>
+    <string name="right">确定</string>
+    <string name="cancel">取消</string>
+    <string name="server_configuration">Server Configuration</string>
+    <string name="enter_server_config_url">Enter Server config url</string>
+    <string name="save">save</string>
+    <string name="loading">正在开机，请稍候…</string>
+    <string name="added">已添加</string>
+    <string name="video">视频</string>
+    <string name="music">音乐</string>
+    <string name="photos">图片</string>
+    <string name="date">日期</string>
+    <string name="add_app_to_home">选择应用添加到首页</string>
+    <string name="no_channel">无相关频道</string>
+    <string name="channel_1">重庆卫视</string>
+    <string name="channel_2">CCTV1</string>
+    <string name="channel_3">湖南</string>
+    <string name="tv_menu_search">搜索</string>
+    <string name="tv_menu_number">影片编号</string>
+    <string name="tv_menu_help">帮助</string>
+    <string name="tv_menu_line_des">分隔线</string>
+    <string name="close_mail">关   闭</string>
+    <string name="error_invalid_ca_card">1003  请插入智能卡</string>
+    <string name="icerror">IC卡信息错误</string>
+    <string name="edserror">EDS调度失败，请重新进入首页尝试</string>
+    <string name="networkoff">4001 无法连接网络</string>
+    <string name="recommend_1">大家在看</string>
+    <string name="recommend_2">排行榜</string>
+    <string name="recommend_3">最新榜</string>
+    <string name="recommend_4">热播榜</string>
+    <string name="recommend_5">明星榜</string>
+    <string name="recommend_6">收藏榜</string>
+    <string name="area_ctv">中国电视院线</string>
+    <string name="area_drama">英美剧专区</string>
+    <string name="area_dance">坝坝舞专区</string>
+    <string name="area_hollywood">强档好莱坞</string>
+    <string name="area_fenghuang">凤凰专区</string>
+    <string name="area_tvb">TVB专区</string>
+    <string name="area_korean">韩剧专区</string>
+    <string name="area_sofa">沙发院线</string>
+    
+    <string name="myapp_one">1</string>
+    <string name="myapp_total_rows">/%s行</string>
+    
+    <string-array name="week">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+	
+</resources>

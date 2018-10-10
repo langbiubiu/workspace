@@ -1,0 +1,9 @@
+.metadata
+.preprocessed
+local.properties
+.svn/
+bin/
+gen/
+deliverables/
+*.apk
+GoldRunLibIntegration/

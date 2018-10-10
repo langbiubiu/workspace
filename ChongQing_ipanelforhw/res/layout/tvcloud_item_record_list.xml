@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1450px"
+    android:layout_height="82px" >
+    
+    <RelativeLayout
+        android:id="@+id/record_event"
+        android:layout_width="1298px"
+        android:layout_height="82px"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@drawable/tvcloud_selector_menu_bg" >
+        
+        <TextView
+	        android:id="@+id/record_name"
+	        android:layout_width="500px"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="70px"
+	        android:duplicateParentState="true"
+	        android:gravity="center_vertical"
+	        android:singleLine="true"
+	        android:textColor="@drawable/tvcloud_selector_tab_text"
+	        android:textSize="36px" />
+	    
+	    <TextView
+	        android:id="@+id/record_mark"
+	        android:layout_width="100px"
+	        android:layout_height="match_parent"
+	        android:layout_toRightOf="@id/record_name"
+	        android:layout_marginLeft="40px"
+	        android:duplicateParentState="true"
+	        android:gravity="center_vertical"
+	        android:textColor="@drawable/tvcloud_selector_tab_text"
+	        android:textSize="30px" />
+	    
+	    <TextView
+	        android:id="@+id/record_time"
+	        android:layout_width="230px"
+	        android:layout_height="match_parent"
+	        android:layout_toRightOf="@id/record_mark"
+	        android:layout_marginLeft="150px"
+	        android:duplicateParentState="true"
+	        android:gravity="center_vertical"
+	        android:textColor="@drawable/tvcloud_selector_tab_text"
+	        android:textSize="30px" />
+	    
+	    <TextView
+	        android:id="@+id/record_size"
+	        android:layout_width="140px"
+	        android:layout_height="match_parent"
+	        android:layout_toRightOf="@id/record_time"
+	        android:layout_marginLeft="80px"
+	        android:duplicateParentState="true"
+	        android:gravity="center_vertical"
+	        android:textColor="@drawable/tvcloud_selector_tab_text"
+	        android:textSize="30px" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/record_delete"
+        android:layout_width="152px"
+        android:layout_height="82px"
+        android:layout_marginLeft="1298px"
+        android:gravity="center"
+        android:focusable="true"
+        android:text="@string/delete"
+        android:textColor="@drawable/tvcloud_selector_tab_text"
+        android:background="@drawable/tvcloud_selector_menu_bg"
+	    android:textSize="30px" />
+    
+</RelativeLayout>

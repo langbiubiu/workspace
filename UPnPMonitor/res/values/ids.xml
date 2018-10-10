@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="control_pause" type="id"/>
+    <item name="control_ffwd" type="id"/>
+    <item name="control_rew" type="id"/>
+    <item name="control_next" type="id"/>
+    <item name="control_prev" type="id"/>
+    <item name="control_seek" type="id"/>
+    <item name="control_duration" type="id"/>
+    <item name="control_time" type="id"/>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="545px"
+    android:layout_height="830px"
+    android:focusable="true" >
+
+    <AbsoluteLayout
+        android:id="@+id/userbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true" >
+
+        <FrameLayout
+            android:id="@+id/wechatitem"
+            android:layout_width="545px"
+            android:layout_height="830px"
+            android:duplicateParentState="true" >
+
+            <ImageView
+                android:id="@+id/wechatuser_item_pic"
+                android:layout_width="540px"
+                android:layout_height="825px"
+                android:layout_gravity="center"
+                android:background="@drawable/img_01" />
+
+            <ImageView
+                android:id="@+id/wechat_user_bg1"
+                android:layout_width="545px"
+                android:layout_height="830px"
+                android:background="@drawable/wechat_user_sl1"
+                android:duplicateParentState="true" />
+
+            <FrameLayout
+                android:id="@+id/wechatuser_item_del"
+                android:layout_width="545px"
+                android:layout_height="830px"
+                android:duplicateParentState="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/wechat_user_bg2"
+                    android:layout_width="545px"
+                    android:layout_height="830px"
+                    android:layout_gravity="bottom"
+                    android:background="#aa000000"
+                    android:duplicateParentState="true" />
+
+                <ImageView
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_gravity="center"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/wechat_icon_delete" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/film_img"
+            android:layout_width="540px"
+            android:layout_height="150px"
+            android:layout_x="0px"
+            android:layout_y="680px"
+            android:background="#aa000000" />
+
+        <com.ipanel.chongqing_ipanelforhw.hwstruct.XCRoundImageView
+            android:id="@+id/userimage"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_x="30px"
+            android:layout_y="705px"
+            android:src="@drawable/back_mine_sl" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="150px"
+            android:layout_y="735px"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </AbsoluteLayout>
+
+</FrameLayout>

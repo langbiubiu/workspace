@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- FilmListActivity焦点框设置参数 -->
+    <dimen name="focus_vertical_regin_min">176px</dimen>
+    <dimen name="focus_vertical_regin_max">597px</dimen>
+    <dimen name="focus_left_padding">-3px</dimen>
+    <dimen name="focus_right_padding">-3px</dimen>
+    <dimen name="focus_top_padding">3px</dimen>
+    <dimen name="focus_bottom_padding">3px</dimen>
+    <dimen name="font_size">32px</dimen>
+    
+    <dimen name="vod_left_lenth">317px</dimen>
+    <dimen name="vod_left_lenth2">414px</dimen>
+    <dimen name="back_left_lenth">255px</dimen>
+</resources>

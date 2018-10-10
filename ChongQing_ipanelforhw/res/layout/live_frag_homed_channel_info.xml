@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_alignParentBottom="true"
+	android:layout_marginBottom="30dp" 
+    android:orientation="horizontal" 
+    android:background="@drawable/live_timeshift_bottom_bg">
+
+    <LinearLayout
+        android:id="@+id/c_f"
+        android:layout_width="204dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/live_channel_menu"
+        android:focusable="false"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/channel_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/live_channeltv_color"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/channel_name"
+            style="@style/marquee_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textColor="@color/live_channeltv_color"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#55000000" />
+
+    <TextView
+        android:id="@+id/look_fromst"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/live_channel_menu"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/look_start"
+        android:textColor="@color/live_channeltv_color"
+        android:textSize="26sp" />
+    
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#55000000" />
+
+    <TextView
+        android:id="@+id/epg_list"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/live_channel_menu"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/current_programme"
+        android:textColor="@color/live_channeltv_color"
+        android:textSize="26sp" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#55000000" />
+
+    <TextView
+        android:id="@+id/look_back"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/live_channel_menu"
+        android:focusable="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/look_back"
+        android:textColor="@color/live_channeltv_color"
+        android:textSize="26sp" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#55000000" />
+
+    <TextView
+        android:id="@+id/book_list"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/live_channel_menu"
+        android:focusable="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/book_list"
+        android:textColor="@color/live_channeltv_color"
+        android:textSize="26sp" />
+    
+    
+
+    <ipanel.join.ad.widget.ImageAdView
+        android:id="@+id/ad"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="right"
+        android:scaleType="fitXY"
+        android:background="@drawable/live_ad_pfbar" />
+
+</LinearLayout>

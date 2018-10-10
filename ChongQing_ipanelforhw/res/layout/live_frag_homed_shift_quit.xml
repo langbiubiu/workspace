@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/anim_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="556dp"
+        android:layout_height="276dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/live_dialog_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:focusable="false"
+            android:text="@string/shift_notice_title"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/shift_info"
+            android:layout_width="450dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:focusable="true"
+            android:text="@string/whether_quit"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/yes_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/yes_button"
+                    android:textColor="@android:color/white"
+                    android:textSize="26sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/no_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/no_button"
+                    android:textColor="@android:color/white"
+                    android:textSize="26sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="203px"
+    android:layout_height="82px"
+    android:background="@drawable/tvcloud_selector_menu_bg"
+    android:focusable="true" >
+
+    <TextView
+        android:id="@+id/time_date"
+        android:layout_width="183px"
+        android:layout_height="45px"
+        android:layout_marginLeft="20px"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:textColor="@drawable/tvcloud_selector_tab_text"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/time_week"
+        android:layout_width="183px"
+        android:layout_height="37px"
+        android:layout_marginLeft="20px"
+        android:layout_below="@id/time_date"
+        android:gravity="center_vertical"
+        android:duplicateParentState="true"
+        android:textColor="@drawable/tvcloud_selector_tab_text"
+        android:textSize="26px" />
+
+</RelativeLayout>

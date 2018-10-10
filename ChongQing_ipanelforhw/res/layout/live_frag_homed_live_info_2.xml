@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transparent_background" >
+
+	<RelativeLayout 
+	    android:id="@+id/bottombar_all"
+	    android:layout_width="fill_parent"
+	    android:layout_height="140dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="30dp" 
+	    android:background="@drawable/live_bottom_bg">
+	
+	    <RelativeLayout
+	        android:id="@+id/left_part"
+	        android:layout_width="310dp"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="60dp" >
+	
+	        <TextView
+	            android:id="@+id/channelNum"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="30dp"
+	            android:textColor="#ffc600"
+	            android:textSize="30sp" />
+	
+	        <TextView
+	            android:id="@+id/channelName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/channelNum"
+	            android:layout_marginTop="5dp"
+	            android:singleLine="true"
+	            android:textColor="#ffc600"
+	            android:textSize="30sp" />
+	        <ImageView 
+	            android:id="@+id/back_flag"
+	            android:layout_width="28dp"
+	            android:layout_height="24dp"
+	            android:layout_marginTop="35dp"
+	            android:layout_marginLeft="170dp"
+	            android:scaleType="fitXY"
+	            android:src="@drawable/live_pf_icon_time"/>"
+	    </RelativeLayout>
+	
+	    <RelativeLayout
+	        android:id="@+id/center_part"
+	        android:layout_width="640dp"
+	        android:layout_height="match_parent"
+	        android:layout_toRightOf="@id/left_part"
+	        android:paddingLeft="40dp" >
+	
+	        <TextView
+	            android:id="@+id/current_event"
+	            style="@style/marquee_style"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:gravity="left"
+	            android:singleLine="true"
+	            android:textColor="#c8c8c8"
+	            android:textSize="28sp" />
+	
+	        <TextView
+	            android:id="@+id/play_time"
+	            style="@style/marquee_style"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/current_event"
+	            android:layout_marginTop="7dp"
+	            android:gravity="left"
+	            android:singleLine="true"
+	            android:textColor="#c8c8c8"
+	            android:textSize="28sp" />
+	
+	        <TextView
+	            android:id="@+id/next_event"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/play_time"
+	            android:layout_marginTop="7dp"
+	            android:gravity="left"
+	            android:singleLine="true"
+	            android:textColor="#c8c8c8"
+	            android:textSize="28sp" />
+	
+	        <com.ipanel.join.topway.homed.live.view.LiveSeekBar
+	            android:id="@+id/watch_progress"
+	            android:layout_width="280dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="305dp"
+	            android:focusable="false"
+	            android:gravity="center"
+	            android:max="1000"
+	            android:maxHeight="15dp"
+	            android:minHeight="15dp"
+	            android:progress="0"
+	            android:progressDrawable="@drawable/live_pfseekbar_drawable"
+	            android:thumb="@android:color/transparent" />
+	    </RelativeLayout>
+	
+	    <RelativeLayout
+	        android:id="@+id/right_part"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_toRightOf="@id/center_part"
+	        android:gravity="center"
+	        android:paddingRight="49dp" >
+	
+	        <ipanel.join.ad.widget.ImageAdView
+	            android:id="@+id/ad"
+	            android:layout_width="300dp"
+	            android:layout_height="140dp"
+	            android:background="@drawable/live_ad_pfbar" />
+	        
+	    </RelativeLayout>
+
+	</RelativeLayout>
+</RelativeLayout>

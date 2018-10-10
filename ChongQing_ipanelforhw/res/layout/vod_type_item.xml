@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="291px"
+    android:layout_height="80px"
+    android:background="@drawable/vod_type_bg_sl"
+    android:focusable="true" >
+
+    <TextView
+        android:id="@+id/type_text"
+        android:layout_width="291px"
+        android:layout_height="80px"
+        android:duplicateParentState="true"
+        android:singleLine="true"
+        android:gravity="right|center_vertical"
+        android:paddingRight="45px"
+        android:textColor="@drawable/vod_type_color_sl"
+        android:textSize="40px" />
+
+</RelativeLayout>

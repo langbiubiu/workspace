@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/epg_bk" >
+
+    <com.ipanel.join.topway.homed.live.view.JChannelListView
+        android:id="@+id/channel_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="37dp" >
+    </com.ipanel.join.topway.homed.live.view.JChannelListView>
+    
+    <TextView 
+        android:id="@+id/loading_view"
+        android:layout_width="600dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="37dp"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:textSize="26sp"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/up_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="323dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/live_arrow_up" />
+
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/channel_list"
+        android:layout_marginLeft="323dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/live_arrow_down" />
+
+    
+    
+    <!-- <ImageView
+        android:id="@+id/help_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/channel_list"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/channel_list"
+        android:visibility="gone"
+        android:src="@drawable/live_help_01" /> -->
+    
+    <ipanel.join.ad.widget.ImageAdView
+        android:id="@+id/ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="665dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/live_channel_list_ad" />
+
+</RelativeLayout>

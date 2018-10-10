@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:paddingLeft="18px"
+    android:paddingRight="18px"
+    android:gravity="center_vertical"
+    android:background="@drawable/live_label_bg" >
+    
+    <TextView
+        android:id="@+id/label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:textColor="@drawable/live_text_color"
+        android:textSize="32px" />
+
+</RelativeLayout>

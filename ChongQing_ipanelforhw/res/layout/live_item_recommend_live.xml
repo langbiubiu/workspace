@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270px"
+    android:layout_height="330px"
+    android:padding="15px"
+    android:focusable="true"
+    android:background="@drawable/live_selector_recommend_poster" >
+    
+    <ImageView
+        android:id="@+id/event_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/default_poster" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/alpha90" >
+        
+        <ImageView
+            android:id="@+id/live_icon"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:textSize="30px"
+            android:scaleType="fitXY"/>
+        
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="40px"
+            android:layout_marginLeft="83px"
+            android:layout_marginTop="10px"
+            android:background="@color/divider_color" />
+        
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="130px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="93px"
+            android:layout_marginTop="10px"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="24px" />
+        
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="136px"
+            android:layout_height="4px"
+            android:layout_below="@id/event_name"
+            android:layout_marginLeft="93px"
+            android:layout_marginTop="6px"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:focusable="false" >
+
+    <RelativeLayout
+        android:layout_width="1280dp"
+        android:layout_height="133dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#cc000000"
+        android:focusable="false" >
+
+        <RelativeLayout
+            android:id="@+id/progress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_starttime"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:text="@string/startzero"
+                android:textColor="#fff"
+                android:textSize="24dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/parentseek"
+                android:layout_width="1113dp"
+                android:layout_height="wrap_content" >
+
+                <SeekBar
+                    android:id="@+id/seekbarcontrol"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:indeterminate="false"
+                    android:max="200"
+                    android:maxHeight="16dp"
+                    android:minHeight="16dp"
+                    android:progressDrawable="@drawable/vod_seek_bar2"
+                    android:thumb="@drawable/vod_slider_bg" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/startzero"
+            android:textColor="#c8c8c8"
+            android:textSize="21dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/progress"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_videoname"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="50dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="#c8c8c8"
+                android:textSize="28dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/live_tips00" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_currenttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="123dp"
+        android:background="@drawable/live_time_samll"
+        android:gravity="center_horizontal"
+        android:text="@string/startzero"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

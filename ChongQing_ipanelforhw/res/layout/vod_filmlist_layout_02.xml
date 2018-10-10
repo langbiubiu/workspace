@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vod_bg00" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="566px"
+        android:layout_height="match_parent"
+        android:background="@drawable/vod_list_bg" >
+
+        <ImageView
+            android:layout_width="112px"
+            android:layout_height="3px"
+            android:layout_marginLeft="78px"
+            android:layout_marginTop="88px"
+            android:src="@drawable/vod_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="213px"
+            android:layout_marginTop="77px"
+            android:text="@string/sort"
+            android:textColor="@color/font_color"
+            android:textSize="32px" />
+
+        <ImageView
+            android:layout_width="112px"
+            android:layout_height="3px"
+            android:layout_marginLeft="380px"
+            android:layout_marginTop="88px"
+            android:src="@drawable/vod_line" />
+
+        <TextView
+            android:id="@+id/sort1"
+            android:layout_width="114px"
+            android:layout_height="55px"
+            android:layout_marginLeft="64px"
+            android:layout_marginTop="145px"
+            android:background="@drawable/vod_textview_bg_sl"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/populatest"
+            android:textColor="@drawable/vod_textcolor_sl"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/sort2"
+            android:layout_width="114px"
+            android:layout_height="55px"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="145px"
+            android:layout_toRightOf="@+id/sort1"
+            android:background="@drawable/vod_textview_bg_sl"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/latest"
+            android:textColor="@drawable/vod_textcolor_sl"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/sort3"
+            android:layout_width="114px"
+            android:layout_height="55px"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="145px"
+            android:layout_toRightOf="@+id/sort2"
+            android:background="@drawable/vod_textview_bg_sl"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/score"
+            android:textColor="@drawable/vod_textcolor_sl"
+            android:textSize="36px" />
+
+        <ImageView
+            android:layout_width="112px"
+            android:layout_height="3px"
+            android:layout_marginLeft="78px"
+            android:layout_marginTop="257px"
+            android:src="@drawable/vod_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="213px"
+            android:layout_marginTop="240px"
+            android:text="@string/filter"
+            android:textColor="@color/font_color"
+            android:textSize="32px" />
+
+        <ImageView
+            android:layout_width="112px"
+            android:layout_height="3px"
+            android:layout_marginLeft="380px"
+            android:layout_marginTop="257px"
+            android:src="@drawable/vod_line" />
+
+        <android.support.v4.view.VerticalViewPager2
+            android:id="@+id/listview1"
+            android:layout_width="114px"
+            android:layout_height="562px"
+            android:layout_marginLeft="64px"
+            android:layout_marginTop="328px"
+            android:dividerHeight="18px" >
+        </android.support.v4.view.VerticalViewPager2>
+
+        <android.support.v4.view.VerticalViewPager2
+            android:id="@+id/listview2"
+            android:layout_width="114px"
+            android:layout_height="562px"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="328px"
+            android:layout_toRightOf="@+id/listview1"
+            android:dividerHeight="18px" >
+        </android.support.v4.view.VerticalViewPager2>
+
+        <android.support.v4.view.VerticalViewPager2
+            android:id="@+id/listview3"
+            android:layout_width="114px"
+            android:layout_height="562px"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="328px"
+            android:layout_toRightOf="@+id/listview2"
+            android:dividerHeight="18px" >
+        </android.support.v4.view.VerticalViewPager2>
+
+        <ImageView
+            android:id="@+id/arrow1down"
+            android:layout_width="35px"
+            android:layout_height="19px"
+            android:layout_marginLeft="101px"
+            android:layout_marginTop="925px"
+            android:src="@drawable/vod_arrowdown"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/arrow2down"
+            android:layout_width="35px"
+            android:layout_height="19px"
+            android:layout_marginLeft="258px"
+            android:layout_marginTop="925px"
+            android:src="@drawable/vod_arrowdown"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/arrow3down"
+            android:layout_width="35px"
+            android:layout_height="19px"
+            android:layout_marginLeft="418px"
+            android:layout_marginTop="925px"
+            android:src="@drawable/vod_arrowdown"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/arrow1up"
+            android:layout_width="35px"
+            android:layout_height="19px"
+            android:layout_marginLeft="101px"
+            android:layout_marginTop="290px"
+            android:src="@drawable/vod_arrowup"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/arrow2up"
+            android:layout_width="35px"
+            android:layout_height="19px"
+            android:layout_marginLeft="258px"
+            android:layout_marginTop="290px"
+            android:src="@drawable/vod_arrowup"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/arrow3up"
+            android:layout_width="35px"
+            android:layout_height="19px"
+            android:layout_marginLeft="418px"
+            android:layout_marginTop="290px"
+            android:src="@drawable/vod_arrowup"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sort_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="630px"
+        android:layout_marginTop="75px"
+        android:text="@string/film"
+        android:textColor="@color/white"
+        android:textSize="44px" />
+
+    <TextView
+        android:id="@+id/sort_totalpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sort_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="123px"
+        android:textColor="@color/font_color"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/sort_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sort_totalpage"
+        android:layout_marginRight="2px"
+        android:layout_toLeftOf="@+id/sort_totalpage"
+        android:textColor="@color/light_white"
+        android:textSize="32px" />
+
+    <android.support.v4.view.VerticalViewPager2
+        android:id="@+id/sort_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="850px"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="610px"
+        android:layout_marginRight="85px"
+        android:layout_marginTop="169px" >
+    </android.support.v4.view.VerticalViewPager2>
+
+</RelativeLayout>

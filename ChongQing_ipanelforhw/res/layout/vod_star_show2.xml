@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/star_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="108px"
+        android:textColor="#BEBEBE"
+        android:textSize="44px" />
+
+    <TextView
+        android:id="@+id/star_movie_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/star_movie"
+        android:layout_marginLeft="25px"
+        android:layout_toRightOf="@+id/star_movie"
+        android:textColor="#BEBEBE"
+        android:textSize="32px" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_marginLeft="92px"
+        android:layout_marginTop="111px"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/mScrollView_layout"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:orientation="horizontal" >
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/star_zixun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="108px"
+        android:layout_marginTop="584px"
+        android:textColor="#BEBEBE"
+        android:textSize="44px" />
+
+    <TextView
+        android:id="@+id/star_zixun_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/star_zixun"
+        android:layout_marginLeft="25px"
+        android:layout_toRightOf="@+id/star_zixun"
+        android:textColor="#BEBEBE"
+        android:textSize="32px" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollview2"
+        android:layout_width="match_parent"
+        android:layout_height="285px"
+        android:layout_marginLeft="92px"
+        android:layout_marginTop="646px"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/mScrollView_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="285px"
+            android:orientation="horizontal" >
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

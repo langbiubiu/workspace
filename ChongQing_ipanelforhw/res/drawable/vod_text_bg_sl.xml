@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ListView的item有焦点时的背景 -->
+    <item android:drawable="@drawable/vod_background" android:state_focused="true"/>
+    <!-- ListView的item点击选中时的背景 -->
+<!--     <item android:drawable="@drawable/vod_btn0" android:state_activated="true" android:state_selected="true"/>
+    ListView的item选中时的背景
+    <item android:drawable="@drawable/vod_moviefoc" android:state_selected="true"/>
+    <item android:drawable="@drawable/vod_btn0" android:state_activated="true"/> -->
+	<item android:drawable="@drawable/vod_btn0"  android:state_selected="true"/>
+    <!-- 默认时的背景 -->
+    <item android:drawable="@android:color/transparent"></item>
+	
+</selector>

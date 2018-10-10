@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="71px"
+    android:layout_height="63px"
+    android:focusable="true"
+    android:paddingTop="10px"
+    android:paddingBottom="10px"
+    android:background="@android:color/transparent"
+    android:clipToPadding="false" >
+    
+    <TextView
+        android:id="@+id/series_index"
+        android:layout_width="71px"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:background="@drawable/live_label_bg"
+        android:textColor="@drawable/live_text_color"
+        android:gravity="center"
+        android:textSize="28px" />
+
+</RelativeLayout>

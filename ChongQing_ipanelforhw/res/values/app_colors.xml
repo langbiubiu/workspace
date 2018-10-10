@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_color_white1">#FFFFFF</color>
+    <color name="app_color_white2">#E0E0E2</color>
+    <color name="app_color_beige1">#7D9ABB</color>
+    <color name="app_color_beige2">#586E82</color>
+    <color name="app_color_orange">#B56419</color>
+    <color name="app_color_green">#0F7E25</color>
+    <color name="app_color_green2">#07AA3D</color>
+    <color name="app_color_yellow">#FFB400</color>    
+    <color name="app_color_grey">#3F4457</color>
+    <color name="app_color_grey1">#515151</color>
+    <color name="app_color_grey2">#939393</color>
+    <color name="app_color_black">#000000</color>
+    
+</resources>

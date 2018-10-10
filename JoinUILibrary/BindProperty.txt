@@ -1,0 +1,113 @@
+Bind 支持的属性列表, 仅列出通用控件的. 
+
+name: LayoutParams
+type: json
+说明: View的父容器决定如何解析此数据. width, height 必须包含. 可能包含的值如下, gravity 值可任意个组合
+	{
+		width: 100,
+		height: 80,
+		x: 200,
+		y: 300,
+		gravity:"top|left|right|bottom|center|center_vertical|center_horizontal",
+		margin:{
+			left:10,
+			right:10,
+			top:10,
+			bottom:10
+		}
+	}
+	
+name: duplicateParentState
+type: string
+说明: true 或 false
+
+name: focusable
+type: string
+说明: true 或 false
+
+name: showFocusFrame
+type: string
+说明: true 或 false
+
+name: backgroundColor
+type: string
+说明: 8位hex值如FFEEDDCC
+
+name: backgroundDrawable
+type: string 或 json
+说明: string时 单个图片URL, json 格式可值定不同状态的URL:
+	{
+		focus:"http://xx.x.x/x.png",
+		selected:"http://",
+		normal:"http://xxxx"
+	}
+
+name: backgroundDrawable9
+type: json
+说明: json 格式:
+	{
+		url:"http://xx.x.x/x.png",
+		patch:{
+			left:10,
+			right:10,
+			top:10,
+			bottom:10
+		},
+		padding:{
+			left:10,
+			right:10,
+			top:10,
+			bottom:10
+		}
+	}
+
+name: padding
+type: json
+说明: json格式:
+	{
+			left:10,
+			right:10,
+			top:10,
+			bottom:10
+	}	
+
+name: drawable
+type: string 或 json
+说明: 同 backgroundDrawable
+
+name: drawable9
+type: json
+说明: 同 backgroundDrawable9
+
+name: text
+type: string
+
+name: textColor
+type: string 或 json
+说明: string 8位hex, json格式:
+	{
+		focus:"11223344",
+		selected:"22334455",
+		normal:"12345678"
+	}
+
+name: textSize
+type: string
+
+
+Action Bind属性
+name: intent
+type: json
+说明:　json格式:
+	{
+		action:"",
+		package:"",
+		className:"",
+		data:"",
+		type:"",
+		category:"",
+		extra:{
+			numberP1:1,
+			stringP2:"xxx"
+		}
+	}

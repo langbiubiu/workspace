@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="CA_MSG_1">收看级别不够</string>
+    <string name="CA_MSG_2">不在收看时段内</string>
+    <string name="CA_MSG_3">没有机卡对应</string>
+    <string name="CA_MSG_4">IC卡与其它机顶盒对应</string>
+    <string name="CA_MSG_5">加扰节目，请插入智能卡</string>
+    <string name="CA_MSG_6">亲爱的用户，该频道您未授权</string>
+    <string name="CA_MSG_7">运营商限制观看该节目</string>
+    <string name="CA_MSG_8">运营商限制区域观看</string>
+    <string name="CA_MSG_9">此卡为子卡，已经被限制收看，请与母卡配对</string>
+    <string name="CA_MSG_10">余额不足，不能观看此节目，请及时充值</string>
+    <string name="CA_MSG_11">此节目为IPPV节目，请到IPPV节目确认/取消购买菜单下确认购买此节目</string>
+    <string name="CA_MSG_12">此节目为IPPV节目，您没有预订和确认购买，不能观看此节目</string>
+    <string name="CA_MSG_13">此节目为IPPT节目，请到IPPT节目确认/取消购买菜单下确认购买此节目</string>
+    <string name="CA_MSG_14">此节目为IPPT节目，您没有预订和确认购买，不能观看此节目</string>
+    <string name="CA_MSG_15">此节目为IPPV节目，余额不足，不能观看，请及时充值</string>
+    <string name="CA_MSG_16">此节目为IPPT节目，余额不足，不能观看，请及时充值</string>
+    <string name="CA_MSG_17">错误</string>
+    <string name="CA_MSG_18">运营商不存在</string>
+    <string name="CA_MSG_19">IC卡被禁止服务</string>
+    <string name="CA_MSG_20">智能卡已冻结，请联系运营商</string>
+    <string name="CA_MSG_21">此卡未被激活，请联系运营商</string>
+    <string name="CA_MSG_22">请联系运营商回传IPP节目信息</string>
+    <string name="CA_MSG_23">用户您好，此节目您尚未购买，正在免费预览中</string>
+    
+
+
+</resources>

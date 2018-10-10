@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="tv_intro">
+        <item name="android:textColor">#A0A19E</item>
+        <item name="android:textSize">32px</item>
+    </style>
+
+    <style name="tv_actor">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">32px</item>
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/room_rating_bar</item>
+        <item name="android:minWidth">10px</item>
+        <item name="android:maxWidth">10px</item>
+        <item name="android:maxHeight">9px</item>
+        <item name="android:minHeight">9px</item>
+    </style>
+
+    <style name="search_font_style">
+        <item name="android:textColor">#B6B6B7</item>
+        <item name="android:textSize">28px</item>
+    </style>
+
+    <style name="back_popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/back_menushow</item>
+        <item name="android:windowExitAnimation">@anim/back_menuhide</item>
+    </style>
+
+    <style name="search_text_style1">
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+    
+    <style name="search_text_style2">
+        <item name="android:textColor">@color/search_color_sl</item>
+    </style>
+    
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/menushow</item>
+        <item name="android:windowExitAnimation">@anim/menuhide</item>
+    </style>
+    
+</resources>

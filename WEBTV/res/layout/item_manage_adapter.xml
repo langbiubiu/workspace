@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/selector_list" >
+
+    <TextView
+        android:id="@+id/icon"
+        android:layout_width="66.67dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:duplicateParentState="true"
+        android:background="@drawable/bg_number_select"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="26.67sp"
+        android:textColor="@color/black" />
+    
+    <ProgressBar
+        android:id="@+id/progress_playing"
+        android:indeterminateDrawable="@drawable/progress"
+        android:layout_width="26.67dp"
+        android:layout_height="26.67dp"
+        android:layout_marginLeft="40dp"
+        android:layout_centerVertical="true"
+        android:indeterminateDuration="1500"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginLeft="20dp"
+        android:paddingRight="20dp"
+        android:duplicateParentState="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:textColor="@drawable/selector_text"
+        android:textSize="24sp"
+        android:singleLine="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000" >
+
+    <ImageView
+        android:id="@+id/loadingimage"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="268dp"
+        android:background="@drawable/vod_loading" />
+
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:gravity="center"
+        android:text="@string/vod_loading"
+        android:textColor="#ffffffff"
+        android:textSize="26sp" />
+
+</RelativeLayout>

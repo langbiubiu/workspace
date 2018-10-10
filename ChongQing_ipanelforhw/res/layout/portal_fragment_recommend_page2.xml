@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="false">
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45px"
+        android:text="@string/recommend_1"
+        android:textSize="45px"
+        android:textColor="#CCE8FF"/>
+    
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="500px"
+        android:layout_height="280px"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="40px"
+        android:src="@drawable/portal_pop_img2_refresh"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/rec_09"
+        android:layout_width="500px"
+        android:layout_height="280px"
+        android:layout_alignTop="@+id/refresh"
+        android:layout_toRightOf="@+id/refresh"
+        android:layout_marginLeft="20px"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/rec_10"
+        android:layout_width="500px"
+        android:layout_height="280px"
+        android:layout_alignTop="@+id/rec_09"
+        android:layout_toRightOf="@+id/rec_09"
+        android:layout_marginLeft="20px"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster"
+        android:focusable="true" />
+    
+    <ImageView
+        android:id="@+id/rec_11"
+        android:layout_width="500px"
+        android:layout_height="280px"
+        android:layout_below="@+id/refresh"
+        android:layout_alignLeft="@+id/refresh"
+        android:layout_marginTop="20px"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster"
+        android:focusable="true" />
+    
+    <FrameLayout 
+        android:id="@+id/rec_12"
+        android:layout_width="500px"
+        android:layout_height="280px"
+        android:layout_alignTop="@+id/rec_11"
+        android:layout_toRightOf="@+id/rec_11"
+        android:layout_marginLeft="20px"
+        android:focusable="true">
+        <ImageView
+            android:id="@+id/rec_12_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_poster"/>
+        <TextView 
+            android:id="@+id/rec_12_title"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="@string/test6"
+            android:textSize="30px"
+            android:textColor="@color/black"
+            android:background="@drawable/portal_cover00"/>
+    </FrameLayout>
+    
+    <FrameLayout 
+        android:id="@+id/rec_13"
+        android:layout_width="500px"
+        android:layout_height="280px"
+        android:layout_alignTop="@+id/rec_12"
+        android:layout_toRightOf="@+id/rec_12"
+        android:layout_marginLeft="20px"
+        android:focusable="true">
+        <ImageView
+            android:id="@+id/rec_13_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_poster"/>
+        <TextView 
+            android:id="@+id/rec_13_title"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"
+            android:text="@string/test7"
+            android:textSize="30px"
+            android:textColor="@color/black"
+            android:background="@drawable/portal_cover00"/>
+    </FrameLayout>
+
+</RelativeLayout>

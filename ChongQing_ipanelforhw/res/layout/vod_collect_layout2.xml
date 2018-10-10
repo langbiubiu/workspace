@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="1560px"
+        android:layout_height="1080px" >
+
+        <TextView
+            android:id="@+id/collect_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76px"
+            android:textColor="#FEFEFE"
+            android:textSize="44px" />
+
+        <cn.ipanel.android.widget.WeightGridLayout
+            android:id="@+id/collect_grid"
+            android:layout_width="1160px"
+            android:layout_height="750px"
+            android:layout_marginLeft="4px"
+            android:layout_marginTop="145px"
+            android:columnWidth="185px"
+            android:horizontalSpacing="54px"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="5"
+            android:verticalSpacing="40px" >
+        </cn.ipanel.android.widget.WeightGridLayout>
+
+        <ImageView
+            android:id="@+id/vod_sort_icon"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="1360px"
+            android:layout_marginTop="144px"
+            android:focusable="true"
+            android:onClick="reSort"
+            android:src="@drawable/vod_sort_up_sl" />
+
+        <ImageView
+            android:id="@+id/vod_line1"
+            android:layout_width="2px"
+            android:layout_height="105px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="167px"
+            android:layout_marginTop="340px"
+            android:background="#bebebe"
+            android:visibility="invisible" />
+
+        <com.ipanel.join.cq.vod.customview.JiShuView
+            android:id="@+id/tvcollect"
+            android:layout_width="335px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="261px"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/vod_line2"
+            android:layout_width="2px"
+            android:layout_height="105px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="167px"
+            android:layout_marginTop="530px"
+            android:background="#bebebe"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/vod_line3"
+            android:layout_width="2px"
+            android:layout_height="105px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="170px"
+            android:layout_marginTop="720px"
+            android:background="#bebebe"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/vod_line4"
+            android:layout_width="2px"
+            android:layout_height="105px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="170px"
+            android:layout_marginTop="910px"
+            android:background="#bebebe"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

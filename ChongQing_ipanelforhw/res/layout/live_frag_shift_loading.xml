@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/anim_view"
+    android:layout_width="1199px"
+    android:layout_height="747px"
+    android:layout_marginLeft="363px"
+    android:layout_marginTop="146px"
+    android:background="@drawable/live_bg_pause" >
+
+    <ipanel.join.ad.widget.ImageAdView
+        android:id="@+id/ad"
+        android:layout_width="1127px"
+        android:layout_height="453px"
+        android:layout_marginLeft="36px"
+        android:layout_marginTop="33px"
+        android:background="@drawable/live_ad_pause"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="210px"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/loading_img"
+            android:layout_width="77px"
+            android:layout_height="77px"
+            android:layout_marginLeft="353px"
+            android:layout_marginTop="53px"
+            android:background="@drawable/live_loading" />
+
+        <TextView
+            android:id="@+id/loading_shows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="444px"
+            android:layout_marginTop="69px"
+            android:textSize="@dimen/small_text_size3" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="152px"
+    android:layout_height="246px"
+    android:layout_marginTop="426px"
+    android:src="@drawable/live_icon_menu"
+    android:visibility="visible" />

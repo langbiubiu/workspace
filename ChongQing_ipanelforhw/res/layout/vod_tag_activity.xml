@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vod_movie_bg" >
+
+    <TextView
+        android:id="@+id/vod_tab_name"
+        android:layout_width="290px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160px"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="48px" />
+
+    <TextView
+        android:id="@+id/vod_total"
+        android:layout_width="290px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vod_tab_name"
+        android:layout_marginTop="10px"
+        android:gravity="center"
+        android:textColor="#B2B2B2"
+        android:textSize="36px" />
+
+    <RelativeLayout
+        android:id="@+id/vod_tab_rl"
+        android:layout_width="290px"
+        android:layout_height="81px"
+        android:layout_marginTop="900px"
+        android:background="@drawable/vod_textview_bg_sl"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/vod_tab_follow"
+            android:layout_width="36px"
+            android:layout_height="32px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="57px"
+            android:background="@drawable/vod_movielike_sl"
+            android:duplicateParentState="true" />
+
+        <TextView
+            android:id="@+id/subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/vod_tab_follow"
+            android:duplicateParentState="true"
+            android:text="@string/vod_follow"
+            android:textColor="@drawable/vod_fontcolor_sl"
+            android:textSize="40px" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/vod_tab_totalpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="123px"
+        android:textColor="@color/font_color"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/vod_tab_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="2px"
+        android:layout_toLeftOf="@+id/vod_tab_totalpage"
+        android:textColor="@color/light_white"
+        android:textSize="32px" />
+
+    <android.support.v4.view.VerticalViewPager2
+        android:id="@+id/vod_tab_viewpager"
+        android:layout_width="1460px"
+        android:layout_height="843px"
+        android:layout_marginLeft="350px"
+        android:layout_marginTop="115px" >
+    </android.support.v4.view.VerticalViewPager2>
+</RelativeLayout>

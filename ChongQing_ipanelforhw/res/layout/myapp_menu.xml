@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1920px"
+    android:layout_height="209px"
+    android:background="#B3000000"
+    android:focusable="true" >
+
+    <Button
+        android:id="@+id/btv_recommend"
+        android:layout_width="226px"
+        android:layout_height="209px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="114px"
+        android:background="@drawable/myapp_uninstall" />
+
+</RelativeLayout>

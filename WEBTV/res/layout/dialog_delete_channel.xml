@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="386.67dp"
+	android:layout_height="126.67dp"
+    android:background="@color/bg_dialog"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33.33dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/delete_all_local"
+        android:textColor="@color/list_select_selected"
+        android:textSize="24sp" />
+		
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="20dp">
+		
+		<Button
+		    android:id="@+id/btn_cancel"
+		    android:layout_width="101.33dp"
+		    android:layout_height="40dp"
+		    android:layout_marginLeft="176.67dp"
+		    android:text="@string/cancel"
+		    android:textColor="@color/text_selected"
+		    android:textSize="24sp"
+		    android:background="@drawable/selector_list" />
+	
+		<Button
+		    android:id="@+id/btn_ok"
+		    android:layout_width="58.67dp"
+		    android:layout_height="40dp"
+		    android:layout_marginLeft="16.67dp"
+		    android:text="@string/ok"
+		    android:textColor="@color/text_selected"
+		    android:textSize="24sp"
+		    android:background="@drawable/selector_list" />
+	
+	</LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="845px"
+    android:layout_height="300px"
+    android:background="@android:color/transparent" >
+
+    <ImageView
+        android:id="@+id/order_img"
+        android:layout_width="240px"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/default_poster" />
+
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/order_img"
+        android:textColor="#fff"
+        android:textSize="48px" />
+
+    <TextView
+        android:id="@+id/order_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_id"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@+id/order_img"
+        android:textColor="#eee"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/order_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_price"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@+id/order_img"
+        android:textColor="#eeeeee"
+        android:textSize="24px" />
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="185px"
+        android:layout_height="50px"
+        android:focusable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/order_img"
+        android:background="@drawable/order_btn_bg_selector" />
+
+</RelativeLayout>

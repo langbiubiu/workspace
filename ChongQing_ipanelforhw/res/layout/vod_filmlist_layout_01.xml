@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vod_bg00" >
+
+    <RelativeLayout
+        android:id="@+id/vod_left_part"
+        android:layout_width="291px"
+        android:layout_height="match_parent"
+        android:background="@drawable/vod_part_bg" >
+
+        <ListView
+            android:id="@+id/vod_sort_up"
+            android:layout_width="match_parent"
+            android:layout_height="586px"
+            android:layout_marginTop="295px"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="25px"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ImageView
+            android:id="@+id/vod_type_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190px"
+            android:layout_marginTop="914px"
+            android:background="@drawable/vod_arrowdown"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/vod_filter"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="100px"
+            android:background="@drawable/vod_focus_sl"
+            android:focusable="true"
+            android:onClick="buttonClick"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="105px"
+                android:background="@drawable/vod_btn_filter_sl"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15px"
+                android:duplicateParentState="true"
+                android:text="@string/vod_filter"
+                android:textColor="@drawable/vod_textcolor_sl"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vod_search"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/vod_filter"
+            android:layout_marginTop="15px"
+            android:background="@drawable/vod_focus_sl"
+            android:focusable="true"
+            android:onClick="buttonClick"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="105px"
+                android:background="@drawable/vod_btn_search_sl"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15px"
+                android:duplicateParentState="true"
+                android:text="@string/vod_search"
+                android:textColor="@drawable/vod_textcolor_sl"
+                android:textSize="40px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="360px"
+        android:layout_marginTop="75px"
+        android:text="@string/film"
+        android:textColor="@color/white"
+        android:textSize="44px" />
+
+    <TextView
+        android:id="@+id/secondtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="75px"
+        android:layout_toRightOf="@+id/title"
+        android:textColor="#b2b2b2"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/totalpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="123px"
+        android:textColor="@color/font_color"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/totalpage"
+        android:layout_marginRight="2px"
+        android:layout_toLeftOf="@+id/totalpage"
+        android:textColor="@color/light_white"
+        android:textSize="32px" />
+
+    <android.support.v4.view.VerticalViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="850px"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="340px"
+        android:layout_marginRight="85px"
+        android:layout_marginTop="169px" >
+    </android.support.v4.view.VerticalViewPager2>
+
+</RelativeLayout>

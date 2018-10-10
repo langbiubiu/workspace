@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="746px"
+    android:layout_height="105px"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+    
+    <TextView
+        android:id="@+id/channel_name"
+        android:layout_width="146px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="146px"
+        android:textSize="36px"
+        android:textColor="@color/label_text"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever" />
+
+    <TextView
+        android:id="@+id/current_event"
+        android:layout_width="330px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="@color/normal_text_color_1"
+        android:textSize="36px" />
+    
+</LinearLayout>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".UserActivity" >
+
+    <FrameLayout
+        android:id="@+id/fl_tvfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="206dp"
+        android:layout_height="206dp"
+        android:layout_centerInParent="true"
+        android:background="#00FFFFFF" >
+
+        <ImageView
+            android:id="@+id/img_pause"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/vod_icon_pause"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        tools:context=".UserActivity" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/play_speed_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/play_speed_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/back_play_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="47dp"
+        android:layout_marginTop="34dp"
+        android:visibility="invisible"
+        android:src="@drawable/back_play_icon" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wechatitem"
+    android:layout_width="545px"
+    android:layout_height="830px"
+    android:focusable="true" >
+    <ImageView
+        android:id="@+id/userpager_item_pic"
+        android:layout_width="540px"
+        android:layout_height="820px"
+        android:layout_gravity="center"
+        android:background="@drawable/img_01"
+        android:duplicateParentState="true"/>
+    
+    <ImageView
+	    android:id="@+id/userpager_item_bg1"
+	    android:layout_width="545px"
+	    android:layout_height="830px"
+	    android:background="@drawable/wechat_user_sl1"	   
+	    android:duplicateParentState="true"/>
+    <FrameLayout
+		android:id="@+id/userpager_item_del"
+		android:layout_width="545px"
+    	android:layout_height="830px"
+    	android:duplicateParentState="true"
+		android:visibility="gone">
+	<ImageView
+	    android:id="@+id/userpager_item_bg2"
+	    android:layout_width="545px"
+	    android:layout_height="830px"
+	    android:background="#aa000000"
+	    android:duplicateParentState="true"/>
+	<ImageView	    
+	    android:layout_width="150px"
+	    android:layout_height="150px"
+	    android:layout_gravity="center"
+	    android:duplicateParentState="true"
+	    android:src="@drawable/wechat_icon_delete"/>
+	</FrameLayout>
+</FrameLayout>

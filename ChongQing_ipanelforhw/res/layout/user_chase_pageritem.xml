@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ffhotitem"
+    android:layout_width="241px"
+    android:layout_height="379px"
+    android:focusable="true" 
+    android:background="@drawable/user_picture_bg_sl">
+    
+    <FrameLayout
+        android:layout_width="235px"
+        android:layout_height="295px" 
+		android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9px">
+        
+    	<ImageView
+		      android:id="@+id/series_pic"
+		      android:layout_width="235px"
+		      android:layout_height="295px" 
+        	  android:scaleType="fitXY"/>
+    
+       <TextView
+            android:id="@+id/series_num"
+            android:layout_gravity="top|right"
+            android:layout_height="60px"
+            android:layout_width="60px"
+            android:gravity="center"
+            android:background="@drawable/user_chase_num"
+            android:textSize="36px"/>
+      <FrameLayout
+        android:id="@+id/user_uninstall_fl3"
+        android:layout_width="235px"
+        android:layout_height="295px"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9px">
+        <ImageView
+            android:id="@+id/user_delete3"
+            android:layout_height="120px"
+            android:layout_width="120px"
+            android:layout_gravity="center"
+            android:src="@drawable/user_uninstall_img_bg_sl"/>
+
+        </FrameLayout>
+ </FrameLayout>
+
+  <TextView
+        android:id="@+id/series_name"
+        android:layout_width="241px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="330px"
+        android:ellipsize="marquee"
+        android:duplicateParentState="true"
+        android:gravity="center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@drawable/user_name_textcolor"
+        android:textSize="32px" />
+          
+</FrameLayout>

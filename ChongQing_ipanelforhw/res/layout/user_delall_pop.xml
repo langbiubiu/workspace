@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="686px"
+    android:layout_height="298px"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/user_del_tips"
+        android:layout_height="214px"
+        android:layout_width="686px"
+        
+        android:gravity="center"
+        android:textSize="40px"
+        android:textColor="#000000"/>
+    <LinearLayout
+        android:layout_height="84px"
+        android:layout_width="686px"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/del_sure"
+            android:layout_height="84px"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:text="@string/sure"
+            android:textSize="40px"
+            android:textColor="@drawable/user_del_text"
+            android:background="@drawable/user_del_back"/>
+        <Button
+            android:id="@+id/del_cancel"
+            android:layout_height="84px"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textSize="40px"
+            android:textColor="@drawable/user_del_text"
+            android:background="@drawable/user_del_back"/>
+    </LinearLayout>        
+</LinearLayout>

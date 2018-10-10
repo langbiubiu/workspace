@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="490px"
+    android:layout_height="170px"
+    android:background="@drawable/live_channel_input_bg" >
+
+    <RelativeLayout
+        android:id="@+id/timesubbg2"
+        android:layout_width="fill_parent"
+        android:layout_height="160px"
+        android:background="#00000000" >
+
+        <TextView
+            android:id="@+id/switch_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text="@string/live_switch_to"
+            android:textColor="#c8c8c8"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/timeinputText1"
+            android:layout_width="60px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25px"
+            android:layout_toRightOf="@+id/switch_to"
+            android:background="@drawable/vod_number_bg"
+            android:gravity="center"
+            android:text="@string/timezero"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/timeinputText2"
+            android:layout_width="60px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:layout_toRightOf="@id/timeinputText1"
+            android:background="@drawable/vod_number_bg"
+            android:gravity="center"
+            android:text="@string/timezero"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/timeinputText3"
+            android:layout_width="60px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/timeinputText2"
+            android:background="@drawable/vod_number_bg"
+            android:gravity="center"
+            android:text="@string/timezero"
+            android:textSize="42px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

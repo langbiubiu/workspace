@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="736px"
+    android:layout_height="103px"
+    android:focusable="true"
+    android:background="@drawable/search_bg_sl" >
+
+    <TextView
+        android:id="@+id/search_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:singleLine="true"
+        android:duplicateParentState="true"
+        android:textColor="@drawable/search_textcolor"
+        android:textSize="40px" />
+
+</RelativeLayout>

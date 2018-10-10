@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240px"
+    android:layout_height="105px"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+    
+    <TextView
+        android:id="@+id/navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75px"
+        android:textSize="36px"
+        android:textColor="#ffffff" />
+    
+</LinearLayout>

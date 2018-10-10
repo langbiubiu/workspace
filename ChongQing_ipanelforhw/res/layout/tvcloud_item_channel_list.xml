@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tvcloud_selector_menu_bg"
+    android:focusable="true" >
+
+    <TextView
+        android:id="@+id/channel_name"
+        android:layout_width="379px"
+        android:layout_height="82px"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="15px"
+        android:singleLine="true"
+        android:textColor="@drawable/tvcloud_selector_tab_text"
+        android:textSize="39px" />
+
+</RelativeLayout>

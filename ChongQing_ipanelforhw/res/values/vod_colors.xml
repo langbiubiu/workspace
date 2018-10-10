@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="left_bg">#082035</color>
+    <color name="font_color">#BCBFBE</color>
+    <color name="light_white">#FEFEFF</color>
+    <color name="search_lettercolor">#A1A1A1</color>
+	<color name="score_green_bg">#009A44</color>
+	<color name="focus_color_yellow">#ffb400</color>
+</resources>

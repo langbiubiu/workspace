@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <shape>
+
+        <!-- 背景色 -->
+        <solid android:color="@color/app_color_green" />
+
+        <!-- 边框宽度、颜色 -->
+        <stroke
+            android:width="@dimen/app_border"
+            android:color="@color/app_color_yellow" />
+    </shape>
+
+</clip>

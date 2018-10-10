@@ -1,0 +1,8 @@
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="234px"
+    android:layout_height="125px"
+    android:layout_marginLeft="1587px"
+    android:layout_marginTop="83px"
+    android:src="@drawable/live_icon_vol_mute"/>

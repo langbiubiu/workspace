@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:focusable="false"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/relline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_left_margin"
+        android:layout_marginRight="@dimen/app_left_margin"
+        android:layout_marginTop="@dimen/app_top_margin" >
+
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="@dimen/app_icon_width"
+            android:layout_height="@dimen/app_icon_height"
+            android:background="@drawable/app_app0"
+            android:contentDescription="@string/app_name"
+            android:focusable="false" />
+
+        <RelativeLayout
+            android:id="@+id/relline2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_icon_height"
+            android:layout_marginLeft="@dimen/app_left_margin"
+            android:layout_toRightOf="@+id/appIcon"
+            android:focusable="false" >
+
+            <TextView
+                android:id="@+id/appNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:focusable="false"
+                android:text="@string/app_title"
+                android:textColor="@color/app_color_white1"
+                android:textSize="@dimen/app_text_size_28" />
+
+            <TextView
+                android:id="@+id/appLikesTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/app_left_margin1"
+                android:focusable="false"
+                android:text="@string/app_likes"
+                android:textColor="@color/app_color_white1"
+                android:textSize="@dimen/app_text_size_22" />
+
+            <TextView
+                android:id="@+id/appDownTimesTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/appLikesTxt"
+                android:focusable="false"
+                android:text="@string/app_down_times"
+                android:textColor="@color/app_color_white1"
+                android:textSize="@dimen/app_text_size_22" />
+
+            <TextView
+                android:id="@+id/appRemarksTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appNameTxt"
+                android:layout_marginTop="@dimen/app_top_margin3"
+                android:focusable="false"
+                android:text="@string/app_remarks"
+                android:textColor="@color/app_color_white1"
+                android:textSize="@dimen/app_text_size_24" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/downBar"
+            style="@style/AppWidgetProgressBarHorizontal"
+            android:layout_below="@+id/appIcon"
+            android:layout_marginTop="@dimen/app_top_margin1"
+            android:focusable="false"
+            android:max="100"
+            android:progress="0" />
+
+        <Button
+            android:id="@+id/downBtn"
+            style="@style/app_btn"
+            android:layout_below="@+id/appIcon"
+            android:layout_marginTop="@dimen/app_top_margin1"
+            android:background="#00000000"
+            android:focusable="true"
+            android:nextFocusDown="@+id/appScreenshotImg1"
+            android:nextFocusRight="@+id/clearBtn"
+            android:text="@string/app_btn_down" />
+
+        <Button
+            android:id="@+id/clearBtn"
+            style="@style/app_btn"
+            android:layout_below="@+id/relline2"
+            android:layout_marginLeft="@dimen/app_left_margin"
+            android:layout_marginTop="@dimen/app_top_margin1"
+            android:layout_toRightOf="@+id/downBtn"
+            android:focusable="true"
+            android:nextFocusDown="@+id/appScreenshotImg1"
+            android:nextFocusLeft="@+id/downBtn"
+            android:nextFocusRight="@+id/delBtn"
+            android:text="@string/app_btn_clear" />
+
+        <Button
+            android:id="@+id/delBtn"
+            style="@style/app_btn"
+            android:layout_below="@+id/relline2"
+            android:layout_marginLeft="@dimen/app_left_margin2"
+            android:layout_marginTop="@dimen/app_top_margin1"
+            android:layout_toRightOf="@+id/clearBtn"
+            android:focusable="true"
+            android:nextFocusDown="@+id/appScreenshotImg1"
+            android:nextFocusLeft="@+id/clearBtn"
+            android:nextFocusRight="@+id/likesBtn"
+            android:text="@string/app_btn_del" />
+
+        <Button
+            android:id="@+id/likesBtn"
+            style="@style/app_btn"
+            android:layout_below="@+id/relline2"
+            android:layout_marginLeft="@dimen/app_left_margin2"
+            android:layout_marginTop="@dimen/app_top_margin1"
+            android:layout_toRightOf="@+id/delBtn"
+            android:focusable="true"
+            android:nextFocusDown="@+id/appScreenshotImg1"
+            android:nextFocusLeft="@+id/delBtn"
+            android:text="@string/app_btn_likes" />
+
+        <TextView
+            android:id="@+id/appDesTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/downBtn"
+            android:layout_marginTop="@dimen/app_top_margin2"
+            android:focusable="false"
+            android:lineSpacingExtra="8dp"
+            android:lines="3"
+            android:text="@string/app_des"
+            android:textColor="@color/app_color_beige2"
+            android:textSize="@dimen/app_text_size_22" />
+
+        <RelativeLayout
+            android:id="@+id/relline3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appDesTxt"
+            android:layout_marginTop="@dimen/app_top_margin1"
+            android:focusable="false" >
+
+            <TextView
+                android:id="@+id/appSizeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:text="@string/app_size"
+                android:textColor="@color/app_color_beige2"
+                android:textSize="@dimen/app_text_size_22" />
+
+            <TextView
+                android:id="@+id/appUpdateTimeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_left_margin3"
+                android:layout_toRightOf="@+id/appSizeTxt"
+                android:focusable="false"
+                android:text="@string/app_update_time"
+                android:textColor="@color/app_color_beige2"
+                android:textSize="@dimen/app_text_size_22" />
+
+            <TextView
+                android:id="@+id/appVersionTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_left_margin3"
+                android:layout_toRightOf="@+id/appUpdateTimeTxt"
+                android:focusable="false"
+                android:text="@string/app_version"
+                android:textColor="@color/app_color_beige2"
+                android:textSize="@dimen/app_text_size_22" />
+
+            <TextView
+                android:id="@+id/appDevelopersTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_left_margin3"
+                android:layout_toRightOf="@+id/appVersionTxt"
+                android:focusable="false"
+                android:text="@string/app_developers"
+                android:textColor="@color/app_color_beige2"
+                android:textSize="@dimen/app_text_size_22" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/separationLineImg"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relline3"
+            android:layout_marginTop="@dimen/app_top_margin1"
+            android:background="@drawable/app_line"
+            android:contentDescription="@string/app_name"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/appScreenshotTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separationLineImg"
+            android:layout_marginTop="@dimen/app_top_margin1"
+            android:focusable="false"
+            android:text="@string/app_screenshot"
+            android:textColor="@color/app_color_white2"
+            android:textSize="@dimen/app_text_size_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relline4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relline1"
+        android:layout_marginBottom="@dimen/app_top_margin1"
+        android:focusable="false"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/appScreenshotImg1"
+            android:layout_width="@dimen/app_screenshot_width"
+            android:layout_height="@dimen/app_screenshot_height"
+            android:layout_marginRight="@dimen/app_left_margin3"
+            android:layout_toLeftOf="@+id/appScreenshotImg2"
+            android:background="@drawable/app_pop_img1_1"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:nextFocusRight="@+id/appScreenshotImg2"
+            android:nextFocusUp="@+id/downBtn" />
+
+        <ImageView
+            android:id="@+id/appScreenshotImg2"
+            android:layout_width="@dimen/app_screenshot_width"
+            android:layout_height="@dimen/app_screenshot_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/app_pop_img1_2"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:nextFocusLeft="@+id/appScreenshotImg1"
+            android:nextFocusRight="@+id/appScreenshotImg3"
+            android:nextFocusUp="@+id/downBtn" />
+
+        <ImageView
+            android:id="@+id/appScreenshotImg3"
+            android:layout_width="@dimen/app_screenshot_width"
+            android:layout_height="@dimen/app_screenshot_height"
+            android:layout_marginLeft="@dimen/app_left_margin3"
+            android:layout_toRightOf="@+id/appScreenshotImg2"
+            android:background="@drawable/app_pop_img1_3"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:nextFocusLeft="@+id/appScreenshotImg2"
+            android:nextFocusUp="@+id/downBtn" />
+    </RelativeLayout>
+
+</RelativeLayout>

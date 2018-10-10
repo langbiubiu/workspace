@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="1560px"
+        android:layout_height="1080px" >
+
+        <TextView
+            android:id="@+id/vod_movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75px"
+            android:layout_marginLeft="30px"
+            android:textColor="@color/white"
+            android:textSize="44px" />
+
+        <TextView
+            android:id="@+id/star_totalpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vod_movie_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="123px"
+            android:textColor="@color/font_color"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/star_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/star_totalpage"
+            android:layout_marginRight="2px"
+            android:layout_toLeftOf="@+id/star_totalpage"
+            android:textColor="@color/light_white"
+            android:textSize="32px" />
+
+        <android.support.v4.view.VerticalViewPager2
+            android:id="@+id/star_viewpager"
+            android:layout_width="1460px"
+            android:layout_height="843px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="169px" >
+        </android.support.v4.view.VerticalViewPager2>
+    </RelativeLayout>
+
+</RelativeLayout>

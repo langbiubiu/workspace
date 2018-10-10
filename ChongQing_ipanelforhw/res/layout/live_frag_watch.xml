@@ -1,0 +1,9 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="97px"
+    android:layout_height="97px"
+    android:layout_alignParentRight="true"
+	android:layout_marginRight="280px"
+	android:layout_marginTop="60px"
+    android:src="@drawable/live_icon_shift"
+    android:visibility="visible" />

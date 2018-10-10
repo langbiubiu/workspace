@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ListView的item有焦点时的黑色 -->
+    <item android:state_focused="true" android:color="#000000"/>
+    <!-- ListView的item选中时的白色 -->
+    <item android:state_selected="true" android:color="#ffffff"/>
+<!--     ListView的item点击选中时的白色
+    <item android:state_activated="true" android:color="#ffffff"/> -->
+    <!-- 默认时的灰色 -->
+    <item android:color="#BEBEBE"/>
+
+</selector>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Channels totalResults="2">
+	<Channel
+			channelId=" 1"
+			channelCode=" CCTV1" 
+			channelName="CCTV1" 
+			channelNumber=" 1"
+			logo=""
+			isStartOver="1"
+			isTVAnyTime="0"
+			isStanrdardChannel="1"
+			isNPVR="0"
+			>
+		<Parameter
+				serviceId="123"
+				frequency="234"
+				qam="3434"
+				symbolRate="5"
+				bitRate="7"
+				customerGroup="abc"
+				tsId="13123"
+				onId="1234321"
+				/>
+	</Channel>
+</Channels>

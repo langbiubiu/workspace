@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="235px"
+    android:layout_height="295px"
+    android:background="#a1a1ac">
+   <ImageView
+       android:layout_width="100px"
+       android:layout_height="100px"
+       android:background="@drawable/default_poster"
+       android:layout_gravity="center"/>
+
+</FrameLayout>

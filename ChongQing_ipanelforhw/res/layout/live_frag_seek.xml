@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/anim_view"
+    android:layout_width="1461px"
+    android:layout_height="224px"
+    android:layout_marginLeft="270px"
+    android:layout_marginTop="773px" >
+
+    <RelativeLayout
+        android:id="@+id/contview_vocieAndplay"
+        android:layout_width="1073px"
+        android:layout_height="224px"
+        android:background="@drawable/live_bg_timeinput" >
+
+        <com.ipanel.join.topway.homed.live.view.ConditionInputView
+            android:id="@+id/y_1"
+            android:layout_width="24px"
+            android:layout_height="65px"
+            android:layout_marginLeft="300px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/live_seek_input_selector"
+            android:gravity="center"
+            android:textColor="#ffcc33"
+            android:textSize="36px" />
+
+        <com.ipanel.join.topway.homed.live.view.ConditionInputView
+            android:id="@+id/y_2"
+            android:layout_width="24px"
+            android:layout_height="65px"
+            android:layout_marginLeft="330px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/live_seek_input_selector"
+            android:gravity="center"
+            android:textColor="#ffcc33"
+            android:textSize="36px" />
+
+        <com.ipanel.join.topway.homed.live.view.ConditionInputView
+            android:id="@+id/y_3"
+            android:layout_width="24px"
+            android:layout_height="65px"
+            android:layout_marginLeft="360px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/live_seek_input_selector"
+            android:gravity="center"
+            android:textColor="#ffcc33"
+            android:textSize="36px" />
+
+        <com.ipanel.join.topway.homed.live.view.ConditionInputView
+            android:id="@+id/y_4"
+            android:layout_width="24px"
+            android:layout_height="65px"
+            android:layout_marginLeft="390px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/live_seek_input_selector"
+            android:gravity="center"
+            android:textColor="#ffcc33"
+            android:textSize="36px" />
+
+        <com.ipanel.join.topway.homed.live.view.ConditionInputView
+            android:id="@+id/m_1"
+            android:layout_width="24px"
+            android:layout_height="65px"
+            android:layout_marginLeft="510px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/live_seek_input_selector"
+            android:gravity="center"
+            android:textColor="#ffcc33"
+            android:textSize="36px" />
+
+        <com.ipanel.join.topway.homed.live.view.ConditionInputView
+            android:id="@+id/m_2"
+            android:layout_width="24px"
+            android:layout_height="65px"
+            android:layout_marginLeft="540px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/live_seek_input_selector"
+            android:gravity="center"
+            android:textColor="#ffcc33"
+            android:textSize="36px" />
+
+        <com.ipanel.join.topway.homed.live.view.ConditionInputView
+            android:id="@+id/d_1"
+            android:layout_width="24px"
+            android:layout_height="65px"
+            android:layout_marginLeft="645px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/live_seek_input_selector"
+            android:gravity="center"
+            android:textColor="#ffcc33"
+            android:textSize="36px" />
+
+        <com.ipanel.join.topway.homed.live.view.ConditionInputView
+            android:id="@+id/d_2"
+            android:layout_width="24px"
+            android:layout_height="65px"
+            android:layout_marginLeft="675px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/live_seek_input_selector"
+            android:gravity="center"
+            android:textColor="#ffcc33"
+            android:textSize="36px" />
+
+        <com.ipanel.join.topway.homed.live.view.ConditionInputView
+            android:id="@+id/h_1"
+            android:layout_width="24px"
+            android:layout_height="65px"
+            android:layout_marginLeft="780px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/live_seek_input_selector"
+            android:gravity="center"
+            android:textColor="#ffcc33"
+            android:textSize="36px" />
+
+        <com.ipanel.join.topway.homed.live.view.ConditionInputView
+            android:id="@+id/h_2"
+            android:layout_width="24px"
+            android:layout_height="65px"
+            android:layout_marginLeft="810px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/live_seek_input_selector"
+            android:gravity="center"
+            android:textColor="#ffcc33"
+            android:textSize="36px" />
+
+        <com.ipanel.join.topway.homed.live.view.ConditionInputView
+            android:id="@+id/mi_1"
+            android:layout_width="24px"
+            android:layout_height="65px"
+            android:layout_marginLeft="915px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/live_seek_input_selector"
+            android:gravity="center"
+            android:textColor="#ffcc33"
+            android:textSize="36px" />
+
+        <com.ipanel.join.topway.homed.live.view.ConditionInputView
+            android:id="@+id/mi_2"
+            android:layout_width="24px"
+            android:layout_height="65px"
+            android:layout_marginLeft="945px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/live_seek_input_selector"
+            android:gravity="center"
+            android:textColor="#ffcc33"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <ipanel.join.ad.widget.ImageAdView
+        android:id="@+id/ad"
+        android:layout_width="377px"
+        android:layout_height="224px"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/contview_vocieAndplay"
+        android:background="@drawable/live_pf_ad"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

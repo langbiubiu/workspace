@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape>
+   		 	<solid android:color="@color/list_select_selected" />
+    		<size android:height="1.33dp" android:width="300dp"/>
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+    		<solid android:color="@color/list_select_selected" />
+    		<size android:height="1.33dp" android:width="300dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+    		<solid android:color="@color/text_unselected" />
+    		<size android:height="1.33dp" android:width="300dp"/>
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="0px"
+    android:background="#2c2c2c" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="98px"
+        android:text="@string/volume_label"
+        android:textColor="#ffffff"
+        android:textSize="40px" />
+
+    <com.ipanel.join.chongqing.widget.LiveSeekBar
+        android:id="@+id/volume_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="1100px"
+        android:layout_height="40px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="200px"
+        android:focusable="false"
+        android:gravity="center"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/live_homed_progress_drawable"
+        android:thumb="@drawable/transparent_background" />
+
+    <TextView
+        android:id="@+id/volume_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="550px"
+        android:textColor="#ffffff"
+        android:textSize="40px" />
+
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:scaleType="fitXY"
+        android:src="@drawable/live_pf_ad2" />
+
+</FrameLayout>

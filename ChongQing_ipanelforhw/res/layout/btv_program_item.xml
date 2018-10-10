@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1050px"
+    android:layout_height="80px"
+    android:background="@drawable/vod_program_bg_sl"
+    android:focusable="true" >
+
+    <TextView
+        android:id="@+id/program_time"
+        android:layout_width="100px"
+        android:layout_height="80px"
+        android:layout_marginLeft="60px"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:textColor="@drawable/back_sl_tab_text"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/program_name"
+        android:layout_width="670px"
+        android:layout_height="80px"
+        android:layout_marginLeft="40px"
+        android:layout_toRightOf="@+id/program_time"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@drawable/back_sl_tab_text"
+        android:textSize="36px" />
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1920px"
+    android:layout_height="1080px" >
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="242px"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/live_pf_bar_bg2" >
+	    
+	    <ImageButton
+	        android:id="@+id/head_shift_btn"
+	        android:layout_width="223px"
+	        android:layout_height="210px"
+	        android:layout_marginLeft="111px"
+	        android:layout_alignParentBottom="true"
+	        android:padding="29px"
+	        android:focusable="true"
+	        android:src="@drawable/live_selector_pop_1_01"
+	        android:background="@drawable/live_selector_pop_1_backgroud"
+	        android:scaleType="centerInside" />
+	    
+	    <ImageButton
+	        android:id="@+id/record_btn"
+	        android:layout_width="223px"
+	        android:layout_height="210px"
+	        android:layout_toRightOf="@id/head_shift_btn"
+	        android:layout_alignParentBottom="true"
+	        android:padding="29px"
+	        android:focusable="true"
+	        android:src="@drawable/live_selector_pop_1_02"
+	        android:background="@drawable/live_selector_pop_1_backgroud"
+	        android:scaleType="centerInside" />
+	    
+	    <ImageButton
+	        android:id="@+id/recommend_btn"
+	        android:layout_width="223px"
+	        android:layout_height="210px"
+	        android:layout_toRightOf="@id/record_btn"
+	        android:layout_alignParentBottom="true"
+	        android:padding="29px"
+	        android:focusable="true"
+	        android:src="@drawable/live_selector_pop_1_03"
+	        android:background="@drawable/live_selector_pop_1_backgroud"
+	        android:scaleType="centerInside" />
+	    
+	    <ImageButton
+	        android:id="@+id/mine_btn"
+	        android:layout_width="223px"
+	        android:layout_height="210px"
+	        android:layout_toRightOf="@id/recommend_btn"
+	        android:layout_alignParentBottom="true"
+	        android:padding="29px"
+	        android:focusable="true"
+	        android:src="@drawable/live_selector_pop_1_04"
+	        android:background="@drawable/live_selector_pop_1_backgroud"
+	        android:scaleType="centerInside" />
+	    
+	    <ImageButton
+	        android:id="@+id/favorite_btn"
+	        android:layout_width="223px"
+	        android:layout_height="210px"
+	        android:layout_toRightOf="@id/mine_btn"
+	        android:layout_alignParentBottom="true"
+	        android:padding="29px"
+	        android:focusable="true"
+	        android:src="@drawable/live_selector_pop_1_06"
+	        android:background="@drawable/live_selector_pop_1_backgroud"
+	        android:scaleType="centerInside" />
+	    
+	    <ImageButton
+	        android:id="@+id/series_btn"
+	        android:layout_width="223px"
+	        android:layout_height="210px"
+	        android:layout_toRightOf="@id/favorite_btn"
+	        android:layout_alignParentBottom="true"
+	        android:padding="29px"
+	        android:focusable="true"
+	        android:src="@drawable/live_selector_pop_1_05"
+	        android:background="@drawable/live_selector_pop_1_backgroud"
+	        android:scaleType="centerInside" />
+	</RelativeLayout>
+</RelativeLayout>

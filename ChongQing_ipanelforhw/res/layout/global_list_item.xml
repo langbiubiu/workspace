@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/global_list_item_poster"
+        android:layout_width="312px"
+        android:layout_height="253px"
+        android:background="@drawable/default_poster"
+        android:scaleType="fitXY"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/global_list_item_name"
+        android:layout_width="312px"
+        android:layout_height="42px"
+        android:layout_marginTop="211px"
+        android:background="@drawable/global_imgv_shadow"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25px" />
+
+</FrameLayout>

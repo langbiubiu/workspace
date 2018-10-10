@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UPnPMonitor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="search">search</string>
+    <string name="font_icon_info">\uf05a</string>
+    <string name="enable_auto_start">enable auto start</string>
+    <string name="disable_auto_start">disable auto start</string>
+    <string name="choosedmr">chooseDMR</string>
+    <string name="choose_media_renderer">Choose Media Renderer</string>
+    <string name="cancel">Cancel</string>
+    <string name="click_to_select_dmr">Click to select DMR</string>
+    <string name="youku_daily_hot">YouKu daily hot</string>
+    <string name="video">Videos</string>
+    <string name="music">Musics</string>
+    <string name="photos">Photos</string>
+
+    <string name="font_icon_next">\uf050</string>
+    <string name="font_icon_prev">\uf049</string>
+    <string name="dms_list">DMS List</string>
+</resources>

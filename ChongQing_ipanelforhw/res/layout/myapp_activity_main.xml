@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1920px"
+    android:layout_height="1080px"
+    android:background="@drawable/portal_bg2">
+    
+    <ImageView 
+        android:id="@+id/myapp_title"
+        android:layout_width="270px"
+        android:layout_height="48px"
+        android:layout_marginTop="45px"
+        android:layout_marginLeft="65px"
+        android:src="@drawable/myapp_title"/>
+    <!--  
+    <ImageView 
+        android:layout_width="472px"
+        android:layout_height="49px"
+        android:layout_marginLeft="1200px"
+        android:layout_marginTop="45px"
+        android:src="@drawable/myapp_tips0"/>
+    -->
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1400px"
+        android:layout_marginTop="45px"
+        layout="@layout/back_tip_layout"/>
+    
+    <TextView 
+        android:id="@+id/myapp_rows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1730px"
+        android:layout_marginTop="50px"
+        android:text="@string/myapp_one"
+        android:textSize="30px"
+        android:textColor="@color/white"/>
+    <TextView 
+        android:id="@+id/myapp_total_rows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/myapp_rows"
+        android:layout_alignTop="@+id/myapp_rows"
+        android:text="@string/myapp_total_rows"
+        android:textSize="30px"/>
+    
+    <GridView 
+        android:id="@+id/app_grid"
+        android:layout_width="1760px"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="120px"
+        android:verticalSpacing="10px"
+        android:horizontalSpacing="10px"
+        android:layout_centerHorizontal="true"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:numColumns="6"
+        android:columnWidth="200px"/>
+        
+</RelativeLayout>
+     

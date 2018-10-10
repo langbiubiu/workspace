@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/epg_bk" >
+
+    <ImageView
+        android:id="@+id/up_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="560dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/live_arrow_up" />
+
+    <com.ipanel.join.topway.homed.live.view.JBackDateListView
+        android:id="@+id/date_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="100dp" >
+    </com.ipanel.join.topway.homed.live.view.JBackDateListView>
+
+    <ImageView
+        android:id="@+id/arrow_right"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/live_arrow_left"
+        android:visibility="visible" >
+    </ImageView>
+
+    <com.ipanel.join.topway.homed.live.view.JBackEventListView
+        android:id="@+id/event_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="110dp" >
+    </com.ipanel.join.topway.homed.live.view.JBackEventListView>
+
+    <ImageView
+        android:id="@+id/arrow_left"
+        android:layout_width="21dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="890dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/live_arrow_right"
+        android:visibility="visible" >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/special_line"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="920dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/epg_focus_bk"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/special_channel_name"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="30dp"
+            android:singleLine="true"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loading_remind"
+        android:layout_width="600dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="100dp"
+        android:background="#88000000"
+        android:focusable="true"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textSize="26sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_list"
+        android:layout_marginLeft="560dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/live_arrow_down" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/title_of_back"
+        android:textColor="#eeeeee"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <!-- <ImageView
+        android:id="@+id/help_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="140dp"
+        android:src="@drawable/help_02" /> -->
+
+</RelativeLayout>

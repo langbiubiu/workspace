@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1920px"
+    android:layout_height="1080px" >
+    
+    <ImageView
+        android:layout_width="746px"
+        android:layout_height="match_parent"
+        android:background="@color/black85" />
+    
+    <com.ipanel.join.chongqing.live.view.JChannelListView
+        android:id="@+id/channel_list"
+        android:layout_width="746px"
+        android:layout_marginTop="68px"
+        android:layout_height="wrap_content" />
+    
+    <ImageView
+        android:id="@+id/left_arrow"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="521px"
+        android:src="@drawable/live_left00" />
+    
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginLeft="680px"
+        android:layout_marginTop="521px"
+        android:src="@drawable/live_right00" />
+
+</RelativeLayout>

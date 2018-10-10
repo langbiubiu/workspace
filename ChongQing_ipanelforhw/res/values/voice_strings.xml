@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="voice_tip_1">说完后松手</string>
+    <string name="voice_tip_2">按住语音键说话</string>
+    <string name="voice_title1">影视搜索</string>
+    <string name="voice_title2">天气搜索</string>
+    <string name="voice_title3">设置</string>
+    <string name="voice_des1">“我想看琅琊榜”</string>
+    <string name="voice_des2">“深圳明天天气如何”</string>
+    <string name="voice_des3">“换一个无线网络”</string>
+    <string name="putonghua">普通话</string>
+    <string name="chongqing_weather">“重庆的天气”</string>
+	<string name="tomorrow_weather">“明天的天气”</string>
+	<string name="weather">天气</string>
+	<string name="tomorrow">明天</string>
+    <string name="day_after_tomorrow">后天</string>
+    <string name="weather_sun">晴</string>
+    <string name="weather_cloud">阴</string>
+	<string name="search_result">搜索结果</string>
+	<string name="voice_city">重庆</string>
+	<string name="voice_test1">“我想看芈月传”</string>
+	<string name="voice_test2">“琅琊榜”</string>
+	<string name="voice_test3">“云中歌”</string>
+	<string name="voice_test4">小主所在的地方今天微风未来两天平均温度12℃，适合外出散散步</string>
+	<string name="voice_test5">14~18℃</string>
+	<string name="voice_test6">2015-11-23</string>
+	<string name="voice_test7">小雨</string>
+</resources>

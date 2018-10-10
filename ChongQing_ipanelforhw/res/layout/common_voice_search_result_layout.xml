@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+<!-- 
+    <RelativeLayout
+        android:layout_width="291px"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/common_search_result_bg1" >
+
+        <cn.ipanel.android.widget.SimpleTab
+            android:id="@+id/search_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+        </cn.ipanel.android.widget.SimpleTab>
+        
+    </RelativeLayout>
+ -->   
+    <include
+        android:id="@+id/left_part"
+        layout="@layout/common_left_layout"
+        android:visibility="visible" />
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="360px"
+        android:layout_marginTop="75px"
+        android:text="@string/search_result"
+        android:textColor="@color/white"
+        android:textSize="44px" />
+
+    <TextView
+        android:id="@+id/secondtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="75px"
+        android:layout_toRightOf="@+id/title"
+        android:textColor="#b2b2b2"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/totalpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="123px"
+        android:textColor="@color/font_color"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/totalpage"
+        android:layout_marginRight="2px"
+        android:layout_toLeftOf="@+id/totalpage"
+        android:textColor="@color/light_white"
+        android:textSize="32px" />
+
+    <android.support.v4.view.VerticalViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="850px"
+        android:layout_marginLeft="340px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="85px"
+        android:layout_marginTop="169px" >
+    </android.support.v4.view.VerticalViewPager2>
+    
+    
+</RelativeLayout>
+     

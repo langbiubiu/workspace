@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="portal_title_bg">#23213b</color>
+    <color name="white">#FFFFFF</color>
+    
+    <color name="lucensy">#00000001</color>
+    <color name="translucency">#e0000000</color>
+    <color name="orange">#ffa500</color>
+    <color name="black">#000000</color>
+    <!-- <color name="red">#bf242a</color> -->
+    <color name="transparent">#00000000</color>
+    <color name="light_orange">#fcb75c</color>
+    <color name="alpha_00">#00000000</color>
+    <color name="gray">#DBDBDB</color>
+    <color name="trans">#50000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="darkgray">#74787c</color>
+    <color name="yellow">#ffb400</color>
+    <color name="time_color">#b4b4b4</color>
+    <color name="new_color">#dcdcc8</color>
+    <color name="live_color">#c8c8c8</color>
+    <color name="divider_color">#19ffffff</color>
+</resources>

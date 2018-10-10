@@ -1,0 +1,43 @@
+容器类( ViewGroup):
+	ipanel.join.widget.AbsLayout
+	说明: 绝对布局, 根据每个子View LayoutParams 里的x, y坐标布局, 坐标相对此容器
+
+	ipanel.join.widget.FrameLayout
+	说明: 同一容器按顺序依次叠加布局, 通过LayoutParams里的graviety和margin, 确定相对此容器的位置
+
+	ipanel.join.widget.LinearLayout
+	说明: 线性布局, 横向或纵向. 按照子View的大小依次线性排列
+
+	ipanel.join.widget.HScrollView
+	说明: 横向可滚动布局, 只能有一个子View或ViewGroup
+
+	ipanel.join.widget.VScrollView
+	说明: 纵向可滚动布局, 只能有一个子View或ViewGroup
+
+	ipanel.join.widget.TabLayout
+	说明: 同线性布局, 可对子View的select状态维护
+
+	ipanel.join.widget.TileLayout
+	说明: 基于子View的权重的Metro样式布局
+
+
+
+组件类(View):
+	ipanel.join.widget.ImgView
+	说明: 图片显示组件
+
+	ipanel.join.widget.ReflectedImgView
+	说明: 继承ImgView, 倒影方式显示图片
+
+	ipanel.join.widget.TxtView
+	说明: 文本显示组件
+
+	ipanel.join.widget.ListView
+	说明: 列表组件, 子View由adapter提供
+
+	ipanel.join.widget.ViewPager
+	说明: 分页布局, 子View通过Adapter提供
+
+	ipanel.join.widget.ViewPager2
+	说明: 同ViewPager
+

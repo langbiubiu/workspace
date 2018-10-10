@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1920px"
+    android:layout_height="1080px" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="242px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/back_buttom" >
+
+        <ImageButton
+            android:id="@+id/vod_shift_btn"
+            android:layout_width="224px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="111px"
+            android:background="@drawable/live_selector_pop_1_backgroud"
+            android:focusable="true"
+            android:padding="29px"
+            android:scaleType="centerInside"
+            android:src="@drawable/live_selector_pop_1_01" />
+
+        <ImageButton
+            android:id="@+id/vod_recommend_btn"
+            android:layout_width="224px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/vod_shift_btn"
+            android:background="@drawable/live_selector_pop_1_backgroud"
+            android:focusable="true"
+            android:padding="29px"
+            android:scaleType="centerInside"
+            android:src="@drawable/live_selector_pop_1_03" />
+
+        <ImageButton
+            android:id="@+id/vod_series_btn"
+            android:layout_width="224px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/vod_recommend_btn"
+            android:background="@drawable/live_selector_pop_1_backgroud"
+            android:focusable="true"
+            android:padding="29px"
+            android:scaleType="centerInside"
+            android:src="@drawable/live_selector_pop_1_05" />
+
+        <ImageButton
+            android:id="@+id/vod_mine_btn"
+            android:layout_width="224px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/vod_series_btn"
+            android:background="@drawable/live_selector_pop_1_backgroud"
+            android:focusable="true"
+            android:padding="29px"
+            android:scaleType="centerInside"
+            android:src="@drawable/live_selector_pop_1_04" />
+
+        <Button
+            android:id="@+id/vod_jst"
+            android:layout_width="224px"
+            android:layout_height="205px"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/vod_mine_btn"
+            android:background="@drawable/back_jst_sl"
+            android:focusable="true"
+            android:padding="29px"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+</RelativeLayout>

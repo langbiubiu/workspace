@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_search_input"
+    android:layout_width="200px"
+    android:layout_height="200px"
+    android:background="@drawable/vod_focus_keyboard_press_mid" >
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:layout_width="200px"
+        android:layout_height="66.6px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_one_middle"
+            android:layout_width="66.6px"
+            android:layout_height="66.6px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="66.6px"
+            android:gravity="center"
+            android:paddingTop="15px"
+            android:textColor="#000100"
+            android:textSize="36px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_two"
+        android:layout_width="200px"
+        android:layout_height="66.6px"
+        android:layout_below="@+id/ll_one"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_two_left"
+            android:layout_width="66.6px"
+            android:layout_height="66.6px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0px"
+            android:gravity="center"
+            android:paddingLeft="15px"
+            android:textColor="#000100"
+            android:textSize="36px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_two_middle"
+            android:layout_width="66.6px"
+            android:layout_height="66.6px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="0px"
+            android:gravity="center"
+            android:textColor="#000100"
+            android:textSize="36px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_two_right"
+            android:layout_width="66.6px"
+            android:layout_height="66.6px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="0px"
+            android:gravity="center"
+            android:paddingRight="15px"
+            android:textColor="#000100"
+            android:textSize="36px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_three"
+        android:layout_width="200px"
+        android:layout_height="66.6px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="-5px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_three_middle"
+            android:layout_width="66.6px"
+            android:layout_height="66.6px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="66.6px"
+            android:gravity="center"
+            android:paddingBottom="20px"
+            android:textColor="#000100"
+            android:textSize="36px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

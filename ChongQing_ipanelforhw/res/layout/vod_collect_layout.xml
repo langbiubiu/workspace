@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="1560px"
+        android:layout_height="1080px" >
+
+        <TextView
+            android:id="@+id/collect_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76px"
+            android:textColor="#FEFEFE"
+            android:textSize="44px" />
+
+        <GridView
+            android:id="@+id/collect_grid"
+            android:layout_width="1160px"
+            android:layout_height="750px"
+            android:layout_marginLeft="4px"
+            android:layout_marginTop="145px"
+            android:columnWidth="185px"
+            android:horizontalSpacing="54px"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="5"
+            android:verticalSpacing="40px" >
+        </GridView>
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="1350px"
+            android:layout_marginTop="144px"
+            android:focusable="false"
+            android:src="@drawable/vod_dot" />
+
+        <com.ipanel.join.cq.vod.customview.JiShuView
+            android:id="@+id/tvcollect"
+            android:layout_width="335px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="261px"
+            android:focusable="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

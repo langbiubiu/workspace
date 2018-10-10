@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1920px"
+    android:layout_height="1080px" >
+
+    <LinearLayout
+        android:layout_width="497px"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/live_list00"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/series_image"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="295px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="318px" >
+
+            <TextView
+                android:id="@+id/series_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="35px"
+                android:textColor="#f0f0f0"
+                android:textSize="36px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="90px"
+                android:text="@string/tv_number"
+                android:textColor="#8c8c8c"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/series_numbers"
+                android:layout_width="320px"
+                android:layout_height="45px"
+                android:layout_marginLeft="130px"
+                android:layout_marginTop="90px"
+                android:gravity="center_vertical"
+                android:textColor="@color/yellow"
+                android:textSize="32px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="145px"
+                android:text="@string/tv_language"
+                android:textColor="#8c8c8c"
+                android:textSize="32px" />
+
+            <LinearLayout
+                android:id="@+id/series_language"
+                android:layout_width="344px"
+                android:layout_height="45px"
+                android:layout_marginLeft="120px"
+                android:layout_marginTop="145px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="200px"
+                android:text="@string/series_type"
+                android:textColor="#8c8c8c"
+                android:textSize="32px" />
+
+            <LinearLayout
+                android:id="@+id/series_type"
+                android:layout_width="344px"
+                android:layout_height="45px"
+                android:layout_marginLeft="120px"
+                android:layout_marginTop="200px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="255px"
+                android:text="@string/actor"
+                android:textColor="#8c8c8c"
+                android:textSize="32px" />
+
+            <LinearLayout
+                android:id="@+id/series_actors"
+                android:layout_width="344px"
+                android:layout_height="45px"
+                android:layout_marginLeft="120px"
+                android:layout_marginTop="255px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11px"
+            android:layout_marginTop="20px"
+            android:text="@string/tv_series"
+            android:textColor="#f0f0f0"
+            android:textSize="28px" />
+
+        <android.support.v4.view.VerticalViewPager2
+            android:id="@+id/series_viewpager"
+            android:layout_width="464px"
+            android:layout_height="380px"
+            android:layout_marginLeft="11px"
+            android:layout_marginTop="10px" />
+    </LinearLayout>
+
+</RelativeLayout>

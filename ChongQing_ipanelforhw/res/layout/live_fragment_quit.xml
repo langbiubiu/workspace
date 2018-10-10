@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1920px"
+    android:layout_height="1080px"
+    android:background="@color/bg_color" >
+    
+    <ImageView
+        android:id="@+id/quit_ad"
+        android:layout_width="430px"
+        android:layout_height="670px"
+        android:layout_marginLeft="65px"
+        android:layout_marginTop="145px"
+        android:padding="15px"
+        android:focusable="true"
+        android:src="@drawable/live_ad_img"
+        android:background="@drawable/live_selector_recommend_poster" />
+    
+    <Button
+        android:id="@+id/pop_close"
+        android:layout_width="400px"
+        android:layout_height="80px"
+        android:layout_below="@id/quit_ad"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="80px"
+        android:gravity="center"
+        android:focusable="true"
+        android:text="@string/quit_tips"
+        android:textSize="40px"
+        android:textColor="@color/black"
+        android:background="@drawable/live_selector_quit_text_bg" />
+    
+    <TextView
+        android:layout_width="400px"
+        android:layout_height="60px"
+        android:layout_below="@id/pop_close"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:text="@string/quit_tips2"
+        android:textSize="30px" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="530px"
+        android:layout_marginTop="70px"
+        android:text="@string/recommend_live"
+        android:textSize="40px"
+        android:textColor="@color/label_text" />
+    
+    <cn.ipanel.android.widget.WeightGridLayout
+        android:id="@+id/current_live"
+        android:layout_width="1370px"
+        android:layout_height="330px"
+        android:layout_marginLeft="505px"
+        android:layout_marginTop="145px" ></cn.ipanel.android.widget.WeightGridLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="530px"
+        android:layout_marginTop="520px"
+        android:text="@string/recommend_vod"
+        android:textSize="40px"
+        android:textColor="@color/label_text" />
+    
+    <cn.ipanel.android.widget.WeightGridLayout
+        android:id="@+id/recommend_vod"
+        android:layout_width="1370px"
+        android:layout_height="330px"
+        android:layout_marginLeft="505px"
+        android:layout_marginTop="595px" ></cn.ipanel.android.widget.WeightGridLayout>
+    
+</RelativeLayout>

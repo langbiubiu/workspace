@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="app_btn">
+        <item name="android:layout_width">@dimen/app_btn_width</item>
+        <item name="android:layout_height">@dimen/app_btn_height</item>
+        <item name="android:background">@drawable/app_btn_bg_selector</item>
+        <item name="android:textColor">@drawable/app_btn_color</item>
+        <item name="android:textSize">@dimen/app_text_size_22</item>
+    </style>
+
+    <style name="AppNoticeDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="AppWidgetProgressBarHorizontal" parent="@android:style/Widget.ProgressBar.Horizontal">        
+        <item name="android:layout_width">@dimen/app_btn_width</item>
+        <item name="android:layout_height">@dimen/app_btn_height</item>
+        <item name="android:maxHeight">@dimen/app_btn_height</item>
+        <item name="android:minHeight">@dimen/app_btn_height</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>        
+        <item name="android:progressDrawable">@drawable/app_progressbar_progress_layerlist</item>              
+    </style>
+
+</resources>

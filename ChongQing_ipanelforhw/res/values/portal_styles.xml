@@ -1,0 +1,48 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Black">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
+        </style>
+
+    <style name="DialogText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DialogText.Title">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="portal_popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/portal_menushow</item>
+        <item name="android:windowExitAnimation">@anim/portal_menuhide</item>
+    </style>
+
+    <style name="hometheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+    
+    <style name="AppTheme.Video" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/portal_background</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+     
+    <style name="AppTheme.Player" parent="AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    
+</resources>

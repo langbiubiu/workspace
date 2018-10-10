@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="123dp"
+        android:layout_marginLeft="880dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/vod_setting_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="17dp" >
+
+        <ImageView
+            android:id="@+id/setting_left_btn"
+            android:layout_width="24dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:src="@drawable/vod_setting_left_normal" />
+
+        <TextView
+            android:id="@+id/setting_value"
+            android:layout_width="190dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="#ffc92a"
+            android:textSize="56dp" />
+
+        <ImageView
+            android:id="@+id/setting_right_btn"
+            android:layout_width="24dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:src="@drawable/vod_setting_right_normal" />
+
+        <TextView
+            android:id="@+id/setting_item"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="32dp"
+            android:paddingRight="14dp"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+</RelativeLayout>

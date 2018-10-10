@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_bg"
+    android:orientation="horizontal"
+    tools:context=".UserActivity" >
+
+    <com.ipanel.join.cq.user.SimpleTab
+        android:id="@+id/tab"
+        android:layout_width="288px"
+        android:layout_height="match_parent"
+        android:background="@drawable/user_list"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/history_linear"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="117px"
+            android:background="@drawable/user_list_selector"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:nextFocusUp="@+id/history_linear" >
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginRight="52px"
+                android:gravity="center_vertical|right"
+                android:text="@string/history"
+                android:duplicateParentState="true"
+                android:textColor="@drawable/user_text_selector"
+                android:textSize="36px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/watch_list_linear"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="23px"
+            android:background="@drawable/user_list_selector"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/watch_list"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginRight="52px"
+                android:gravity="center_vertical|right"
+                android:text="@string/watchList"
+                android:duplicateParentState="true"
+                android:textColor="@drawable/user_text_selector"
+                android:textSize="36px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chase_drama_linear"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="23px"
+            android:background="@drawable/user_list_selector"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/chase_drama"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginRight="52px"
+                android:gravity="center_vertical|right"
+                android:text="@string/chaseDrama"
+                android:duplicateParentState="true"
+                android:textColor="@drawable/user_text_selector"
+                android:textSize="36px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_recordings_linear"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="23px"
+            android:background="@drawable/user_list_selector"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/my_recordings"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginRight="52px"
+                android:gravity="center_vertical|right"
+                android:text="@string/myRecordings"
+                android:duplicateParentState="true"
+                android:textColor="@drawable/user_text_selector"
+                android:textSize="36px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reservation_linear"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="23px"
+            android:background="@drawable/user_list_selector"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/reservation"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginRight="52px"
+                android:gravity="center_vertical|right"
+                android:text="@string/reservation"
+                android:duplicateParentState="true"
+                android:textColor="@drawable/user_text_selector"
+                android:textSize="36px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/collect_linear"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="23px"
+            android:background="@drawable/user_list_selector"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/collect"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginRight="52px"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical|right"
+                android:text="@string/user_channel_collect"
+                android:textColor="@drawable/user_text_selector"
+                android:textSize="36px" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/flagbook_linear"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="23px"
+            android:background="@drawable/user_list_selector"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/flagbook"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginRight="52px"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical|right"
+                android:text="@string/user_flagbook"
+                android:textColor="@drawable/user_text_selector"
+                android:textSize="36px" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/star_linear"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="23px"
+            android:background="@drawable/user_list_selector"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/star"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginRight="52px"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical|right"
+                android:text="@string/user_actor"
+                android:textColor="@drawable/user_text_selector"
+                android:textSize="36px" />
+        </LinearLayout>
+    </com.ipanel.join.cq.user.SimpleTab>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="1692px"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

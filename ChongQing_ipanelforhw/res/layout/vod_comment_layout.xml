@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="1560px"
+        android:layout_height="1080px" >
+
+        <TextView
+            android:id="@+id/comment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="74px"
+            android:textColor="#FEFEFE"
+            android:textSize="44px" />
+
+        <TextView
+            android:id="@+id/comment_totalpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/comment_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="123px"
+            android:textColor="@color/font_color"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/comment_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/comment_totalpage"
+            android:layout_marginRight="2px"
+            android:layout_toLeftOf="@+id/comment_totalpage"
+            android:textColor="@color/light_white"
+            android:textSize="32px" />
+
+        <ImageView
+            android:layout_width="1460px"
+            android:layout_height="2px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="144px"
+            android:src="@drawable/vod_headline" />
+
+        <ListView
+            android:id="@+id/comment_list"
+            android:layout_width="1460px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="144px"
+            android:divider="@drawable/vod_line"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <TextView
+        android:id="@+id/today"
+        android:layout_height="44px"
+        android:layout_width="93px"
+        android:layout_marginLeft="82px"
+        android:layout_marginTop="63px"
+        android:gravity="center"
+        android:background="#1637B3"
+        android:text="@string/today"
+        android:textSize="28px"
+        android:textColor="#FFFFFF"/> 
+    <android.support.v4.view.VerticalViewPager2
+        android:id="@+id/today_pager"
+        android:layout_marginLeft="82px"
+        android:layout_marginTop="36px"
+        android:layout_width="1473px"
+        android:layout_height="wrap_content"/>  
+
+</LinearLayout>

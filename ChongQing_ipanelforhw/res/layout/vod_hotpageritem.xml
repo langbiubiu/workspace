@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical" >
+
+    <cn.ipanel.android.widget.WeightGridLayout
+        android:id="@+id/hotgrid"
+        android:padding="23px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" >
+    </cn.ipanel.android.widget.WeightGridLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270px"
+    android:layout_height="330px"
+    android:padding="15px"
+    android:focusable="true"
+    android:background="@drawable/live_selector_recommend_poster" >
+    
+    <ImageView
+        android:id="@+id/vod_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/default_poster" />
+    
+    <ImageView
+        android:id="@+id/vod_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/vod_name"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="36px"
+        android:textColor="#000000"
+        android:background="@color/alpha90" />
+    
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<resources>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@color/sc_transparent_background</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 设置屏幕变暗 -->
+    </style>
+
+    <style name="marquee_style">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/portal_back_popbox</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="Dialog_Collect_Dark" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Dialog_Collect" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+	 <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/vod_menu_in</item>
+        <item name="android:windowExitAnimation">@anim/vod_menu_out</item>
+    </style>
+
+    
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+   
+    <style name="SpaceDialogMiddle" parent="@android:Theme.Dialog">       
+         <item name="android:windowFrame">@null</item>        
+         <item name="android:windowNoTitle">true</item>         
+         <item name="android:windowBackground">@drawable/vod_back_popbox</item>        
+         <item name="android:windowIsFloating">true</item>        
+         <item name="android:windowContentOverlay">@null</item>   
+    </style>
+    <style name="SpaceDialogLittle" parent="@android:Theme.Dialog">       
+         <item name="android:windowFrame">@null</item>        
+         <item name="android:windowNoTitle">true</item>         
+         <item name="android:windowBackground">@drawable/vod_back_popbox02</item>        
+         <item name="android:windowIsFloating">true</item>        
+         <item name="android:windowContentOverlay">@null</item>   
+    </style>
+    
+</resources>

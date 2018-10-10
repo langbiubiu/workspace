@@ -1,0 +1,7394 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration version="1.0"  scale="1">
+<screen id="ID_main">
+	<view id="ID_main" clazz="ipanel.join.widget.AbsLayout">
+	    <bind>
+		 	  <property>backgroundDrawable</property>
+			  <value>asset:///config-new-1080P/back.jpg</value>
+		</bind>
+		<view id="ID_main_tv_widget_small" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:60,
+						y:0,
+						width:260,
+						height:150
+					}
+					</value>
+				</bind>
+				<bind>
+				    <property>backgroundDrawable</property>
+				    <value>asset:///config-new-1080P/window_small.jpg</value>
+				</bind>
+				<bind>
+			      <property>visibility</property>
+			      <value>4</value>
+			  	</bind>
+		</view>
+		<view id="ID_main_up_bg_2" clazz="ipanel.join.widget.ImgView">
+			   <bind>
+				  <property>LayoutParams</property>
+				  <value type="json">
+					{
+						x:0,
+						y:0,
+						width:320,
+						height:150
+					}
+				  </value>
+			  </bind>
+			  <bind>
+				  <property>drawable</property>
+				  <value>asset:///config-new-1080P/bg_fold_up_2.png</value>
+			  </bind>
+			  <bind>
+			      <property>focusable</property>
+			      <value>false</value>
+			  </bind>
+			  <bind>
+			      <property>visibility</property>
+			      <value>4</value>
+			  </bind>
+		</view>
+	    <view id="ID_main_logo" clazz="ipanel.join.widget.ImgView">
+			   <bind>
+				  <property>LayoutParams</property>
+				  <value type="json">
+					{
+						x:60,
+						y:45,
+						width:230,
+						height:50
+					}
+				  </value>
+			  </bind>
+			  <bind>
+				  <property>drawable</property>
+				  <value>asset:///config-new-1080P/logo_cqccn.png</value>
+			  </bind>
+			  <bind>
+			      <property>focusable</property>
+			      <value>false</value>
+			  </bind>
+		</view>
+	   <!--  
+	   <view id="ID_main_poster" clazz="ipanel.join.widget.ImgView">
+	       <bind>
+	           <property>LayoutParams</property>
+	           <value>
+	               {
+	                	x:60,
+	                	y:150,
+	                	width:260,
+	                	height:150
+	               }
+	           </value>
+	       </bind>
+	       <bind>
+	           <property>drawable</property>
+	           <value>asset:///config-new-1080P/pop_img_1.jpg</value>
+	       </bind>
+	   </view>
+	   -->
+	   <view id="main_left_menu" clazz="ipanel.join.widget.AbsLayout">
+	       <bind>
+	           <property>LayoutParams</property>
+	           <value>
+	               {
+	                	x:0,
+	                	y:150,
+	                	width:320,
+	                	height:-2
+	               }
+	           </value>
+	       </bind>
+	       <bind>
+			    <property>focusable</property>
+			    <value>false</value>
+			</bind>
+		<view id="ID_main_search" clazz="ipanel.join.widget.ImgView">
+	       <bind>
+	           <property>LayoutParams</property>
+	           <value>
+	               {
+	                	x:80,
+	                	y:0,
+	                	width:-2,
+	                	height:-2
+	               }
+	           </value>
+	       </bind>
+	       <bind>
+				<property>gravity</property>
+				<value>center</value>
+		   </bind>
+	       <bind>
+				<property>drawable</property>
+				    <value type="json">
+				       {
+				        focus:"asset:///config-new-1080P/portal_search_focus.png",
+				        normal:"asset:///config-new-1080P/portal_search.png"
+				       }
+				    </value>
+			</bind>
+	       <bind>
+			    <property>focusable</property>
+			    <value>true</value>
+			</bind>
+			<action event="onClick" operation="intent">
+				<bind>
+				    <property>intent</property>
+				    <value>
+				        {
+				          	package:"com.ipanel.chongqing_ipanelforhw",
+				            className:"com.ipanel.join.cq.vod.searchpage.SearchPage"
+				        }
+				    </value>
+				</bind>
+			</action>
+	   	</view>
+	   <view id="title_pager" clazz="ipanel.join.widget.VerticalPager2">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+						{
+							x:0,
+							y:80,
+							width:320,
+							height:540
+						}
+					</value>
+				</bind>
+				<bind>
+					<property>pageScrollDuration</property>
+					<value>200</value>
+				</bind>
+				<bind>
+					<property>FragmentPagerAdapter</property>
+					<value type="json">
+						[
+							{
+								width:0.167,
+								id:"title_0"
+							}, 
+							{
+								width:0.167,
+								id:"title_1"
+							}, 
+							{
+								width:0.167,
+								id:"title_2"
+							},
+							{
+								width:0.167,
+								id:"title_3"
+							},
+							{
+								width:0.167,
+								id:"title_4"
+							}
+							<!--  
+							{
+								width:0.167,
+								id:"title_5"
+							}
+							-->
+						]
+					</value>
+				</bind>
+			</view>
+	  </view>
+		<view id="content_pager" clazz="ipanel.join.widget.VerticalPager2">
+				<bind>
+					<property>focusable</property>
+					<value>false</value>
+				</bind>
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+						{
+							x:320,
+							y:0,
+							width:-2,
+							height:-2
+						}
+					</value>
+				</bind>
+				<bind>
+					<property>focusItemOffset</property>
+					<value>0</value>
+				</bind>
+				<bind>
+					<property>pageScrollDuration</property>
+					<value>300</value>
+				</bind>
+				<bind>
+					<property>FragmentPagerAdapter</property>
+					<value type="json">
+						[
+							{
+								width:1,
+								id:"content_0"
+							},
+ 							{
+								width:1,
+								id:"content_1"
+							}, 
+							{
+								width:0.5,
+								id:"content_2"
+							},
+							{
+								width:0.67,
+								id:"content_3"
+							},
+							{
+								width:0.75,
+								id:"content_4"
+							},
+							{
+								width:0.59,
+								id:"content_5"
+							},
+							{
+								width:0.80,
+								id:"content_6"
+							},
+							{
+								width:1,
+								id:"content_7"
+							}
+							<!--  
+							{
+								width:0.8,
+								id:"content_8"
+							}
+							-->
+						]
+					</value>
+				</bind>
+		</view>
+		<view id="ID_main_tv_widget" clazz="com.ipanel.join.cqhome.view.TvFrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:360,
+						y:150,
+						width:760,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+				    <property>backgroundDrawable</property>
+				    <value>asset:///config-new-1080P/window_big.jpg</value>
+				</bind>
+				<bind>
+				    <property>freUrl</property>
+				    <value>
+				        {
+				       		fre:"474000000",
+                       		program:"3201"
+				        }
+				    </value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>false</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.chongqing.live.LiveForHWActivity"
+				            }
+				        </value>
+				    </bind>
+				</action>
+		</view>
+		<view id="ID_main_up_bg" clazz="ipanel.join.widget.ImgView">
+			   <bind>
+				  <property>LayoutParams</property>
+				  <value type="json">
+					{
+						x:320,
+						y:0,
+						width:1600,
+						height:150
+					}
+				  </value>
+			  </bind>
+			  <bind>
+				  <property>drawable</property>
+				  <value>asset:///config-new-1080P/bg_fold_up_1.png</value>
+			  </bind>
+			  <bind>
+			      <property>focusable</property>
+			      <value>false</value>
+			  </bind>
+			  <bind>
+			      <property>visibility</property>
+			      <value>4</value>
+			  </bind>
+		</view>
+		<view id="ID_main_news_img" clazz="ipanel.join.widget.ImgView">
+			   <bind>
+				  <property>LayoutParams</property>
+				  <value type="json">
+					{
+						x:360,
+						y:50,
+						width:-2,
+						height:-2
+					}
+				  </value>
+			  </bind>
+			  <bind>
+				  <property>drawable</property>
+				  <value>asset:///config-new-1080P/icon_news.png</value>
+			  </bind>
+			  <bind>
+			      <property>focusable</property>
+			      <value>false</value>
+			  </bind>
+		</view>
+		<view id="ID_main_new" clazz="com.ipanel.join.cqhome.view.MarQueeTextView">
+			<bind>
+				<property>LayoutParams</property>
+				<value type="json">
+					{
+						x:410,
+						y:47,
+						width:900,
+						height:-2
+					}
+				</value>
+			</bind>
+			<bind>
+				<property>text</property>
+				<value>生态宜居城区，高新产业基地，科教文化高地，“全域重庆-生态北碚”欢迎您！</value>
+			</bind>
+			<bind>
+			    <property>textSize</property>
+			    <value>36</value>
+			</bind>
+			<bind>
+			    <property>textColor</property>
+			    <value>FFc8c8c8</value>
+			</bind>
+			<bind>
+			     <property>focusable</property>
+			     <value>false</value>
+			 </bind>
+		</view>
+		<!-- 网络状�?-->
+	     <view id="ID_main_net" clazz="com.ipanel.join.cqhome.view.NetImageView">
+			<bind>
+				<property>LayoutParams</property>
+				<value type="json">
+					{
+						x:1460,
+						y:50,
+						width:40,
+						height:40
+					}
+				</value>
+			</bind>
+			<bind>
+			    <property>drawable</property>
+			    <value type="json">
+			        {
+			         net1:"asset:///config-new-1080P/icon_cable_1.png",
+					 net2:"asset:///config-new-1080P/icon_cable_2.png"
+			        }
+			    </value>
+			</bind>
+			<bind>
+					<property>focusable</property>
+					<value>false</value>
+		   </bind>
+		</view>
+		<view id="ID_main_line1" clazz="ipanel.join.widget.ImgView">
+			   <bind>
+				  <property>LayoutParams</property>
+				  <value type="json">
+					{
+						x:1520,
+						y:40,
+						width:-2,
+						height:-2
+					}
+				  </value>
+			  </bind>
+			  <bind>
+				  <property>drawable</property>
+				  <value>asset:///config-new-1080P/line.png</value>
+			  </bind>
+			  <bind>
+			      <property>focusable</property>
+			      <value>false</value>
+			  </bind>
+		</view>
+		<view id="ID_main_weather" clazz="com.ipanel.join.cqhome.view.WeatherView">
+			<bind>
+				<property>LayoutParams</property>
+				<value type="json">
+					{
+						x:1540,
+						y:38,
+						width:200,
+						height:62
+					}
+				</value>
+			</bind>
+			<bind>
+			    <property>orientation</property>
+			    <value>vertical</value>
+			</bind>
+			<bind>
+			    <property>focusablel</property>
+			    <value>false</value>
+			</bind>
+		</view>
+		<view id="ID_main_line2" clazz="ipanel.join.widget.ImgView">
+			   <bind>
+				  <property>LayoutParams</property>
+				  <value type="json">
+					{
+						x:1755,
+						y:40,
+						width:-2,
+						height:-2
+					}
+				  </value>
+			  </bind>
+			  <bind>
+				  <property>drawable</property>
+				  <value>asset:///config-new-1080P/line.png</value>
+			  </bind>
+			  <bind>
+			      <property>focusable</property>
+			      <value>false</value>
+			  </bind>
+		</view>
+		<view id="ID_main_time" clazz="com.ipanel.join.cqhome.view.TimeTextView">
+			<bind>
+				<property>LayoutParams</property>
+				<value type="json">
+					{
+						x:1773,
+						y:35,
+						width:-2,
+						height:-2
+					}
+				</value>
+			</bind>
+			<bind>
+			    <property>textSize</property>
+			    <value>27</value>
+			</bind>
+			<bind>
+			    <property>textColor</property>
+			    <value>FFc8c8c8</value>
+			</bind>
+			<bind>
+			    <property>focusable</property>
+			    <value>false</value>
+			</bind>
+	   </view>
+		<view id="ID_main_down_bg" clazz="ipanel.join.widget.ImgView">
+			   <bind>
+				  <property>LayoutParams</property>
+				  <value type="json">
+					{
+						x:320,
+						y:870,
+						width:1600,
+						height:210
+					}
+				  </value>
+			  </bind>
+			  <bind>
+				  <property>drawable</property>
+				  <value>asset:///config-new-1080P/bg_fold_down.png</value>
+			  </bind>
+			  <bind>
+			      <property>focusable</property>
+			      <value>false</value>
+			  </bind>
+			  <bind>
+			      <property>visibility</property>
+			      <value>4</value>
+			  </bind>
+		</view>
+	</view>
+</screen>
+	<!-- 直播Tab -->
+	<screen id="title_0">
+		<view id="title_0_wrap" clazz="ipanel.join.widget.AbsLayout">
+			<bind>
+				<property>LayoutParams</property>
+				<value type="json">
+					{
+						width:-1,
+						height:90
+					}
+				</value>
+			</bind>
+			<bind>
+				<property>focusable</property>
+				<value>true</value>
+			</bind>
+			<bind>
+				<property>backgroundDrawable</property>
+				<value type="json">
+						{
+							selected:"asset:///config-new-1080P/tab_selected.png",
+							focus:"asset:///config-new-1080P/tab_focus.png"
+						}
+				</value>
+			</bind>
+			<bind>
+			    <property>nextFocusRight</property>
+			    <value>last_channel</value>
+			</bind>
+			<view id="title_0_1" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+						{
+							x:80,
+						    y:0,
+							width:40,
+							height:-1
+						}
+					</value>
+				</bind>
+				<bind>
+					<property>gravity</property>
+					<value>center_vertical</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value type="json">
+						{
+							normal:"asset:///config-new-1080P/navIcon_live_1.png",
+							selected:"asset:///config-new-1080P/navIcon_live_2.png",
+							focus:"asset:///config-new-1080P/navIcon_live_3.png"
+						}
+					</value>
+				</bind>
+				<bind>
+					<property>duplicateParentState</property>
+					<value>true</value>
+				</bind>
+			</view>
+			<view id="title_0_2" clazz="ipanel.join.widget.TxtView">
+			    	<bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:135,
+						    y:0,
+						    width:-2,
+						    height:-1
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical|left</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>36</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value type="json">
+				            {
+				            focus:"#000000",
+				            selected:"#ffffff",
+				            normal:"#bebebe"
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:15
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+						<property>duplicateParentState</property>
+						<value>true</value>
+					</bind>
+				    <bind>
+				        <property>text</property>
+				        <value>直播</value>
+				    </bind>
+			</view>
+		</view>
+	</screen>
+<!-- 推荐Tab -->
+	<screen id="title_1">
+		<view id="title_wrap1" clazz="ipanel.join.widget.AbsLayout">
+			<bind>
+				<property>LayoutParams</property>
+				<value type="json">
+					{
+						width:-1,
+						height:90
+					}
+				</value>
+			</bind>
+			<bind>
+				<property>focusable</property>
+				<value>true</value>
+			</bind>
+			<bind>
+				<property>backgroundDrawable</property>
+				<value type="json">
+						{
+							selected:"asset:///config-new-1080P/tab_selected.png",
+							focus:"asset:///config-new-1080P/tab_focus.png"
+						}
+				</value>
+			</bind>
+			<view id="title_1_1" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+						{
+							x:80,
+						    y:0,
+							width:-2,
+							height:-1
+						}
+					</value>
+				</bind>
+				<bind>
+				    <property>gravity</property>
+				    <value>center_vertical</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value type="json">
+						{
+							normal:"asset:///config-new-1080P/navIcon_rcmd_1.png",
+							selected:"asset:///config-new-1080P/navIcon_rcmd_2.png",
+							focus:"asset:///config-new-1080P/navIcon_rcmd_3.png"
+						}
+					</value>
+				</bind>
+				<bind>
+					<property>duplicateParentState</property>
+					<value>true</value>
+				</bind>
+			</view>
+			<view id="title_1_2" clazz="ipanel.join.widget.TxtView">
+			    	<bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:135,
+						    y:0,
+						    width:-2,
+						    height:-1
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>36</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value type="json">
+				            {
+				            focus:"#000000",
+				            selected:"#ffffff",
+				            normal:"#bebebe"
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:15
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+						<property>duplicateParentState</property>
+						<value>true</value>
+					</bind>
+				    <bind>
+				        <property>text</property>
+				        <value>推荐</value>
+				    </bind>
+			</view>
+		</view>
+	</screen>
+<!-- 点播Tab -->
+	<screen id="title_2">
+		<view id="title_wrap2" clazz="ipanel.join.widget.AbsLayout">
+			<bind>
+				<property>LayoutParams</property>
+				<value type="json">
+					{
+						width:-1,
+						height:90
+					}
+				</value>
+			</bind>
+			<bind>
+				<property>focusable</property>
+				<value>true</value>
+			</bind>
+			<bind>
+				<property>backgroundDrawable</property>
+				<value type="json">
+						{
+							selected:"asset:///config-new-1080P/tab_selected.png",
+							focus:"asset:///config-new-1080P/tab_focus.png"
+						}
+				</value>
+			</bind>
+			<view id="title_2_1" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+						{
+							x:80,
+						    y:0,
+							width:-2,
+							height:-1
+						}
+					</value>
+				</bind>
+				<bind>
+				    <property>gravity</property>
+				    <value>center_vertical</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value type="json">
+						{
+							normal:"asset:///config-new-1080P/navIcon_vod_1.png",
+							selected:"asset:///config-new-1080P/navIcon_vod_2.png",
+							focus:"asset:///config-new-1080P/navIcon_vod_3.png"
+						}
+					</value>
+				</bind>
+				<bind>
+					<property>duplicateParentState</property>
+					<value>true</value>
+				</bind>
+			</view>
+			<view id="title_2_2" clazz="ipanel.join.widget.TxtView">
+			    	<bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:135,
+						    y:0,
+						    width:-2,
+						    height:-1
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>36</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value type="json">
+				            {
+				            focus:"#000000",
+				            selected:"#ffffff",
+				            normal:"#bebebe"
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:15
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+						<property>duplicateParentState</property>
+						<value>true</value>
+					</bind>
+				    <bind>
+				        <property>text</property>
+				        <value>点播</value>
+				    </bind>
+			</view>
+		</view>
+	</screen>
+	<!-- 专区Tab -->
+	<screen id="title_3">
+		<view id="title_wrap3" clazz="ipanel.join.widget.AbsLayout">
+			<bind>
+				<property>LayoutParams</property>
+				<value type="json">
+					{
+						width:-1,
+						height:90
+					}
+				</value>
+			</bind>
+			<bind>
+				<property>focusable</property>
+				<value>true</value>
+			</bind>
+			<bind>
+				<property>backgroundDrawable</property>
+				<value type="json">
+						{
+							selected:"asset:///config-new-1080P/tab_selected.png",
+							focus:"asset:///config-new-1080P/tab_focus.png"
+						}
+				</value>
+			</bind>
+			<view id="title_3_1" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+						{
+							x:80,
+						    y:0,
+							width:-2,
+							height:-1
+						}
+					</value>
+				</bind>
+				<bind>
+				    <property>gravity</property>
+				    <value>center_vertical</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value type="json">
+						{
+							normal:"asset:///config-new-1080P/navIcon_sArea_1.png",
+							selected:"asset:///config-new-1080P/navIcon_sArea_2.png",
+							focus:"asset:///config-new-1080P/navIcon_sArea_3.png"
+						}
+					</value>
+				</bind>
+				<bind>
+					<property>duplicateParentState</property>
+					<value>true</value>
+				</bind>
+			</view>
+			<view id="title_3_2" clazz="ipanel.join.widget.TxtView">
+			    	<bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:135,
+						    y:0,
+						    width:-2,
+						    height:-1
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>36</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value type="json">
+				            {
+				            focus:"#000000",
+				            selected:"#ffffff",
+				            normal:"#bebebe"
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:15
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+						<property>duplicateParentState</property>
+						<value>true</value>
+					</bind>
+				    <bind>
+				        <property>text</property>
+				        <value>专区</value>
+				    </bind>
+			</view>
+		</view>
+	</screen>
+	<!-- 应用Tab -->
+	<screen id="title_4">
+		<view id="title_wrap4" clazz="ipanel.join.widget.AbsLayout">
+			<bind>
+				<property>LayoutParams</property>
+				<value type="json">
+					{
+						width:-1,
+						height:90
+					}
+				</value>
+			</bind>
+			<bind>
+				<property>focusable</property>
+				<value>true</value>
+			</bind>
+			<bind>
+				<property>backgroundDrawable</property>
+				<value type="json">
+						{
+							selected:"asset:///config-new-1080P/tab_selected.png",
+							focus:"asset:///config-new-1080P/tab_focus.png"
+						}
+				</value>
+			</bind>
+			<view id="title_4_1" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+						{
+							x:80,
+						    y:0,
+							width:-2,
+							height:-1
+						}
+					</value>
+				</bind>
+				<bind>
+				    <property>gravity</property>
+				    <value>center_vertical</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value type="json">
+						{
+							normal:"asset:///config-new-1080P/navIcon_app_1.png",
+							selected:"asset:///config-new-1080P/navIcon_app_2.png",
+							focus:"asset:///config-new-1080P/navIcon_app_3.png"
+						}
+					</value>
+				</bind>
+				<bind>
+					<property>duplicateParentState</property>
+					<value>true</value>
+				</bind>
+			</view>
+			<view id="title_4_2" clazz="ipanel.join.widget.TxtView">
+			    	<bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:135,
+						    y:0,
+						    width:-2,
+						    height:-1
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>36</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value type="json">
+				            {
+				            focus:"#000000",
+				            selected:"#ffffff",
+				            normal:"#bebebe"
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:15
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+						<property>duplicateParentState</property>
+						<value>true</value>
+					</bind>
+				    <bind>
+				        <property>text</property>
+				        <value>应用</value>
+				    </bind>
+			</view>
+		</view>
+	</screen>
+<!-- 党员远教Tab -->
+	<screen id="title_5">
+		<view id="title_wrap5" clazz="ipanel.join.widget.AbsLayout">
+			<bind>
+				<property>LayoutParams</property>
+				<value type="json">
+					{
+						width:-1,
+						height:90
+					}
+				</value>
+			</bind>
+			<bind>
+				<property>focusable</property>
+				<value>true</value>
+			</bind>
+			<bind>
+				<property>backgroundDrawable</property>
+				<value type="json">
+						{
+							selected:"asset:///config-new-1080P/tab_selected.png",
+							focus:"asset:///config-new-1080P/tab_focus.png"
+						}
+				</value>
+			</bind>
+			<view id="title_5_1" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+						{
+							x:80,
+						    y:0,
+							width:-2,
+							height:-1
+						}
+					</value>
+				</bind>
+				<bind>
+				    <property>gravity</property>
+				    <value>center_vertical</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value type="json">
+						{
+							normal:"asset:///config-new-1080P/navIcon_dyyj_1.png",
+							selected:"asset:///config-new-1080P/navIcon_dyyj_2.png",
+							focus:"asset:///config-new-1080P/navIcon_dyyj_3.png"
+						}
+					</value>
+				</bind>
+				<bind>
+					<property>duplicateParentState</property>
+					<value>true</value>
+				</bind>
+			</view>
+			<view id="title_5_2" clazz="ipanel.join.widget.TxtView">
+			    	<bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:135,
+						    y:0,
+						    width:-2,
+						    height:-1
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>36</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value type="json">
+				            {
+				            focus:"#000000",
+				            selected:"#ffffff",
+				            normal:"#bebebe"
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:15
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+						<property>duplicateParentState</property>
+						<value>true</value>
+					</bind>
+				    <bind>
+				        <property>text</property>
+				        <value>党员远教</value>
+				    </bind>
+			</view>
+		</view>
+	</screen>
+	
+<!-- 直播 -->
+<screen id="content_0" type="fragment">
+   <view id="ID_FG_live" clazz="ipanel.join.widget.AbsLayout">
+       <view id="ID_main_tv_widget_bg" clazz="ipanel.join.widget.AbsLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:150,
+						width:760,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+				    <property>backgroundDrawable</property>
+				    <value>asset:///config-new-1080P/window_big.jpg</value>
+				</bind>
+				<!--  
+				<bind>
+				    <property>freUrl</property>
+				    <value>
+				        {
+				       fre:"frequency://427000000?symbol_rate=6875000&amp;delivery=cable&amp;modulation=qam64&amp;frequency=427000000",
+                       program:"program://1104?audio_stream_pid=146&amp;audio_stream_type=audio_mpeg2&amp;video_stream_pid=355&amp;video_stream_type=video_mpeg2&amp;pcr_stream_pid=355&amp;ca_required=false"
+				        }
+				    </value>
+				</bind>
+				-->
+				<bind>
+					<property>focusable</property>
+					<value>false</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.chongqing.live.LiveForHWActivity"
+				            }
+				        </value>
+				    </bind>
+				</action>
+		</view>
+		<!-- 回看 -->
+		<view id="ID_main_live_hk" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:150,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_live_hk.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				            	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.cq.back.BackActivity"
+				             }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_live_hk_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_vertical,
+						    margin:{
+						    	left:250
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>36</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>回看</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 我的 -->
+		<view id="ID_main_1_2" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:370,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_live_wd.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.chongqing.portal.MineActivity"
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_live_wd_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_vertical,
+						    margin:{
+						    	left:250
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>36</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>我的</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 广告一 -->
+		<view id="ID_main_live_ad1" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1195,
+						y:150,
+						width:335,
+						height:430
+					}
+					</value>
+				</bind>
+				
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/ad_img_01.jpg</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				            	 className:"com.ipanel.join.chongqing.portal.MineActivity"
+				             }
+				        </value>
+				    </bind>
+				</action>
+		</view>
+		<!-- 广告二-->
+		<view id="ID_main_live_ad2" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1195,
+						y:590,
+						width:335,
+						height:430
+					}
+					</value>
+				</bind>
+				
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/ad_img_02.jpg</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"",
+				            	 className:"",
+				            	 extra:{
+				              	 "live_activity_flag":6
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+		</view>
+		<!-- 上次观看频道 -->
+       <view id="ID_main_1_5" clazz="com.ipanel.join.cqhome.view.FirstChannelView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:590,
+						width:375,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+            		<property>tag</property>
+            		<value>tag_off_channel</value>
+            	</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_live_gjpd.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.chongqing.live.LiveForHWActivity",
+				            	 extra:{
+				              	 "live_tag":1,
+				            	 "live_program_tag":"1104",
+				            	 "live_activity_freq":"427000000"
+				            	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_live_1_logo" clazz="ipanel.join.widget.ImgView">
+            		<bind>
+						<property>LayoutParams</property>
+						<!--  
+						<value type="json">
+						{
+							x:100,
+							y:75,
+							width:180,
+							height:180
+						}
+						</value>
+						-->
+						<value type="json">
+						{
+							x:40,
+							y:75,
+							width:285,
+							height:154
+						}
+						</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+					<bind>
+					    <property>drawable</property>
+					    <!--  <value>asset:///config-new-1080P/chaLogo_cqws.png</value>-->
+					    <value>asset:///config-new-1080P/cq.png</value>
+					</bind>
+        		</view>
+        		<view id="ID_live_1_bar_bg" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							x:0,
+						    y:319,
+							width:-1,
+						    height:6
+						}
+						</value>
+					</bind>
+				    <bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/bar_bg.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_live_1_bar_progress" clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:319,
+						    width:-2,
+						    height:6
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_live_1_pf_bg" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							x:0,
+						    y:325,
+							width:-1,
+						    height:-1
+						}
+						</value>
+					</bind>
+				    <bind>
+						<property>backgroundDrawable</property>
+						<value>asset:///config-new-1080P/cover00.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_live_pf_tv_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:325,
+						    width:-1,
+						    height:-1
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_live_1_programname" clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:327,
+						    width:375,
+						    height:55
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>bottom</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>34</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FF000000</value> 
+             		</bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:13,
+				            right:13
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>上次观看频道</value>
+				    </bind>
+				</view>
+				<view id="ID_live_1_channelname" clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:378,
+						    width:375,
+						    height:50
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FF666666</value> 
+             		</bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:13
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>重庆卫视</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_1_6" clazz="com.ipanel.join.cqhome.view.ChannelView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:425,
+						y:590,
+						width:375,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+				    <property>channel</property>
+				    <value type="json">
+				        {
+				         	name:_one
+				        }
+				    </value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/defPoster_375x430.png</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.chongqing.live.LiveForHWActivity",
+				            	 extra:{
+				              	 "live_activity_flag":4,
+				            	 "params":"205",
+				            	 "live_activity_freq":"355000000"
+				            	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_live_rec_1_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+				    <bind>
+						<property>backgroundDrawable</property>
+						<value>asset:///config-new-1080P/defPoster_375x430.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_live_rec_1_bar_bg" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							x:0,
+						    y:319,
+							width:-1,
+						    height:6
+						}
+						</value>
+					</bind>
+				    <bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/bar_bg.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_live_rec_1_bar_progress" clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:319,
+						    width:-2,
+						    height:6
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_live_rec_1_pf_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:325,
+						    width:-1,
+						    height:-1
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_live_rec_1_pf_tv_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:325,
+						    width:-1,
+						    height:-1
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_live_rec_1_programname" clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:327,
+						    width:375,
+						    height:55
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>bottom</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>34</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FF000000</value> 
+             		</bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:13,
+				            right:13
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_live_rec_1_channelname" clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:378,
+						    width:375,
+						    height:50
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FF666666</value> 
+             		</bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:13
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>重庆卫视</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_1_7" clazz="com.ipanel.join.cqhome.view.ChannelView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:590,
+						width:375,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+				    <property>channel</property>
+				    <value type="json">
+				        {
+				         	name:_two
+				        }
+				    </value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/defPoster_375x430.png</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.chongqing.live.LiveForHWActivity",
+				            	 extra:{
+				              	 "live_activity_flag":4,
+				            	 "params":"1305",
+				            	 "live_activity_freq":"427000000"
+				            	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_live_rec_1_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+				    <bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/defPoster_375x430.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_live_rec_1_bar_bg" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							x:0,
+						    y:319,
+							width:-1,
+						    height:6
+						}
+						</value>
+					</bind>
+				    <bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/bar_bg.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_live_rec_1_bar_progress" clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:319,
+						    width:-2,
+						    height:6
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_live_rec_1_pf_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:325,
+						    width:-1,
+						    height:-1
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_live_rec_1_pf_tv_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:325,
+						    width:-1,
+						    height:-1
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_live_rec_1_programname" clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:327,
+						    width:375,
+						    height:55
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>bottom</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>34</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FF000000</value> 
+             		</bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:13,
+				            right:13
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_live_rec_1_channelname" clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:378,
+						    width:375,
+						    height:50
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FF666666</value> 
+             		</bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:13
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>重庆卫视</value>
+				    </bind>
+				</view>
+		</view>
+		
+	</view>
+</screen>
+<!-- 推荐一-->
+<screen id="content_1" type="fragment">
+    <view id="ID_FG_hot"  clazz="ipanel.join.widget.AbsLayout">
+        <view id="ID_main_hot1_1" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:150,
+						width:760,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.cq.vod.detail.TVDetailActivity",
+				            	 extra:{
+				              	 	"name":"芈月传（HD）",
+				              	 	"id":"4270129",
+				              	 	"isVodId":true
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot1_1_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<!--  <value>asset:///config-new-1080P/defPoster_760x430.png</value>-->
+						<value>asset:///config-new-1080P/poster_rcmd_01.jpg</value>
+						<!--<value>http://192.168.14.114:8082/EPG/jsp/images/universal/film/poster/iptvcms/server/default/deploy/cms.war/upload/poster/memposter/201107/yiqi01_29A29E18-ABF2-4547-8594-7A6BD3AA96DA.jpg</value>-->
+						
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:370,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot1_txt_1"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:370,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>芈月传（HD）</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot1_2" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:150,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.cq.vod.detail.DetailActivity",
+				            	 extra:{
+				              	 	"name":"西游记之大圣归来",
+				              	 	"id":"4310985",
+				              	 	"isVodId":true
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot1_2_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<!--  <value>asset:///config-new-1080P/defPoster_375x210.png</value>-->
+						<value>asset:///config-new-1080P/poster_rcmd_02.jpg</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot1_txt_2"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>西游记之大圣归来</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot1_3" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:370,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.cq.vod.detail.TVDetailActivity",
+				            	 extra:{
+				              	 	"name":"重庆崽儿 孟非（重庆发现之逐梦他乡重庆人HD）",
+				              	 	"id":"4302591",
+				              	 	"isVodId":true
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot1_3_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<!--  <value>asset:///config-new-1080P/defPoster_375x210.png</value>-->
+						<value>asset:///config-new-1080P/poster_rcmd_03.jpg</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot1_txt_3"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>重庆崽儿 孟非（重庆发现之逐梦他乡重庆人HD）</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot1_4" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:590,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.cq.vod.detail.TVDetailActivity",
+				            	 extra:{
+				              	 	"name":"冰与火之歌：权力游戏第五季(HBO)",
+				              	 	"id":"4233680",
+				              	 	"isVodId":true
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot1_4_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<!--  <value>asset:///config-new-1080P/defPoster_375x210.png</value>-->
+						<value>asset:///config-new-1080P/poster_rcmd_04.jpg</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot1_txt_4"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>冰与火之歌：权力游戏第五季(HBO)</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot1_5" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:425,
+						y:590,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.cq.vod.detail.TVDetailActivity",
+				            	 extra:{
+				              	 	"name":"噢我的维纳斯（HD）",
+				              	 	"id":"4277476",
+				              	 	"isVodId":true
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot1_5_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<!--  <value>asset:///config-new-1080P/defPoster_375x210.png</value>-->
+						<value>asset:///config-new-1080P/poster_rcmd_05.jpg</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot1_txt_5"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>噢我的维纳斯（HD）</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot1_6" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:590,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.cq.vod.detail.DetailActivity",
+				            	 extra:{
+				              	 	"name":"湖南卫视“点亮2016”跨年演唱会(HD)",
+				              	 	"id":"4314110",
+				              	 	"isVodId":true
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot1_6_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<!--  <value>asset:///config-new-1080P/defPoster_375x210.png</value>-->
+						<value>asset:///config-new-1080P/poster_rcmd_06.jpg</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot1_txt_6"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>湖南卫视“点亮2016”跨年演唱会(HD)</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot1_7" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:810,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.cq.vod.detail.DetailActivity",
+				            	 extra:{
+				              	 	"name":"周迅献吻少年 金星惨被摔下马(西游奇遇记HD)",
+				              	 	"id":"4314965",
+				              	 	"isVodId":true
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot1_7_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<!--  <value>asset:///config-new-1080P/defPoster_375x210.png</value>-->
+						<value>asset:///config-new-1080P/poster_rcmd_07.jpg</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot1_txt_7"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>周迅献吻少年 金星惨被摔下马(西游奇遇记HD)</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot1_8" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:425,
+						y:810,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.cq.vod.detail.DetailActivity",
+				            	 extra:{
+				              	 	"name":"舌尖上的中国第二季(HD)",
+				              	 	"id":"3820338",
+				              	 	"isVodId":true
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot1_8_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<!-- <value>asset:///config-new-1080P/defPoster_375x210.png</value>-->
+						<value>asset:///config-new-1080P/poster_rcmd_08.jpg</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot1_txt_8"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>舌尖上的中国第二季(HD)</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot1_9" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:810,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.chongqing_ipanelforhw",
+				            	 className:"com.ipanel.join.cq.vod.detail.TVDetailActivity",
+				            	 extra:{
+				              	 	"name":"陈有良尖椒鸡：舌尖上的非物质文化遗产（美食非常道HD）",
+				              	 	"id":"3820338",
+				              	 	"isVodId":true
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot1_9_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/poster_rcmd_09.jpg</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot1_txt_9"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:150,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>陈有良尖椒鸡：舌尖上的非物质文化遗产（美食非常道HD）</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 广告三 -->
+		<view id="ID_main_hot1_ad1" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1195,
+						y:150,
+						width:335,
+						height:430
+					}
+					</value>
+				</bind>
+				
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/ad_img_01.jpg</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"",
+				            	 className:"",
+				            	 extra:{
+				              	 "live_activity_flag":6
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+		</view>
+		<!-- 广告四-->
+		<view id="ID_main_hot1_ad2" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1195,
+						y:590,
+						width:335,
+						height:430
+					}
+					</value>
+				</bind>
+				
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/ad_img_02.jpg</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"",
+				            	 className:"",
+				            	 extra:{
+				              	 "live_activity_flag":6
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+		</view>
+	</view>
+</screen>
+<!-- 推荐二-->
+<screen id="content_2" type="fragment">
+    <view id="ID_FG_hot2"  clazz="ipanel.join.widget.AbsLayout">
+        <view id="ID_main_hot2_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:60,
+						    y:150,
+						    width:-2,
+						    height:-2
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>38</value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>大家在看</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>fff0f0f0</value>
+				    </bind>
+		</view>
+        <view id="ID_main_hot2_1" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:220,
+						width:240,
+						height:300
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_rcmd_yhp.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<bind>
+				    <property>clickListener</property>
+				    <value>com.ipanel.join.chongqing.portal.RefreshClickListener</value>
+				</bind>
+				<view id="ID_live_hyp_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:235
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>36</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>换一批</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot2_2" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:290,
+						y:220,
+						width:240,
+						height:300
+					}
+					</value>
+				</bind>
+				<bind>
+				    <property>recommend</property>
+				    <value type="json">
+				        {
+				        	position:0
+				        }
+				    </value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_hot2_2_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/defPoster_240x300.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:240,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot2_txt_2"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:240,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>花千骨</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot2_3" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:540,
+						y:220,
+						width:240,
+						height:300
+					}
+					</value>
+				</bind>
+				<bind>
+				    <property>recommend</property>
+				    <value type="json">
+				        {
+				        	position:1
+				        }
+				    </value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_hot2_3_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/defPoster_240x300.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:240,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot2_txt_3"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:240,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>花千骨</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot2_4" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:790,
+						y:220,
+						width:240,
+						height:300
+					}
+					</value>
+				</bind>
+				<bind>
+				    <property>recommend</property>
+				    <value type="json">
+				        {
+				        	position:2
+				        }
+				    </value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_hot2_4_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/defPoster_240x300.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:240,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot2_txt_4"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:240,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>花千骨</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot2_5" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1040,
+						y:220,
+						width:240,
+						height:300
+					}
+					</value>
+				</bind>
+				<bind>
+				    <property>recommend</property>
+				    <value type="json">
+				        {
+				        	position:3
+				        }
+				    </value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_hot2_5_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/defPoster_240x300.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:240,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot2_txt_5"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:240,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>花千骨</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot2_6" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1290,
+						y:220,
+						width:240,
+						height:300
+					}
+					</value>
+				</bind>
+				<bind>
+				    <property>recommend</property>
+				    <value type="json">
+				        {
+				        	position:4
+				        }
+				    </value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_hot2_6_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/defPoster_240x300.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:240,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_hot2_txt_6"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:240,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>花千骨</value>
+				    </bind>
+				</view>
+		</view>
+	</view>
+</screen>
+<!-- 推荐三-->
+<screen id="content_3" type="fragment">
+    <view id="ID_FG_hot3"  clazz="ipanel.join.widget.AbsLayout">
+        <view id="ID_main_hot3_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:60,
+						    y:150,
+						    width:-2,
+						    height:-2
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>38</value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>排行榜</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>fff0f0f0</value>
+				    </bind>
+		</view>
+		<view id="ID_main_hot3_1" clazz="com.ipanel.join.cqhome.view.RanksView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:220,
+						width:375,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+					<property>recommend_rank</property>
+					<value type="json">
+					    {
+					        ranktype:1
+					    }
+					</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.rank.VodRankListActivity",
+				            	extra:{
+				            	    "type":1
+				            	}
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot3_1_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/defPoster_375x430.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_hot3_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:340,
+						    width:-1,
+						    height:90
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_main_hot3_txt_1"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:340,
+						    width:-1,
+						    height:90
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>最新榜</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot3_2" clazz="com.ipanel.join.cqhome.view.RanksView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:425,
+						y:220,
+						width:375,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>recommend_rank</property>
+					<value type="json">
+					    {
+					        ranktype:2
+					    }
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.rank.VodRankListActivity",
+				            	extra:{
+				            	    "type":2
+				            	}
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot3_2_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/defPoster_375x430.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_hot3_txt2_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:340,
+						    width:-1,
+						    height:90
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_main_hot3_txt_2"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:340,
+						    width:-1,
+						    height:90
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>热播榜</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot3_3" clazz="com.ipanel.join.cqhome.view.RanksView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:220,
+						width:375,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>recommend_rank</property>
+					<value type="json">
+					    {
+					        ranktype:3
+					    }
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.rank.VodRankListActivity",
+				            	extra:{
+				            	    "type":3
+				            	}
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot3_3_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/defPoster_375x430.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_hot3_txt3_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:340,
+						    width:-1,
+						    height:90
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_main_hot3_txt_3"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:340,
+						    width:-1,
+						    height:90
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>明星榜</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_hot3_4" clazz="com.ipanel.join.cqhome.view.RanksView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1195,
+						y:220,
+						width:335,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>recommend_rank</property>
+					<value type="json">
+					    {
+					        ranktype:4
+					    }
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.rank.VodRankListActivity",
+				            	extra:{
+				            	    "type":4
+				            	}
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_hot3_4_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<value>asset:///config-new-1080P/column_rcmd_scb.png</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_hot3_txt4_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:340,
+						    width:-1,
+						    height:90
+				            }
+				        </value>
+				    </bind>
+				</view>
+				<view id="ID_main_hot3_txt_4"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:340,
+						    width:-1,
+						    height:90
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>30</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>收藏榜</value>
+				    </bind>
+				</view>
+		</view>
+		
+	</view>
+</screen>
+
+<!-- 点播一 -->
+<screen id="content_4" type="fragment">
+    <view id="ID_FG_vod"  clazz="ipanel.join.widget.AbsLayout">
+        <view id="ID_main_vod_txt"  clazz="ipanel.join.widget.TxtView">
+            		<bind>
+            		    <property>tag</property>
+            		    <value>tag_vod_txt</value>
+            		</bind>
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:60,
+						    y:80,
+						    width:-2,
+						    height:-2
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>38</value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>点播</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>fff0f0f0</value>
+				    </bind>
+		</view>
+        <!-- 最重庆-->
+        <view id="ID_main_vod_1" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:150,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_zcq.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.join.homed.chongqing.most",
+				            	 className:"com.ipanel.join.homed.chongqing.most.MainActivity"
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_vod_1_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>最重庆</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 电影 -->
+		<view id="ID_main_vod_2" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:425,
+						y:150,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_dy.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.vodhome.FilmListActivity",
+				            	extra:
+				            	{ 
+				            		name:"电影",
+				            		params:"10000100000000090000000000103262"
+				            	} 
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_vod_2_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>电影</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 电视剧-->
+		<view id="ID_main_vod_3" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:150,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_dsj.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.vodhome.FilmListActivity",
+				            	extra:
+				            	{ 
+				            		name:"电视剧",
+				            		params:"10000100000000090000000000103263"
+				            	} 
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_vod_3_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>电视剧</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 专题-->
+		<view id="ID_main_vod_4" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:370,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_zt.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				         <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.vodhomer1.VodHome",
+				            	extra:{
+				            	    "params":10004
+				            	}
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_vod_4_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>专题</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 全域重庆-->
+		<view id="ID_main_vod_5" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:425,
+						y:370,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_qycq.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent"> 
+            		<bind> 
+              			<property>intent</property>  
+              			<value>
+                  			{ 
+                  				action:"com.ipanel.join.cq.huawei", 
+                  				broadcast:true, 
+                  				extra:{ 
+                  					"url":"http://chongqing.wasu.cn/yigou_chongqing/jump_chongqing.jsp?code=newnews&amp;viewSize=SD" 
+                  					} 
+                  				}
+              			</value> 
+            		</bind> 
+          		</action>
+          		<view id="ID_vod_5_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>全域重庆</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 免费专区-->
+		<view id="ID_main_vod_6" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:370,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_mfzq.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.vodhomer1.VodHome",
+				            	extra:{
+				            	    "params":10005
+				            	}
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_vod_6_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>免费专区</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 新闻-->
+		<view id="ID_main_vod_7" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:590,
+						width:280,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_xw.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent"> 
+            		<bind> 
+              			<property>intent</property>  
+              			<value>
+              			    { 
+              			    	action:"com.ipanel.join.cq.huawei", 
+              			    	broadcast:true, 
+              			    	extra:{ 
+              			    		"url":"http://chongqing.wasu.cn/yigou_chongqing/jump_chongqing.jsp?code=newyule&amp;viewSize=SD" 
+              			    		} 
+              			    }
+              			</value> 
+            		</bind> 
+          		</action>
+          		<view id="ID_vod_7_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>新闻</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 娱乐-->
+		<view id="ID_main_vod_8" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:330,
+						y:590,
+						width:280,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_yl.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_vod_8_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>娱乐</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 少儿-->
+		<view id="ID_main_vod_9" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:620,
+						y:590,
+						width:280,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_se.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_vod_9_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>少儿</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 4K-->
+		<view id="ID_main_vod_10" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:910,
+						y:590,
+						width:275,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_4k.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.vodhome.FilmListActivity",
+				            	extra:
+				            	{ 
+				            		name:"4K体验",
+				            		params:"10000100000000090000000000105822",
+				            		sub:"1"
+				            	} 
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_vod_10_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>4K</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 广告五 -->
+		<view id="ID_main_vod_ad1" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1195,
+						y:150,
+						width:335,
+						height:320
+					}
+					</value>
+				</bind>
+				
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/ad_img_03.jpg</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"",
+				            	 className:"",
+				            	 extra:{
+				              	 "live_activity_flag":6
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+		</view>
+		<!-- 广告六 -->
+		<view id="ID_main_vod_ad2" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1195,
+						y:480,
+						width:335,
+						height:320
+					}
+					</value>
+				</bind>
+				
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/ad_img_04.jpg</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"",
+				            	 className:"",
+				            	 extra:{
+				              	 "live_activity_flag":6
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+		</view>
+    </view>
+</screen>
+<!-- 点播二 -->
+<screen id="content_5" type="fragment">
+    <view id="ID_FG_vod2"  clazz="ipanel.join.widget.AbsLayout">
+        <!-- 生活-->
+        <view id="ID_main_vod_11" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:150,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_sh.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.vodhomer1.VodHome",
+				            	extra:{
+				            	    "params":10006
+				            	}
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_vod_11_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>生活</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 记录-->
+		<view id="ID_main_vod_12" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:425,
+						y:150,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_jl.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.vodhomer1.VodHome",
+				            	extra:{
+				            	    "params":10002
+				            	}
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_vod_12_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>记录</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 体育-->
+		<view id="ID_main_vod_13" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:150,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_ty.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"",
+				            	className:"",
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_vod_13_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>体育</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 3D-->
+		<view id="ID_main_vod_14" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:370,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_3d.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.vodhome.FilmListActivity",
+				            	extra:
+				            	{ 
+				            		name:"3D体验",
+				            		params:"10000100000000090000000000100080",
+				            		sub:"1"
+				            	} 
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_vod_14_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>3D</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 杜比-->
+		<view id="ID_main_vod_15" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:425,
+						y:370,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_db.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.vodhome.FilmListActivity",
+				            	extra:
+				            	{ 
+				            		name:"杜比体验",
+				            		params:"10000100000000090000000000105823",
+				            		sub:"1"
+				            	} 
+				            }
+				        </value>
+				    </bind>
+				</action>
+          		<view id="ID_vod_15_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>杜比</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 栏目-->
+		<view id="ID_main_vod_16" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:370,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_vod_lm.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.chongqing_ipanelforhw",
+				            	className:"com.ipanel.join.cq.vod.vodhomer1.VodHome",
+				            	extra:{
+				            	    "params":10005
+				            	}
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_vod_16_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>栏目</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 广告七-->
+		<view id="ID_main_vod_ad3" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1195,
+						y:150,
+						width:335,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/ad_img_01.jpg</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent"> 
+            		<bind> 
+              			<property>intent</property>  
+              			<value>
+              			    { 
+              			    	action:"com.ipanel.join.cq.huawei", 
+              			    	broadcast:true, 
+              			    	extra:{ 
+              			    		"url":"http://chongqing.wasu.cn/yigou_chongqing/jump_chongqing.jsp?code=newyule&amp;viewSize=SD" 
+              			    		} 
+              			    }
+              			</value> 
+            		</bind> 
+          		</action> 
+		</view>
+    </view>
+</screen>
+<!-- 专区 -->
+<screen id="content_6" type="fragment">
+    <view id="ID_FG_area" clazz="ipanel.join.widget.AbsLayout">
+        <view id="ID_main_area_txt"  clazz="ipanel.join.widget.TxtView">
+            		<bind>
+            		    <property>tag</property>
+            		    <value>tag_area_txt</value>
+            		</bind>
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:60,
+						    y:80,
+						    width:-2,
+						    height:-2
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>38</value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>专区</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>fff0f0f0</value>
+				    </bind>
+		</view>
+        <!-- 中国电视院线 -->
+        <view id="ID_main_area_1" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:150,
+						width:375,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_sArea_zgdsyx.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent"> 
+            		<bind> 
+              		<property>intent</property>  
+              		<!--               <value>{ package:"com.ipanel.join.cq.vod", className:"com.ipanel.join.cq.vod.vodhomer1.FilmListActivity", extra:{ name:"韩剧专区", "params":"-1" } }</value>  -->
+              		<value>{ 
+              		    		action:"com.ipanel.join.cq.huawei", 
+              		    		broadcast:true, 
+              		    		extra:{ 
+              		    				epg:"-1",
+              		    				"url":"http://epgServer/defaultHD/en/Category.jsp?url=koreanZone_index.jsp?scrollTypeID=10000100000000090000000000102283&amp;downTypeID=10000100000000090000000000102284&amp;startIndex=0" 
+              		    			} 
+              		    	}
+              		</value> 
+            		</bind> 
+          		</action>
+          		<view id="ID_area_1_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>中国电视院线</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 英美剧专区 -->
+        <view id="ID_main_area_2" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:425,
+						y:150,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_sArea_ymjzq.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.jion.homed.prefecture",
+				            	 className:"com.ipanel.jion.homed.chongqing.europe.home.EuropeHomeActivity"
+				            }
+				        </value>
+				    </bind>
+				</action>
+          		<view id="ID_area_2_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>英美剧专区</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 坝坝舞专区 -->
+		<view id="ID_main_area_3" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:150,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_sArea_bbwzq.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_area_3_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>坝坝舞专区</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 韩剧专区-->
+		<view id="ID_main_area_4" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:425,
+						y:370,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_sArea_hjzq.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.jion.homed.prefecture",
+				            	 className:"com.ipanel.join.homed.chongqing.korean.home.KoreanHomeActivity"
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_area_4_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>韩剧专区</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 强档好莱坞-->
+		<view id="ID_main_area_5" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:370,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_sArea_qdhlw.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_area_5_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>强档好莱坞</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 凤凰专区-->
+		<view id="ID_main_area_6" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:590,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_sArea_fhzq.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"com.ipanel.jion.homed.prefecture",
+				            	 className:"com.ipanel.join.homed.chongqing.phoenix.home.HomeActivity"
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_area_6_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>凤凰专区</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- TVB专区 -->
+		<view id="ID_main_area_7" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:425,
+						y:590,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_sArea_tvbzq.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_area_7_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>TVB专区</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 沙发院线-->
+		<view id="ID_main_area_8" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:810,
+						y:590,
+						width:375,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_sArea_sfyx.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_area_8_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>沙发院线</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 广告九-->
+		<view id="ID_main_area_ad1" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1195,
+						y:150,
+						width:335,
+						height:320
+					}
+					</value>
+				</bind>
+				
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/ad_img_03.jpg</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"",
+				            	 className:"",
+				            	 extra:{
+				              	 "live_activity_flag":6
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+		</view>
+		<!-- 广告十 -->
+		<view id="ID_main_area_ad2" clazz="ipanel.join.widget.ImgView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1195,
+						y:480,
+						width:335,
+						height:320
+					}
+					</value>
+				</bind>
+				
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/ad_img_04.jpg</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick"  operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				             {
+				              	 package:"",
+				            	 className:"",
+				            	 extra:{
+				              	 "live_activity_flag":6
+				              	 }
+				            }
+				        </value>
+				    </bind>
+				</action>
+		</view>
+    </view>
+</screen>
+<!-- 应用 -->
+<screen id="content_7" type="fragment">
+    <view id="ID_FG_app" clazz="ipanel.join.widget.AbsLayout">
+        <view id="ID_main_app_txt"  clazz="ipanel.join.widget.TxtView">
+            		<bind>
+            		    <property>tag</property>
+            		    <value>tag_app_txt</value>
+            		</bind>
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:60,
+						    y:80,
+						    width:-2,
+						    height:-2
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>38</value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>应用</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>fff0f0f0</value>
+				    </bind>
+		</view>
+        <!-- 推荐一 -->
+        <view id="ID_main_app_1" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:150,
+						width:740,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				        <value>
+				            {
+				            	package:"com.ipanel.market"
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_app_1_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<!--<value>asset:///config-new-1080P/defPoster_760x430.png</value>  -->
+						<value>asset:///config-new-1080P/poster_app_01.jpg</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:370,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_app_txt_1"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:370,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>蒙宝宝选拔赛</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 全部 -->
+		<view id="ID_main_app_2" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:790,
+						y:150,
+						width:240,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_app_qb.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent"> 
+            		<bind> 
+              		<property>intent</property>  
+              		<value>
+              		    { package:"com.ipanel.dtv.chongqing", className:"com.ipanel.dtv.chongqing.IPanel30PortalActivity", extra:{ "url":"http://192.168.9.77/weather/" } }
+              		</value> 
+            		</bind> 
+          		</action>
+          		<view id="ID_app_2_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:155
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>全部</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 教育-->
+		<view id="ID_main_app_3" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:790,
+						y:370,
+						width:240,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_app_jy.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				    <bind>
+				        <property>intent</property>
+				         <value>
+				            {
+				            	package:"",
+				            	className:"",
+				            }
+				        </value>
+				    </bind>
+				</action>
+				<view id="ID_app_3_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:155
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>教育</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 推荐二 -->
+		<view id="ID_main_app_4" clazz="com.ipanel.join.cqhome.view.ShowTextView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1040,
+						y:150,
+						width:490,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_app_4_poster" clazz="ipanel.join.widget.ImgView">
+				    <bind>
+						<property>LayoutParams</property>
+						<value type="json">
+						{
+							width:-1,
+							height:-1
+						}
+						</value>
+					</bind>
+					<bind>
+						<property>drawable</property>
+						<!--<value>asset:///config-new-1080P/defPoster_490x430.png</value>  -->
+						<value>asset:///config-new-1080P/poster_app_02.jpg</value>
+					</bind>
+					<bind>
+				    	<property>scaleType</property>
+				    	<value>FIT_XY</value>
+					</bind>
+				</view>
+				<view id="ID_main_app_txt_bg"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:370,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+			      		<property>visibility</property>
+			      		<value>4</value>
+			  		</bind>
+				</view>
+				<view id="ID_main_app_txt_2"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+				            x:0,
+						    y:370,
+						    width:-1,
+						    height:60
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>backgroundDrawable</property>
+				        <value>asset:///config-new-1080P/cover00.png</value>
+				    </bind>
+				    <bind>
+				        <property>gravity</property>
+				        <value>center_vertical</value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind>
+				        <property>textColor</property>
+				        <value>FF000000</value>
+				    </bind>
+				    <bind>
+				        <property>padding</property>
+				        <value type="json">
+				            {
+				            left:20,
+				            right:20
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>text</property>
+				        <value>幻神天下</value>
+				    </bind>
+				</view>
+		</view>
+        <!-- 游戏 -->
+		<view id="ID_main_app_5" clazz="com.ipanel.join.cqhome.view.ColumeLayout" style="Style_Colume">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:590,
+						width:490,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_app_yx.png</value>
+				</bind>
+				<bind>
+					<property>focusScale</property>
+					<value>ID_app_5_poster</value>
+				</bind>
+				<view id="ID_app_5_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:155,
+						    	left:340
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>游戏</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 游戏 poster-->
+		<view id="ID_app_5_poster" clazz="ipanel.join.widget.ImgView">
+            	<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:10,
+						y:590,
+						width:350,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_app_yx_poster.png</value>
+				</bind>
+        </view>
+		<!-- 动漫 -->
+		<view id="ID_main_app_6" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:540,
+						y:590,
+						width:240,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_app_dm.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_app_6_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:155
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>动漫</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 金融/电商 -->
+		<view id="ID_main_app_7" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:790,
+						y:590,
+						width:240,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_app_jyds.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_app_7_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:155
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>金融/电商</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 应用推荐位一 -->
+		<view id="ID_main_app_8" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1040,
+						y:590,
+						width:240,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/bg_app_1.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_app_8_logo" clazz="ipanel.join.widget.ImgView">
+            	<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						width:100,
+						height:100,
+						gravity:center_horizontal,
+						margin:{
+							top:30
+						}
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/appIcon_xdfxt.png</value>
+				</bind>
+        		</view>
+				<view id="ID_app_8_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:155
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>应用推荐位</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 应用推荐位二-->
+		<view id="ID_main_app_9" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1290,
+						y:590,
+						width:240,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/bg_app_2.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_app_9_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:155
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>应用推荐位</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 娱乐-->
+		<view id="ID_main_app_10" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:810,
+						width:240,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_app_yl.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_app_10_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:155
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>娱乐</value>
+				    </bind>
+				</view>
+		</view>
+		<!-- 健康-->
+		<view id="ID_main_app_11" clazz="ipanel.join.widget.FrameLayout">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:290,
+						y:810,
+						width:240,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_app_jk.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_app_11_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:155
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>健康</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_app_12" clazz="com.ipanel.join.cqhome.view.AppRecView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:540,
+						y:810,
+						width:240,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/bg_app_3.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				<bind>
+				    <property>intent</property>
+				    <value>
+				        {
+				          	package:"com.ipanel.chongqing_ipanelforhw",
+				            className:"com.ipanel.join.homed.chongqing.downloading.AppActivity",
+				            extra:{
+				              	 "app_name":"ZAKER新闻",
+				              	 "apkUrl":"http://192.168.9.124:80/apk/zaker.apk",
+				              	 "app_remarks":"ZAKER-是国内最受欢迎的互动分享和个性化定制阅读软件",
+				              	 "app_id":"zaker.apk",
+				              	 "app_packageName":"com.myzaker.ZAKER_Phone",
+				              	 "app_icon":"config-new-1080P/appIcon_zaker.png",
+				              	 "app_des":"ZAKER拥有资讯、娱乐、科技、财经、时尚、汽车、旅游、生活等二十大版块，聚合2000家媒体、自建频道内容资源。用户可根据个人喜好订阅内容，也可通过ZAKER智能推送功能获取信息。对于感兴趣的内容，用户可在ZAKER内直接与好友分享互动，也可以通过微博、微信、QQ、邮件等社交媒体平台将图文分享收藏  。"
+				            }
+				        }
+				    </value>
+				</bind>
+				</action>
+				<view id="ID_app_12_down_icon" clazz="ipanel.join.widget.ImgView">
+            	<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						width:-2,
+						height:-2,
+						gravity:left
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/icon_download.png</value>
+				</bind>
+        		</view>
+				<view id="ID_app_12_logo" clazz="ipanel.join.widget.ImgView">
+            	<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						width:100,
+						height:100,
+						gravity:center_horizontal,
+						margin:{
+							top:30
+						}
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/appIcon_zaker.png</value>
+				</bind>
+        		</view>
+				<view id="ID_app_12_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:155
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>ZAKER新闻</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_app_13" clazz="com.ipanel.join.cqhome.view.AppRecView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:790,
+						y:810,
+						width:240,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/bg_app_4.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				<bind>
+				    <property>intent</property>
+				    <value>
+				        {
+				          	package:"com.ipanel.chongqing_ipanelforhw",
+				            className:"com.ipanel.join.homed.chongqing.downloading.AppActivity",
+				            extra:{
+				              	 "app_name":"QQ音乐",
+				              	 "apkUrl":"http://192.168.9.124:80/apk/QQyinle.apk",
+				              	 "app_remarks":"QQ音乐-中国互联网领域领先的正版数字音乐服务的领先平�?,
+				              	 "app_id":"QQyinle.apk",
+				              	 "app_icon":"config-new-1080P/appIcon_qqmusic.png",
+				              	 "app_des":"QQ音乐是腾讯公司推出的网络音乐平台，是中国互联网领域领先的正版数字音乐服务的领先平台，有着个性明星主题：大咖装，添星妆！同时也是一款免费的音乐播放器，始终走在音乐潮流最前端，向广大用户提供方便流畅的在线音乐和丰富多彩的音乐社区服务�?
+				            }
+				        }
+				    </value>
+				</bind>
+				</action>
+				<view id="ID_app_13_down_icon" clazz="ipanel.join.widget.ImgView">
+            	<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						width:-2,
+						height:-2,
+						gravity:left
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/icon_download.png</value>
+				</bind>
+        		</view>
+				<view id="ID_app_13_logo" clazz="ipanel.join.widget.ImgView">
+            	<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						width:100,
+						height:100,
+						gravity:center_horizontal,
+						margin:{
+							top:30
+						}
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/appIcon_qqmusic.png</value>
+				</bind>
+        		</view>
+				<view id="ID_app_13_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:155
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>QQ音乐</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_app_14" clazz="com.ipanel.join.cqhome.view.AppRecView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1040,
+						y:810,
+						width:240,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/bg_app_5.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				<bind>
+				    <property>intent</property>
+				    <value>
+				        {
+				          	package:"com.ipanel.chongqing_ipanelforhw",
+				            className:"com.ipanel.join.homed.chongqing.downloading.AppActivity",
+				            extra:{
+				              	 "app_name":"豆果美食",
+				              	 "apkUrl":"http://192.168.9.124:80/apk/douguomeishi.apk",
+				              	 "app_remarks":"豆果美食-国内首家发现、分享、交流美食的互动平台，目前已经发展成为国内外华人较为领先的美食互动社区网�?,
+				              	 "app_id":"douguomeishi.apk",
+				              	 "app_icon":"config-new-1080P/appIcon_dgms.png",
+				              	 "app_des":"国内首家发现、分享、交流美食的互动平台，目前已经发展成为国内外华人较为领先的美食互动社区网络。在线厨艺交流、美食分享平台。提供国内免费手机美食菜谱、生活资讯应用软件�?
+				            }
+				        }
+				    </value>
+				</bind>
+				</action>
+				<view id="ID_app_14_down_icon" clazz="ipanel.join.widget.ImgView">
+            	<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						width:-2,
+						height:-2,
+						gravity:left
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/icon_download.png</value>
+				</bind>
+        		</view>
+				<view id="ID_app_14_logo" clazz="ipanel.join.widget.ImgView">
+            	<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						width:100,
+						height:100,
+						gravity:center_horizontal,
+						margin:{
+							top:30
+						}
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/appIcon_dgms.png</value>
+				</bind>
+        		</view>
+				<view id="ID_app_14_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:155
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>豆果美食</value>
+				    </bind>
+				</view>
+		</view>
+		<view id="ID_main_app_15" clazz="com.ipanel.join.cqhome.view.AppRecView">
+				<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:1290,
+						y:810,
+						width:240,
+						height:210
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/bg_app_6.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<action event="onClick" operation="intent">
+				<bind>
+				    <property>intent</property>
+				    <value>
+				        {
+				          	package:"com.ipanel.chongqing_ipanelforhw",
+				            className:"com.ipanel.join.homed.chongqing.downloading.AppActivity",
+				            extra:{
+				              	 "app_name":"天气预报",
+				              	 "apkUrl":"http://192.168.9.124:80/apk/mojitianqi.apk",
+				              	 "app_remarks":"墨迹天气-一款免费天气信息查询软件，人性化设计，使用简单，是中国支持城市最多的天气预报软件",
+				              	 "app_id":"mojitianqi.apk",
+				              	 "app_icon":"config-new-1080P/appIcon_tqyb.png",
+				              	 "app_des":"墨迹天气，一款免费天气信息查询软件，人性化设计，使用简单，是中国支持城市最多的天气预报软件�?
+				            }
+				        }
+				    </value>
+				</bind>
+				</action>
+				<view id="ID_app_15_down_icon" clazz="ipanel.join.widget.ImgView">
+            	<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						width:-2,
+						height:-2,
+						gravity:left
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/icon_download.png</value>
+				</bind>
+        		</view>
+				<view id="ID_app_15_logo" clazz="ipanel.join.widget.ImgView">
+            	<bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						width:100,
+						height:100,
+						gravity:center_horizontal,
+						margin:{
+							top:30
+						}
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/appIcon_tqyb.png</value>
+				</bind>
+        		</view>
+				<view id="ID_app_15_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    gravity:center_horizontal,
+						    margin:{
+						    	top:155
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>天气预报</value>
+				    </bind>
+				</view>
+		</view>
+    </view>
+</screen>
+<!-- 党员远教 -->
+<screen id="content_8" type="fragment">
+    <view id="ID_FG_party"  clazz="ipanel.join.widget.AbsLayout">
+        <view id="ID_main_party_1" clazz="ipanel.join.widget.FrameLayout">
+            <bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:40,
+						y:290,
+						width:375,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>backgroundDrawable</property>
+					<value>asset:///config-new-1080P/column_dyyj_dyyj.png</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+				<view id="ID_party_1_txt"  clazz="ipanel.join.widget.TxtView">
+				    <bind>
+				        <property>LayoutParams</property>
+				        <value type="json">
+				            {
+						    width:-2,
+						    height:-2,
+						    margin:{
+						    	top:30,
+						    	left:30
+						    }
+				            }
+				        </value>
+				    </bind>
+				    <bind>
+				        <property>textSize</property>
+				        <value>32</value>
+				    </bind>
+				    <bind> 
+                 		<property>textColor</property>  
+                 		<value>FFFFFFFF</value> 
+             		</bind> 
+				    <bind>
+				        <property>text</property>
+				        <value>党员远教</value>
+				    </bind>
+				</view>
+        </view>
+        <view id="ID_main_party_2" clazz="ipanel.join.widget.ImgView">
+            <bind>
+					<property>LayoutParams</property>
+					<value type="json">
+					{
+						x:425,
+						y:290,
+						width:1105,
+						height:430
+					}
+					</value>
+				</bind>
+				<bind>
+					<property>drawable</property>
+					<value>asset:///config-new-1080P/poster_dyyj_01.jpg</value>
+				</bind>
+				<bind>
+					<property>focusable</property>
+					<value>true</value>
+				</bind>
+				<bind>
+				    <property>showFocusFrame</property>
+				    <value>true</value>
+				</bind>
+        </view>
+    </view>
+</screen>
+	<style id="Style_Colume">
+		<bind>
+			<property>focusable</property>
+			<value>true</value>
+		</bind>
+		<bind>
+			<property>showFocusFrame</property>
+			<value>true</value>
+		</bind>
+	</style>
+
+</configuration>

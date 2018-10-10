@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="690px"
+    android:layout_height="370px"
+    android:layout_gravity="center"
+    android:background="@drawable/weixin_bg"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="600px"
+        android:layout_height="80px"
+        android:layout_marginTop="60px"
+        android:textSize="48px"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:gravity="center" />
+    
+    <LinearLayout
+        android:layout_width="470px"
+        android:layout_height="80px"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="100px"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/positiveButton"
+            android:layout_width="205px"
+            android:layout_height="80px"
+            android:textSize="34px"
+            android:textColor="@drawable/weixin_btn_text_color"
+            android:background="@drawable/weixin_btn_selector"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="205px"
+            android:layout_height="80px"
+            android:layout_marginLeft="60px"
+            android:textSize="34px"
+            android:textColor="@drawable/weixin_btn_text_color"
+            android:background="@drawable/weixin_btn_selector"
+            android:gravity="center" />
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1920px"
+    android:layout_height="1080px" >
+    
+    <!--
+    <LinearLayout
+        android:id="@+id/shift_dight_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1616px"
+        android:layout_marginTop="32px"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/shift_input_bai"
+            android:layout_width="72px"
+            android:layout_height="111px"
+            android:gravity="center"
+            android:src="@drawable/live_num0" />
+
+        <ImageView
+            android:id="@+id/shift_input_shi"
+            android:layout_width="72px"
+            android:layout_height="111px"
+            android:gravity="center"
+            android:src="@drawable/live_num0" />
+
+        <ImageView
+            android:id="@+id/shift_input_ge"
+            android:layout_width="72px"
+            android:layout_height="111px"
+            android:gravity="center"
+            android:src="@drawable/live_num0" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/shift_right_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/shift_dight_line"
+        android:layout_below="@id/shift_dight_line"
+        android:layout_marginTop="8px"
+        android:gravity="center_vertical|right"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="50px" />
+        -->
+    
+    <RelativeLayout
+        android:id="@+id/shift_bottombar"
+	    android:layout_width="match_parent"
+	    android:layout_height="150px"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/black80" >
+        
+        <TextView
+            android:id="@+id/shift_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="10px"
+            android:text="@string/startzero_short"
+            android:textColor="@color/recommend_tips_bg"
+            android:textSize="32px" />
+        
+        <SeekBar
+            android:id="@+id/shift_progress"
+            android:layout_width="1620px"
+            android:layout_height="24px"
+            android:layout_toRightOf="@id/shift_start_time"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="15px"
+            android:focusable="false"
+            android:max="1000"
+            android:progressDrawable="@drawable/live_program_progress"
+            android:thumb="@android:color/transparent" />
+        
+        <TextView
+            android:id="@+id/shift_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/shift_progress"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:text="@string/startzero_short"
+            android:textColor="@color/recommend_tips_bg"
+            android:textSize="32px" />
+        
+        <TextView
+            android:id="@+id/current_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/shift_start_time"
+            android:layout_marginTop="79px"
+            android:textColor="@color/recommend_tips_bg"
+            android:textSize="42px" />
+        
+        <ImageView
+            android:layout_width="333px"
+            android:layout_height="32px"
+            android:layout_below="@id/shift_progress"
+            android:layout_marginLeft="1485px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/live_tips00" />
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/current_position"
+        android:layout_width="150px"
+        android:layout_height="55px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="135px"
+        android:background="@drawable/live_time_samll"
+        android:gravity="center_horizontal"
+        android:text="@string/startzero"
+        android:textColor="@color/black"
+        android:textSize="32px" />
+
+    <!--
+    <LinearLayout
+        android:id="@+id/seek_image_ll"
+        android:layout_width="390px"
+        android:layout_height="270px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="135px"
+        android:background="@drawable/live_time_seek"
+        android:padding="5px"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+        
+        <ImageView
+            android:id="@+id/seek_image"
+            android:layout_width="380px"
+            android:layout_height="215px"
+            android:scaleType="fitXY" />
+        
+        <TextView
+            android:id="@+id/current_position2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/startzero_short"
+            android:textColor="@color/black"
+            android:textSize="32px" />
+    </LinearLayout>
+    -->
+
+</RelativeLayout>

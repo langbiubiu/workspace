@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_playerlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:id="@+id/lay_left"
+        android:layout_width="273.33dp"
+        android:layout_height="720dp"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical" >
+
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="146.33dp"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/logo"
+	            android:layout_width="152dp"
+	            android:layout_height="64dp"
+	            android:src="@drawable/webtv_logo" />
+            
+        </RelativeLayout>
+        <!--
+        <LinearLayout 
+            android:id="@+id/ll_local"
+            android:layout_width="match_parent"
+            android:layout_height="70.67dp"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:nextFocusDown="@+id/ls_category"
+            android:orientation="horizontal"
+            android:background="@drawable/selector_list">
+            
+            <ImageView
+                android:id="@+id/icon_local"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16.67dp"
+                android:duplicateParentState="true"
+                android:background="@drawable/selector_icon_local" />
+            
+            <TextView
+                android:id="@+id/text_local"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.67dp"
+                android:duplicateParentState="true"
+                android:text="@string/local"
+                android:textColor="@drawable/selector_text"
+                android:textSize="32sp" />
+            
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider_category" />
+		-->
+        <ListView
+            android:id="@+id/ls_category"
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:clickable="true"
+            android:divider="@drawable/divider_category"
+            android:listSelector="@drawable/selector_list"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/lay_right"
+        android:layout_width="333.33dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="273.33dp"
+        android:background="@color/bg_channel_list" >
+        
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="27.33dp"
+            android:text="@string/local"
+            android:textColor="@color/text_selected"
+            android:textSize="24sp"
+            android:background="@drawable/bg_title" />
+        
+        <LinearLayout
+            android:id="@+id/tip_menu"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_title_reverse" >
+            
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="35.33dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tip_menu" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.67dp"
+                android:layout_marginTop="32.33dp"
+                android:text="@string/menu_str"
+                android:textSize="20sp"
+                android:textColor="@color/text_selected" />
+            
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/ls_channel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/category_title"
+            android:layout_above="@id/tip_menu"
+            android:clickable="true"
+            android:divider="@drawable/divider_channel"
+            android:listSelector="@color/translucent_background"
+            android:visibility="gone"
+            android:scrollbars="none" />
+        
+        <LinearLayout
+            android:id="@+id/ll_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:orientation="vertical" >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_password"
+                android:textColor="@color/text_selected"
+                android:textSize="24sp" />
+            
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center_vertical|right"
+                android:maxLength="4"
+	        	android:inputType="number|numberPassword"
+	        	android:textColor="@color/text_selected"
+	        	android:textSize="32sp"
+                android:background="@drawable/selector_edit" />
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/txt_load_localdata_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_title"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/user_defined_content"
+            android:textColor="@color/text_unselected"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_id"
+            style="@style/myProgressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDuration="1500"
+            android:visibility="gone" />
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

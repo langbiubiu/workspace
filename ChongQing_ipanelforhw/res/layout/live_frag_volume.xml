@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/anim_view"
+    android:layout_width="match_parent"
+    android:layout_height="225px"
+    android:layout_marginTop="773px" >
+
+    <RelativeLayout
+        android:layout_width="1073px"
+        android:layout_height="225px"
+        android:layout_marginLeft="270px"
+        android:background="@drawable/live_volume_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33px"
+            android:layout_marginTop="27px"
+            android:src="@drawable/live_key_help_1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="264px"
+            android:layout_marginTop="27px"
+            android:src="@drawable/live_key_help_2" />
+
+        <TextView
+            android:id="@+id/noow_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="945px"
+            android:layout_marginTop="23px"
+            android:textColor="#ffffff"
+            android:textSize="39px" />
+
+        <TextView
+            android:id="@+id/am_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="800px"
+            android:layout_marginTop="30px"
+            android:textColor="#ffffff"
+            android:textSize="30px" />
+
+        <SeekBar
+            android:id="@+id/volume_progress"
+            android:layout_width="683px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="216px"
+            android:layout_marginTop="120px"
+            android:focusable="false"
+            android:gravity="center"
+            android:max="100"
+            android:maxHeight="38px"
+            android:minHeight="38px"
+            android:paddingLeft="5px"
+            android:paddingRight="5px"
+            android:progress="50"
+            android:progressDrawable="@drawable/live_volome_progress_drawable"
+            android:thumb="@drawable/live_progress_dot"
+            android:thumbOffset="15px" />
+
+        <TextView
+            android:id="@+id/volume_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="930px"
+            android:layout_marginTop="131px"
+            android:textColor="#ffffff"
+            android:textSize="33px" />
+    </RelativeLayout>
+
+    <ipanel.join.ad.widget.ImageAdView
+        android:id="@+id/ad"
+        android:layout_width="377px"
+        android:layout_height="224px"
+        android:layout_marginLeft="1352px"
+        android:background="@drawable/live_pf_ad"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

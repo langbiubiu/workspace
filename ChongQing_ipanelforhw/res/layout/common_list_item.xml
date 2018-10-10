@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:focusable="true">
+	<TextView 
+	    android:id="@+id/list_item_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="30px"
+	    android:duplicateParentState="true"
+	    android:text="@string/voice_tip_2"
+	    android:textColor="@color/voice_text_color_sl"
+	    android:textSize="40px"
+	    android:background="@drawable/voice_content_bg_sl"/>
+
+</RelativeLayout>

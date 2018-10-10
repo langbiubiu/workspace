@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270px"
+    android:layout_height="395px"
+    android:background="@drawable/vod_tvadd_bg_selector"
+    android:focusable="true" >
+
+    <ImageView
+        android:id="@+id/recommend_poster"
+        android:layout_width="240px"
+        android:layout_height="300px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15px"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster" />
+
+    <TextView
+        android:id="@+id/recommend_name"
+        android:layout_width="245px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="335px"
+        android:duplicateParentState="true"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@drawable/vod_recommend_text_color"
+        android:textSize="32px" />
+
+</RelativeLayout>

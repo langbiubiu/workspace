@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/vod_tv_detail_layout"
+    android:background="@drawable/void_tv_bg" >
+
+    <LinearLayout
+        android:id="@+id/tv_left_bar"
+        android:layout_width="291px"
+        android:layout_height="1080px"
+        android:background="@drawable/vod_list_bg01"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tv_line1"
+            android:layout_width="290px"
+            android:layout_height="81px"
+            android:layout_marginTop="100px"
+            android:background="@drawable/vod_textview_bg_sl"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/tv_collect"
+                android:layout_width="36px"
+                android:layout_height="32px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35px"
+                android:layout_toLeftOf="@+id/tv_collect_text"
+                android:background="@drawable/vod_movielike_sl"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:id="@+id/tv_collect_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:duplicateParentState="true"
+                android:text="@string/vod_collect"
+                android:textColor="@drawable/vod_fontcolor_sl"
+                android:textSize="35px" />
+        </RelativeLayout>
+
+        <cn.ipanel.android.widget.SimpleTab
+            android:id="@+id/tv_simple_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/tv_line2"
+                android:layout_width="290px"
+                android:layout_height="81px"
+                android:background="@drawable/vod_textview_bg_sl"
+                android:focusable="true" >
+
+                <ImageView
+                    android:id="@+id/tv_play"
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35px"
+                    android:layout_toLeftOf="@+id/tv_num"
+                    android:background="@drawable/vod_play_sl"
+                    android:duplicateParentState="true" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="45px"
+                    android:duplicateParentState="true"
+                    android:text="@string/play"
+                    android:textColor="@drawable/vod_fontcolor_sl"
+                    android:textSize="35px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tv_line3"
+                android:layout_width="290px"
+                android:layout_height="81px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/vod_textview_bg_sl"
+                android:focusable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="45px"
+                    android:duplicateParentState="true"
+                    android:text="@string/introduction"
+                    android:textColor="@drawable/vod_fontcolor_sl"
+                    android:textSize="35px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tv_line4"
+                android:layout_width="290px"
+                android:layout_height="81px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/vod_textview_bg_sl"
+                android:focusable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="45px"
+                    android:duplicateParentState="true"
+                    android:text="@string/alike"
+                    android:textColor="@drawable/vod_fontcolor_sl"
+                    android:textSize="35px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tv_line6"
+                android:layout_width="290px"
+                android:layout_height="81px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/vod_textview_bg_sl"
+                android:focusable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="45px"
+                    android:duplicateParentState="true"
+                    android:text="@string/starshow"
+                    android:textColor="@drawable/vod_fontcolor_sl"
+                    android:textSize="35px" />
+            </RelativeLayout>
+        </cn.ipanel.android.widget.SimpleTab>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/collect_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="360px"
+        android:visibility="gone" >
+
+        <include layout="@layout/vod_collect_layout2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/star_layout"
+        android:layout_width="1560px"
+        android:layout_height="1080px"
+        android:layout_marginLeft="350px"
+        android:visibility="invisible" >
+
+        <include layout="@layout/vod_star_layout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_intro"
+        android:layout_width="1558px"
+        android:layout_height="1080px"
+        android:layout_marginLeft="362px"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/tv_poster"
+            android:layout_width="321px"
+            android:layout_height="400px"
+            android:layout_marginLeft="3px"
+            android:layout_marginTop="125px" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="49px"
+            android:layout_marginTop="126px"
+            android:layout_toRightOf="@+id/tv_poster"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textSize="60px" />
+
+        <ImageView
+            android:id="@+id/play_icon"
+            android:layout_width="49px"
+            android:layout_height="49px"
+            android:layout_alignBottom="@+id/tv_name"
+            android:layout_marginLeft="1092px"
+            android:background="@drawable/vod_playnum" />
+
+        <TextView
+            android:id="@+id/play_times"
+            android:layout_width="190px"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/play_icon"
+            android:layout_marginLeft="2px"
+            android:layout_toRightOf="@+id/play_icon"
+            android:textColor="#FFFFFF"
+            android:textSize="36px" />
+
+        <ImageView
+            android:id="@+id/douban_icon"
+            android:layout_width="49px"
+            android:layout_height="49px"
+            android:layout_alignBottom="@+id/tv_name"
+            android:layout_marginLeft="1335px"
+            android:background="@drawable/vod_douban" />
+
+        <TextView
+            android:id="@+id/douban_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/douban_icon"
+            android:layout_marginLeft="2px"
+            android:layout_toRightOf="@+id/douban_icon"
+            android:textColor="#F99403"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/total_nums"
+            style="@style/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="23px"
+            android:text="@string/total_num" />
+
+        <ImageView
+            android:id="@+id/gap"
+            android:layout_width="4px"
+            android:layout_height="35px"
+            android:layout_alignBottom="@+id/total_nums"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/total_nums"
+            android:background="@drawable/vertical_line" />
+
+        <TextView
+            android:id="@+id/update_to"
+            style="@style/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="23px"
+            android:layout_toRightOf="@+id/gap"
+            android:text="@string/update_to" />
+
+        <ImageView
+            android:id="@+id/gap2"
+            android:layout_width="4px"
+            android:layout_height="35px"
+            android:layout_alignBottom="@+id/update_to"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/update_to"
+            android:background="@drawable/vertical_line" />
+
+        <TextView
+            android:id="@+id/year"
+            style="@style/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="23px"
+            android:layout_toRightOf="@+id/gap2"
+            android:text="@string/year" />
+
+        <ImageView
+            android:id="@+id/gap3"
+            android:layout_width="4px"
+            android:layout_height="35px"
+            android:layout_alignBottom="@+id/update_to"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/year"
+            android:background="@drawable/vertical_line" />
+
+        <TextView
+            android:id="@+id/region"
+            style="@style/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="23px"
+            android:layout_toRightOf="@+id/gap3"
+            android:text="@string/location" />
+
+        <Button
+            android:id="@+id/good_bt"
+            android:layout_width="45px"
+            android:layout_height="41px"
+            android:layout_marginLeft="367px"
+            android:layout_marginTop="300px"
+            android:background="@drawable/vod_good_sl" />
+
+        <TextView
+            style="@style/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="310px"
+            android:layout_toRightOf="@+id/good_bt"
+            android:text="@string/good" />
+
+        <Button
+            android:id="@+id/bad_bt"
+            android:layout_width="45px"
+            android:layout_height="41px"
+            android:layout_marginLeft="546px"
+            android:layout_marginTop="311px"
+            android:background="@drawable/vod_bad_sl" />
+
+        <TextView
+            style="@style/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="310px"
+            android:layout_toRightOf="@+id/bad_bt"
+            android:text="@string/bad" />
+
+        <TextView
+            android:id="@+id/director"
+            style="@style/tv_actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="367px"
+            android:layout_marginTop="370px"
+            android:text="@string/director" />
+
+        <LinearLayout
+            android:id="@+id/director_ll"
+            android:layout_width="981px"
+            android:layout_height="43px"
+            android:layout_marginLeft="446px"
+            android:layout_marginTop="370px"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/actor"
+            style="@style/tv_actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="367px"
+            android:layout_marginTop="432px"
+            android:text="@string/actor" />
+
+        <LinearLayout
+            android:id="@+id/actor_ll"
+            android:layout_width="981px"
+            android:layout_height="43px"
+            android:layout_marginLeft="446px"
+            android:layout_marginTop="432px"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tag"
+            style="@style/tv_actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="367px"
+            android:layout_marginTop="493px"
+            android:text="@string/tag" />
+
+        <LinearLayout
+            android:id="@+id/tag_ll"
+            android:layout_width="981px"
+            android:layout_height="43px"
+            android:layout_marginLeft="446px"
+            android:layout_marginTop="493px"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/headline"
+            android:layout_width="1448px"
+            android:layout_height="1.5px"
+            android:layout_marginLeft="1px"
+            android:layout_marginTop="577px"
+            android:src="@drawable/vod_headline" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="1448px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="632px"
+            android:lineSpacingExtra="29px"
+            android:lines="4"
+            android:textColor="#9F9F9F"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_recommend_layout"
+        android:layout_width="1570px"
+        android:layout_height="1080px"
+        android:layout_marginLeft="350px"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/series_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="75px"
+            android:textColor="@color/white"
+            android:textSize="44px" />
+
+        <TextView
+            android:id="@+id/series_totalpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/series_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="123px"
+            android:textColor="@color/font_color"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/series_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/series_totalpage"
+            android:layout_marginRight="2px"
+            android:layout_toLeftOf="@+id/series_totalpage"
+            android:textColor="@color/light_white"
+            android:textSize="32px" />
+
+        <android.support.v4.view.VerticalViewPager2
+            android:id="@+id/tv_viewpager"
+            android:layout_width="1460px"
+            android:layout_height="843px"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="169px" >
+        </android.support.v4.view.VerticalViewPager2>
+    </RelativeLayout>
+
+</RelativeLayout>

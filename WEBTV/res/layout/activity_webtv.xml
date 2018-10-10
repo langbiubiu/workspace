@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/black"
+   >
+   
+    <com.hx.ijkplayer_demo.widget.media.IjkVideoView
+        android:id="@+id/video_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        />
+    
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutRadioBg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/dtvplayer_radio_bg"
+        android:visibility="invisible" >
+
+        <com.streambus.webtv.widget.AudioView
+            android:id="@+id/audio_view"
+            android:layout_width="1200dp"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp" />
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:id="@+id/ll_channel"
+	    android:layout_width="460dp"
+	    android:layout_height="80dp"
+	    android:layout_marginTop="26.67dp"
+	    android:background="@drawable/rectangle"
+	    android:paddingRight="26.67dp"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    android:visibility="gone" >
+	    
+	    <TextView
+	        android:id="@+id/channel_number"
+	        android:layout_width="66.67dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginTop="16dp"
+	        android:layout_marginBottom="16dp"
+	        android:duplicateParentState="true"
+	        android:background="@drawable/bg_number_selected"
+	        android:gravity="center"
+	        android:textSize="26.67sp"
+	        android:textColor="@color/black" />
+	    
+	    <TextView
+	        android:layout_weight="1"
+	        android:id="@+id/channel_name"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="26.67dp"
+	        android:textColor="@color/text_selected"
+	        android:textSize="24sp"
+	        android:singleLine="true"
+	        android:ellipsize="marquee"
+	        android:marqueeRepeatLimit="marquee_forever" />
+	    
+	    <ProgressBar
+	        android:id="@+id/progress"
+	        style="@style/myProgressBarStyleSmall"
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"
+	        android:layout_marginRight="26.67dp"
+	        android:indeterminateDuration="1500"
+	        android:visibility="gone" />
+	
+	</LinearLayout>
+
+</FrameLayout>

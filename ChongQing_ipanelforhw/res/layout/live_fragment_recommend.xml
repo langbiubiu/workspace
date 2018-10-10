@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1920px"
+    android:layout_height="1080px" >
+    
+    <com.ipanel.join.topway.homed.widget.SimpleAdapterView
+        android:id="@+id/recommend_list"
+        android:layout_width="match_parent"
+        android:layout_height="439px"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="67px"
+        android:background="@drawable/live_bar_bg1" />
+
+</RelativeLayout>

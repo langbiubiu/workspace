@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1920px"
+    android:layout_height="1080px" >
+        
+    <RelativeLayout
+        android:id="@+id/navi_container" 
+        android:layout_width="240px"
+        android:layout_height="match_parent"
+        android:background="@drawable/live_list01" >
+        
+        <com.ipanel.join.chongqing.live.view.JChannelGroupListView
+        	android:id="@+id/channel_group_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68px" />
+        
+    </RelativeLayout>
+    
+    <ImageView
+        android:layout_width="330px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/navi_container"
+        android:background="@drawable/live_list02" />
+    
+    <com.ipanel.join.chongqing.live.view.JChannelListView_b
+        android:id="@+id/channel_list_02"
+        android:layout_width="330px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68px"
+        android:layout_toRightOf="@id/navi_container" />
+    
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginLeft="504px"
+        android:layout_marginTop="521px"
+        android:src="@drawable/live_right00" />
+
+</RelativeLayout>

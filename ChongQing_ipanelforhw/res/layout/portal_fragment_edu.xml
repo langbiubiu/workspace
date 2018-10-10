@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="false">
+  	
+    <ImageView
+        android:id="@+id/distance_edu"
+        android:layout_width="375px"
+        android:layout_height="430px"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="40px"
+        android:src="@drawable/portal_pop_img6_1"
+        android:focusable="true"
+        android:nextFocusDown="@+id/distance_edu"/>
+    
+    <ImageView
+        android:id="@+id/edu_ad"
+        android:layout_width="1145px"
+        android:layout_height="430px"
+        android:layout_alignTop="@+id/distance_edu"
+        android:layout_toRightOf="@+id/distance_edu"
+        android:layout_marginLeft="10px"
+        android:src="@drawable/portal_pop_img6_2"
+        android:nextFocusDown="@+id/edu_ad"/>
+    
+</RelativeLayout>

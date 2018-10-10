@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300px"
+    android:layout_height="300px"
+    android:background="@drawable/vod_picture_bg_sl"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="247px"
+        android:layout_height="210px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_icon"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:duplicateParentState="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="@string/recommend_2"
+        android:textColor="@color/portal_sl_tab_text"
+        android:textSize="30px" />
+
+</RelativeLayout>

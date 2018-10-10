@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/radio1" >
+    
+    <ImageView
+        android:layout_width="411.33dp"
+        android:layout_height="173.33dp"
+        android:layout_marginTop="273.33dp"
+        android:src="@drawable/webtv_start_logo"
+        android:contentDescription="@string/yes" />
+        
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135.33dp"
+        android:textSize="36sp"
+        android:textColor="@color/text_unselected" />
+
+</LinearLayout>

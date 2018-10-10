@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <View
+        android:id="@+id/gradient_bg"
+        android:layout_width="1500px"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="54px"
+        android:layout_height="86px"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="69px"
+        android:src="@drawable/live_arrow_left0" />
+
+    <View
+        android:id="@+id/gradient_line"
+        android:layout_width="5px"
+        android:layout_height="750px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="270px"
+        android:background="@drawable/live_menu_line_gradient_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75px"
+        android:layout_marginTop="69px"
+        android:text="@string/tvstation"
+        android:textColor="#FFFFFF"
+        android:textSize="60px" />
+
+    <RelativeLayout
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/live_arrow_right_for_focus"
+            android:tag="arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/part_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="150px" >
+
+        <com.ipanel.join.topway.homed.live.view.PagerLayout
+            android:id="@+id/colume_pager"
+            android:layout_width="225px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/part_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="300px"
+        android:layout_marginTop="150px" >
+
+        <com.ipanel.join.topway.homed.live.view.PagerLayout
+            android:id="@+id/channel_pager"
+            android:layout_width="450px"
+            android:layout_height="840px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0px" />
+
+        <com.ipanel.join.topway.homed.live.view.PagerLayout
+            android:id="@+id/time_pager"
+            android:layout_width="270px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="450px" />
+=
+        <com.ipanel.join.topway.homed.live.view.PagerLayout
+            android:id="@+id/program_pager"
+            android:layout_width="525px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="705px" />
+
+        <TextView
+            android:id="@+id/channel_empty_txt"
+            android:layout_width="225px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45px"
+            android:text="@string/no_data_info"
+            android:textColor="#ffffff"
+            android:textSize="54px"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/program_empty_txt"
+            android:layout_width="225px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="825px"
+            android:text="@string/no_data_info"
+            android:textColor="#ffffff"
+            android:textSize="54px"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

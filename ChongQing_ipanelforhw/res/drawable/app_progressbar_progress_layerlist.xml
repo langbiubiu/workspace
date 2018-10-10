@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <selector>
+            <item android:state_activated="true">
+                <shape>
+
+                    <!-- 背景色 -->
+                    <solid android:color="@color/app_color_grey" />
+
+                    <!-- 边框宽度、颜色 -->
+                    <stroke
+                        android:width="@dimen/app_border"
+                        android:color="@color/app_color_yellow" />
+                </shape>
+            </item>
+            <item android:state_activated="false">
+                <shape>
+                    <solid android:color="@color/app_color_grey" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item android:id="@android:id/progress">
+        <selector>
+            <item android:state_activated="true">
+                <clip>
+                    <shape>
+
+                        <!-- 背景色 -->
+                        <solid android:color="@color/app_color_green" />
+
+                        <!-- 边框宽度、颜色 -->
+                        <stroke
+                            android:width="@dimen/app_border"
+                            android:color="@color/app_color_yellow" />
+                    </shape>
+                </clip>
+            </item>
+            <item android:state_activated="false">
+                <clip>
+                    <shape>
+                        <solid android:color="@color/app_color_green" />
+                    </shape>
+                </clip>
+            </item>
+        </selector>
+    </item>
+
+</layer-list>
